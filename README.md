@@ -10,6 +10,12 @@ A skeleton was created for you to branch off. It is heavily commented and should
 ### Naming your branch
 Name your branch accordingly to the "Issue"/feature you are working on: hero, search, carousel... Always be extremely careful to work on your branch and not one of another collaborator.
 
+### JavaScript
+ A separate file should be made for every feature developped which require JavaScript. Name it accordingly to the feature (i.e "search.js" for the search feature).
+
+### jQuery
+The latest version of jQuery (3.3.1) is hosted in the repository folder "js" and already in the skeleton's HTML header. Keep that version number in mind if you are searching for solutions. We could use a CDN but having it hosted here means allowing for offling development.
+
 ### Bugs & Errors
 There is nothing wrong with having a look at other people's work/branches (it is even encouraged) but don't widly change their codes. Instead go to the issue related to the feature they are developing and refer to the code/commit which contain the error in the comments so the contributor can rectify it
 
