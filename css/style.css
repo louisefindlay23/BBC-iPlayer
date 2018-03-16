@@ -10,7 +10,7 @@ body {
 /* H E A D E R */
 
 header {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     display: flex;
@@ -48,7 +48,7 @@ header {
 /* B O T T O M  N A V */
 
 nav {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     display: flex;
