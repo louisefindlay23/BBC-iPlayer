@@ -1,38 +1,17 @@
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
+var myElement = document.querySelector("header");
+var headroom  = new Headroom(myElement);
+headroom.init(); 
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
+var headroom = new Headroom(elem, {
+    "offset": 0,
+    "tolerance": 0,
+    "classes": {
+      "initial": "animated",
+      "pinned": "slideDown",
+      "unpinned": "slideUp"
     }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
+  });
+  headroom.init();
+  
+  // to destroy
+  headroom.destroy();
