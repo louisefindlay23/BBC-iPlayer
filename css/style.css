@@ -3,6 +3,10 @@ body {
     padding: 65px 0 0 0;
 }
 
+html {
+    font-family: sans-serif;
+}
+
 
 /* H E A D E R */
 
@@ -112,6 +116,54 @@ nav {
 
 /* P R O F I L E */
 
+#profile-header {
+    display: flex;
+    align-items: center;
+    height: 165px;
+    background: url("../img/7sisters.jpg") no-repeat center;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.85) 60%, rgba(0, 0, 0, 1) 75%), url('../img/7sisters.jpg') no-repeat center;
+	background-size: cover;
+}
 
+#profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile-picture {
+    width: 35%;
+    max-width: 125px;
+    margin: 0 0 0 5%;
+}
+
+#profile-picture img {
+    width: 100%;
+    border: solid 4px #000;
+    border-radius: 100px;
+}
+
+#profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50px 0px 0px 50px;
+    -moz-border-radius: 50px 0px 0px 50px;
+    -webkit-border-radius: 50px 0px 0px 50px;
+    background: #000;
+    padding: 8px 2% 8px 15px;
+}
+
+#profile-info h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+#profile-info p {
+    margin: 0;
+    font-weight: 100;
+}
 
 /* F A Q */
