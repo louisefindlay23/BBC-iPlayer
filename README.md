@@ -8,7 +8,7 @@ Web App prototype
 You will find explanations regarding the workflow for this project below. It summarize what we talked about during our first production meeting and it should be read before jumping in to make sure that everything goes smoothly during the development process.
 
 ### Skeleton
-A skeleton was created for you to branch off. Both the index.html and the style.css are heavily commented and should clearly define the space in which your feature will be implemented. This is done in order to avoid merge errors during pull request when the time comes. If you have any question regarding the comments left in the index.hmtl, come talk to me on Slack. It is important for everyone to understand this as it should keep us away from too much trouble when putting together everyone's work.
+A skeleton was created for you to branch off. Both the index.html and the style.css are heavily commented and should clearly define the space in which your feature will be implemented. This is done in order to avoid merge errors during pull request when the time comes. If you have any question regarding the comments left in the index.html or style.css, come talk to me on Slack. It is important for everyone to understand this as it should keep us away from too much trouble when putting together everyone's work.
 
 ### Naming your branch
 Name your branch accordingly to the "Issue"/feature you are working on: hero, search, carousel... Always be extremely careful to work on your branch and not one of another collaborator.
