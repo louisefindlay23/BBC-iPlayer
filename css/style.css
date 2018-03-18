@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    padding: 65px 0 0 0;
+    padding: 65px 0;
+	background: #000;
 }
 
 html {
@@ -104,17 +105,104 @@ nav {
 
 /* T V  S H O W */
 
-
+#tvshow {
+	display: none;
+}
 
 /* C A T E G O R I E S */
 
-
+#categories {
+	display: none;
+}
 
 /* S E A R C H */
 
+#search {
+	display: none;
+}
 
+#search h1, h3 {
+	text-align: center;
+}
+
+#search h1, h3, p {
+	color: #fff;
+}
+
+.searchbox {
+	width: 80%;
+	height: auto;
+	overflow: auto;
+	border-color: #fff;
+	padding: 2%;
+	background: #000;
+	color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+/* For Microsoft Edge */
+
+::-ms-input-placeholder {
+    color: #fff;
+}
+
+.row {
+	width: 60%;
+	height: auto;
+	overflow: auto;
+	margin: 0 20% 0 20%;
+}
+
+.left-col {
+	width: 50%;
+	height: auto;
+	overflow: auto;
+	float: left;
+}
+
+.right-col {
+	width: 50%;
+	height: auto;
+	overflow: auto;
+	float: left;
+}
+
+/* Creating the X's */
+
+.close {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  opacity: 1;
+  margin: 1em;
+  padding-left: 20%;
+}
+.close:hover {
+  opacity: 0.5;
+}
+.close:before, .close:after {
+  position: absolute;
+  content: ' ';
+  height: 19px;
+  width: 2px;
+  background: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
 
 /* P R O F I L E */
+
+#profile {
+	display: none;
+}
 
 #profile-header {
     display: flex;
@@ -190,5 +278,4 @@ nav {
     max-width: 300px;
     border-radius: 1000px;
 }
-
 /* F A Q */
