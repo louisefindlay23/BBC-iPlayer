@@ -108,7 +108,7 @@ nav {
 
 /* S E A R C H */
 
-#search h3{
+#search h1, h3 {
 	text-align: center;
 }
 
