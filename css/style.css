@@ -112,6 +112,14 @@ nav {
 	text-align: center;
 }
 
+.searchbox {
+	width: 80%;
+	height: auto;
+	overflow: auto;
+	border-color: #000;
+	padding: 2%;
+}
+
 .row {
 	width: 60%;
 	height: auto;
@@ -132,6 +140,8 @@ nav {
 	overflow: auto;
 	float: left;
 }
+
+/* Creating the X's */
 
 .close {
   position: absolute;
