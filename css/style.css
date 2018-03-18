@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 65px 0;
+
 	background: #000;
 }
 
@@ -278,4 +279,41 @@ nav {
     max-width: 300px;
     border-radius: 1000px;
 }
+
+
 /* F A Q */
+
+#faq {
+    color: #fff;
+}
+
+#faq-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#faq h3 {
+    margin: 10px 0 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#faq h4 {
+    margin: 15px 0 0;
+    transition: color 1s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#faq p {
+    margin: 5px 0 20px;
+}
+
+#a1, #a2, #a3, #a4 {
+    display: none;
+}
+
+.q-active {
+    color: #ff008e;
+    transition: color 1s;
+}
