@@ -11,70 +11,140 @@
 </head>
 
 <body>
-    
-    <!-- H E A D E R -->
-    <header class="headroom">
-        <div id="site-id">
-            <img src="img/BBC_iPlayer_logo.svg" alt="BBC iPlayer logo">
-        </div>
-        <div id="settings-icon">
-            <img src="img/settings.png" alt="Settings icon">
-        </div>
-    </header>
-    <!-- E N D  H E A D E R -->
-    
-    
-    <!-- H O M E  -->
-    <section id="home">
-        
-        
-        <!-- H E R O -->
-        <div class="hero">
-            
-        </div>
-        <!-- E N D  H E R O -->
-        
-        
-        <!-- C A R O U S E L -->
-        <div class="carousel">
-            
-            
-        </div>
-        <!-- E N D  C A R O U S E L -->
-        
-    </section>
-    <!-- E N D  H O M E -->
-    
-    
-    <!-- T V  S H O W -->
-    <section id="tvshow">
-        
-    </section>
-    <!-- E N D  T V  S H O W -->
-    
-    
-    <!-- C A T E G O R I E S -->
-    <section id="categories">
-        
-    </section>
-    <!-- E N D  C A T E G O R I E S -->
-    
-    
-    <!-- S E A R C H -->
-    <section id="search">
-        
-    </section>
-    <!-- E N D  S E A R C H -->
-    
-    
-    <!-- P R O F I L E -->
+  
+<!-- H E A D E R -->
+<header class="headroom">
+    <div id="site-id">
+        <img src="img/BBC_iPlayer_logo.svg" alt="BBC iPlayer logo">
+    </div>
+    <div id="settings-icon">
+        <img src="img/settings.png" alt="Settings icon">
+    </div>
+</header>
+<!-- E N D  H E A D E R -->
+
+
+<!-- H O M E  -->
+<section id="home">
+
+
+<!-- H E R O -->
+    <div class="hero">
+
+    </div>
+<!-- E N D  H E R O -->
+
+
+<!-- C A R O U S E L -->
+    <div class="carousel">
+
+
+    </div>
+<!-- E N D  C A R O U S E L -->
+
+</section>
+<!-- E N D  H O M E -->
+
+
+<!-- T V  S H O W -->
+<section id="tvshow">
+
+</section>
+<!-- E N D  T V  S H O W -->
+
+
+<!-- C A T E G O R I E S -->
+<section id="categories">
+
+</section>
+<!-- E N D  C A T E G O R I E S -->
+
+
+<!-- S E A R C H -->
+<section id="search">
+	
+	<!-- Search box -->
+	
+	<form>
+		<h1><input class="searchbox" type="text" name="search" placeholder="S E A R C H"></h1>
+	</form>
+	<h3>Your recent searches</h3>
+	
+	<!-- Search with a closing X -->
+	
+	<div class="row" id="row1"> 
+		<div class="left-col">
+			<p>SEARCH 1</p>
+		</div>
+		<div class="right-col">
+			<a href="#" class="close" id="close1"> </a>
+		</div>
+	</div>
+	
+	<!--2nd search with a closing X -->
+	
+	<div class="row" id="row2"> 
+		<div class="left-col">
+			<p>SEARCH 2</p>
+		</div>
+		<div class="right-col">
+			<a href="#" class="close" id="close2"> </a>
+		</div>
+	</div>
+	
+	
+	<!--3rd search with a closing X -->
+	
+	<div class="row" id="row3"> 
+		<div class="left-col">
+			<p>SEARCH 3</p>
+		</div>
+		<div class="right-col">
+			<a href="#" class="close" id="close3"> </a>
+		</div>
+	</div>
+	
+	<!--4th search with a closing X -->
+	
+	<div class="row" id="row4"> 
+		<div class="left-col">
+			<p>SEARCH 4</p>
+		</div>
+		<div class="right-col">
+			<a href="#" class="close" id="close4"> </a>
+		</div>
+	</div>
+	
+	<!--Clear all searches -->
+	
+	<h3 id="clearall">CLEAR ALL</h3>
+</section>
+<!-- E N D  S E A R C H -->
+
+
+<!-- P R O F I L E -->
     <section id="profile">
-        
+        <div id="profile-header">
+            <div id="picture-zoom">
+                <div id="picture-flex">
+                    <img src="img/joshua.jpg" alt="Profile picture">
+                </div>
+            </div>
+            <div id="profile-container">
+                <div id="profile-picture">
+                    <img src="img/joshua.jpg" alt="Profile picture" id="trigger-zoom">
+                </div>
+                <div id="profile-info">
+                    <h3>Joshua</h3>
+                    <p>15 Shows Finished</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- E N D  P R O F I L E -->
-    
-    
-    <!-- F A Q -->
+<!-- E N D  P R O F I L E -->
+
+
+<!-- F A Q -->
     <section id="faq">
         <div id="faq-container">
             <h3>Frequently Asked Questions</h3>
@@ -113,27 +183,30 @@
         </div>
         
     </section>
-    <!-- E N D  F A Q -->
-    
-    
-    <!-- B O T T O M  N A V -->
-    <nav>
-        <div class="nav-icon">
-            <img src="img/home.png" alt="Home icon">
-        </div>
-        <div class="nav-icon">
-            <img src="img/categories.png" alt="Categories icon">
-        </div>
-        <div class="nav-icon">
-            <img src="img/search.png" alt="Search icon">
-        </div>
-        <div class="nav-icon">
-            <img src="img/profile.png" alt="Profile icon">
-        </div>
-    </nav>
-    <!-- E N D  N A V -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/headroom.min.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/faq.js"></script>
+<!-- E N D  F A Q -->
+
+
+<!-- B O T T O M  N A V -->
+<nav>
+    <div class="nav-icon">
+        <img id="navhome" src="img/home.png" alt="Home icon">
+    </div>
+    <div class="nav-icon">
+        <img id="navcategory" src="img/categories.png" alt="Categories icon">
+    </div>
+    <div class="nav-icon">
+        <img id="navsearch" src="img/search.png" alt="Search icon">
+    </div>
+    <div class="nav-icon">
+        <img id="navprofile" src="img/profile.png" alt="Profile icon">
+    </div>
+</nav>
+<!-- E N D  N A V -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/headroom.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/search.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/faq.js"></script>
 </body>
+</html>
