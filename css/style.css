@@ -80,7 +80,7 @@ nav {
 .nav-icon {
     color: #fff;
     font-size: 2em;
-    transition: color 1s;
+    transition: color 0.15s;
 }
 
 
@@ -307,5 +307,5 @@ nav {
 
 .element-active {
     color: #ff008e !important;
-    transition: color 1s;
+    transition: color 0.15s;
 }
