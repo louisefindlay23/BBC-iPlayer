@@ -94,11 +94,13 @@ nav {
 
 /* C A R O U S E L */
 
-.multiple-items img {
-	width: 100%;
-	height: auto;
-	overflow: auto;
+* { box-sizing: border-box; }
+
+.carousel img {
+  display: block;
+  height: 200px;
 }
+
 
 /* T V  S H O W */
 
