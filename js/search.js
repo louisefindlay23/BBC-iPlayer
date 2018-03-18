@@ -10,6 +10,8 @@ $(document).ready(function(){
 		
 	 $(".row").fadeOut();
 		
+	 $("#clearall").fadeOut();
+		
 	 });
 	
 	
