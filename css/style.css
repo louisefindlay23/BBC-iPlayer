@@ -94,7 +94,11 @@ nav {
 
 /* C A R O U S E L */
 
-
+.multiple-items img {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
 
 /* T V  S H O W */
 
