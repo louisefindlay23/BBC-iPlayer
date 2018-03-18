@@ -101,13 +101,21 @@ nav {
 
 /* T V  S H O W */
 
-
+#tvshow {
+	display: none;
+}
 
 /* C A T E G O R I E S */
 
-
+#categories {
+	display: none;
+}
 
 /* S E A R C H */
+
+#search {
+	display: none;
+}
 
 #search h1, h3 {
 	text-align: center;
@@ -188,6 +196,8 @@ nav {
 
 /* P R O F I L E */
 
-
+#profile {
+	display: none;
+}
 
 /* F A Q */
