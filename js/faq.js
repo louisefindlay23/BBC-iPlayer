@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $("#q1").click(function(){
+        $("#r1").slideToggle();
+        $("#q1").toggleClass("q-active")
+    });
+    $("#q2").click(function(){
+        $("#r2").slideToggle();
+        $("#q2").toggleClass("q-active")
+    });
+    $("#q3").click(function(){
+        $("#r3").slideToggle();
+        $("#q3").toggleClass("q-active")
+    });
+    $("#q4").click(function(){
+        $("#r4").slideToggle();
+        $("#q4").toggleClass("q-active")
+    });
+});
