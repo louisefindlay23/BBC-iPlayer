@@ -6,7 +6,7 @@ body {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -25,6 +25,9 @@ header {
     background-color: #000;
     z-index: 10;
     transition: top 0.2s ease-in-out;
+    -webkit-box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.75);
 }
 
 #site-id {
@@ -39,13 +42,9 @@ header {
 }
 
 #settings-icon {
-    width: 9%;
-    max-width: 35px;
+    color: #fff;
+    font-size: 1.9em;
     margin: 0 3% 0 0;
-}
-
-#settings-icon img {
-    width: 100%;
 }
 
 .headroom {
@@ -79,16 +78,9 @@ nav {
 }
 
 .nav-icon {
-    width: 10%;
-    max-width: 35px;
-}
-
-.nav-icon img {
-    width: 100%;
-}
-
-.nav-up {
-    top: -65px;
+    color: #fff;
+    font-size: 2em;
+    transition: color 1s;
 }
 
 
@@ -119,14 +111,14 @@ nav {
 /* S E A R C H */
 
 #search {
-	display: none;
+    display: none;
 }
 
-#search h1, h3 {
+#search h1, #search h3 {
 	text-align: center;
 }
 
-#search h1, h3, p {
+#search h1, #search h3, #search p {
 	color: #fff;
 }
 
@@ -313,7 +305,7 @@ nav {
     display: none;
 }
 
-.q-active {
-    color: #ff008e;
+.element-active {
+    color: #ff008e !important;
     transition: color 1s;
 }
