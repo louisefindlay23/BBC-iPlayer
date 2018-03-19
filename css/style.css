@@ -298,6 +298,7 @@ nav {
 
 #faq {
     color: #fff;
+	display: none;
 }
 
 #faq-container {
