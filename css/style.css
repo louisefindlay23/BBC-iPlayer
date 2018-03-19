@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 65px 0;
-
 	background: #000;
 }
 
@@ -86,6 +85,9 @@ nav {
 
 /* H O M E */
 
+#home {
+    display: block;
+}
 
 
 /* H E R O */
@@ -110,6 +112,15 @@ nav {
     filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.5));
 }
 
+.carousel-title {
+    color: #fff;
+    text-align: center;
+    margin: 8px 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
 .daredevil {
     background: url(../img/bck/daredevil.jpg) center/cover no-repeat;
 }
@@ -132,6 +143,62 @@ nav {
 
 .shameless {
     background: url(../img/bck/shameless.jpg) center/cover no-repeat;
+}
+
+.mrrobot {
+    background: url(../img/bck/mrrobot.jpg) center/cover no-repeat;
+}
+
+.strangerthings {
+    background: url(../img/bck/st.jpg) center/cover no-repeat;
+}
+
+.bigmouth {
+    background: url(../img/bck/bm.jpg) center/cover no-repeat;
+}
+
+.blackmirror {
+    background: url(../img/bck/blackm.jpg) center/cover no-repeat;
+}
+
+.theericandreshow {
+    background: url(../img/bck/teas.jpg) center/cover no-repeat;
+}
+
+.adventuretime {
+    background: url(../img/bck/at.jpg) center/cover no-repeat;
+}
+
+.americandad {
+    background: url(../img/bck/ad.jpg) center/cover no-repeat;
+}
+
+.siliconvalley {
+    background: url(../img/bck/sv.jpg) center/cover no-repeat;
+}
+
+.sonsofanarchy {
+    background: url(../img/bck/soa.jpg) center/cover no-repeat;
+}
+
+.brooklynninenine {
+    background: url(../img/bck/bnn.jpg) center/cover no-repeat;
+}
+
+.parksandrecreation {
+    background: url(../img/bck/par.jpg) center/cover no-repeat;
+}
+
+.rickandmorty {
+    background: url(../img/bck/ram.jpg) center/cover no-repeat;
+}
+
+.westworld {
+    background: url(../img/bck/ww.jpg) center/cover no-repeat;
+}
+
+.thehundred {
+    background: url(../img/bck/th.jpg) center/cover no-repeat;
 }
 
 .flickity-button {
@@ -237,10 +304,11 @@ nav {
   transform: rotate(-45deg);
 }
 
+
 /* P R O F I L E */
 
 #profile {
-	display: none;
+	display: block;
 }
 
 #profile-header {
@@ -249,7 +317,8 @@ nav {
     height: 165px;
     background: url("../img/7sisters.jpg") no-repeat center;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.85) 60%, rgba(0, 0, 0, 1) 75%), url('../img/7sisters.jpg') no-repeat center;
-	background-size: cover;
+    background-size: cover;
+    margin: 0 0 -25px 0;
 }
 
 #profile-container {
@@ -310,7 +379,6 @@ nav {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-
 }
 
 #picture-zoom img {
