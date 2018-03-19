@@ -94,18 +94,44 @@ nav {
 
 /* C A R O U S E L */
 
-* { box-sizing: border-box; }
-
 .carousel-cell {
-  width: 50%;
-  height: 100px;
-  margin-right: 10px;
+  width: 45%;
+  height: 15vh;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel img {
-  display: block;
-  width: 50%;
-  height: 100px;
+.carousel-cell img {
+    max-height: 60%;
+    max-width: 80%;
+    -webkit-filter: drop-shadow( 2px 2px 0px rgba(0,0,0,0.5));
+    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.5));
+}
+
+.daredevil {
+    background: url(../img/bck/daredevil.jpg) center/cover no-repeat;
+}
+
+.gotham {
+    background: url(../img/bck/gotham.jpg) center/cover no-repeat;
+}
+
+.got {
+    background: url(../img/bck/got.jpg) center/cover no-repeat;
+}
+
+.breakingbad {
+    background: url(../img/bck/breakingbad.jpg) center/cover no-repeat;
+}
+
+.hoc {
+    background: url(../img/bck/hoc.jpg) center/cover no-repeat;
+}
+
+.shameless {
+    background: url(../img/bck/shameless.jpg) center/cover no-repeat;
 }
 
 .flickity-button {
@@ -329,5 +355,6 @@ nav {
 
 .element-active {
     color: #ff008e !important;
+    transition: color 1s;
     transition: color 0.15s;
 }

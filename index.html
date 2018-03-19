@@ -9,6 +9,7 @@
     <title>BBC iPlayer</title>
     <link rel='stylesheet' href='css/style.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://npmcdn.com/flickity@2.1.0/dist/flickity.css">
 </head>
 
 <body>
@@ -35,15 +36,26 @@
         
         
         <!-- C A R O U S E L -->
-		<div class="carousel"
-  data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-  	<img src="img/breakingbad.png" alt="orange tree" />
-  	<img src="img/daredevil.jpg" alt="submerged" />
-  	<img src="img/gameofthrones.jpg" alt="look-out" />
-  	<img src="img/gotham.jpg" alt="One World Trade" />
-  	<img src="img/houseofcards.jpg" alt="drizzle" />
-  	<img src="img/shameless.jpg" alt="cat nose" />
-	</div>
+		<div class="carousel">
+            <div class="carousel-cell breakingbad">
+                <img src="img/logo/breakingbad.png" alt="Breaking Bad" style="filter:none;">
+            </div>
+            <div class="carousel-cell daredevil">
+                <img src="img/logo/daredevil.png" alt="Daredevil">
+            </div>
+            <div class="carousel-cell got">
+                <img src="img/logo/got.png" alt="Game of Thrones">
+            </div>
+            <div class="carousel-cell gotham">
+                <img src="img/logo/gotham.png" alt="Gotham">
+            </div>
+            <div class="carousel-cell hoc">
+                <img src="img/logo/hoc.png" alt="House of Cards">
+            </div>
+            <div class="carousel-cell shameless">
+                    <img src="img/logo/shameless.png" alt="Shameless">
+            </div>
+        </div>
         <!-- E N D  C A R O U S E L -->
         
     </section>
@@ -216,7 +228,7 @@
     <script src="js/navigation.js"></script>
     <script src="js/faq.js"></script>
     <script src="js/profile-picture.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="js/carousel.js"></script>
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
