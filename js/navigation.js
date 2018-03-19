@@ -2,6 +2,9 @@
 
 $(document).ready(function(){
 	'use strict';
+	$("#profile").hide();
+	$("#home").show();
+
     $("#navhome").click(function(){
         $("#home").show();
 		$("#faq, #search, #categories, #tvshow, #settings, #profile").hide();

@@ -1,9 +1,8 @@
-// JavaScript Document
-
-var elem = document.querySelector('.carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true,
-  freeScroll: true,
+$(document).ready(function () {
+  $('.carousel').flickity({
+    // Options
+    cellAlign: 'left',
+    contain: true,
+    freeScroll: true,
+  });
 });
