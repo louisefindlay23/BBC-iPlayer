@@ -94,10 +94,26 @@ nav {
 
 /* C A R O U S E L */
 
-.multiple-items img {
-	width: 100%;
-	height: auto;
-	overflow: auto;
+* { box-sizing: border-box; }
+
+.carousel-cell {
+  width: 50%;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.carousel img {
+  display: block;
+  width: 50%;
+  height: 100px;
+}
+
+.flickity-button {
+  display: none;
+}
+
+.flickity-page-dots {
+  display: none;
 }
 
 /* T V  S H O W */
