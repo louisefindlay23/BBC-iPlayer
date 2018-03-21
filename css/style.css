@@ -33,7 +33,7 @@ header {
     width: 45%;
     max-width: 190px;
     margin: 0 0 0 3%;
-    padding: 4px 0 0 0;
+    padding: 10px 0 0 0;
 }
 
 #site-id img {
@@ -112,6 +112,19 @@ nav {
     font-size: 2em;
 }
 
+
+/* S E T T I N G S */
+
+#settings {
+    position: absolute;
+    top: 65px;
+    display: none;
+    z-index: 5;
+    background-color: #333;
+    width: 100vw;
+    min-height: calc(100vh - 130px);
+    padding: 0 0 65px 0;
+}
 
 /* H O M E */
 
@@ -239,17 +252,20 @@ nav {
   display: none;
 }
 
+
 /* T V  S H O W */
 
 #tvshow {
 	display: none;
 }
 
+
 /* C A T E G O R I E S */
 
 #categories {
 	display: none;
 }
+
 
 /* S E A R C H */
 

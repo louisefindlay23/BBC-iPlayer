@@ -1,5 +1,3 @@
-// JavaScript Document
-
 $(document).ready(function(){
 	'use strict';
 	$("#profile").hide();
@@ -33,12 +31,13 @@ $(document).ready(function(){
 		$("#navhome, #navsearch, #navcategory, #settings-icon").removeClass("element-active");
 	});
 	
-	$("#settings-icon").click(function(){
-        $("#settings").show();
-		$("#home, #profile, #tvshow, #categories, #search, #faq").hide();
-		$("#settings-icon").addClass("element-active");
-		$("#navhome, #navsearch, #navcategory, #navprofile").removeClass("element-active");
-    });
+	$(".fa-cog").click(function(){
+		$("#settings").fadeIn();
+		$("#settings-icon").toggleClass("fa-times fa-cog");
+	});
 	
-	// Add more jquery
+	$(".fa-times").click(function(){
+		$("#settings").hide();
+		$("#settings-icon").toggleClass("fa-cog fa-times");
+	});
 });
