@@ -31,13 +31,8 @@ $(document).ready(function(){
 		$("#navhome, #navsearch, #navcategory, #settings-icon").removeClass("element-active");
 	});
 	
-	$(".fa-cog").click(function(){
-		$("#settings").fadeIn();
+	$("#settings-icon").click(function(){
+		$("#settings").fadeToggle();
 		$("#settings-icon").toggleClass("fa-times fa-cog");
-	});
-	
-	$(".fa-times").click(function(){
-		$("#settings").hide();
-		$("#settings-icon").toggleClass("fa-cog fa-times");
 	});
 });
