@@ -8,8 +8,13 @@
     <meta name='author' content='Dellingr'/>
     <title>BBC iPlayer</title>
     <link rel='stylesheet' href='css/style.css'>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://npmcdn.com/flickity@2.1.0/dist/flickity.css">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2.1.0/dist/flickity.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/loading.js"></script>
 </head>
 
 <body>
@@ -23,14 +28,22 @@
     </header>
     <!-- E N D  H E A D E R -->
     
+    <!-- L O A D I N G  S C R E E N -->
+    <section id="loader">
+        <div id="loader-content">
+            <img src="img/BBC_iPlayer_logo.svg">
+            <i id="spinner" class="fas fa-spinner fa-spin fa-2x"></i>
+        </div>
+    </section>
+    <!-- E N D  L O A D I N G  S C R E E N -->
     
     <!-- H O M E  -->
     <section id="home">
 		
-	 <!-- 1st carousel -->
+        <!-- 1st carousel -->
 		
-     <p class="carousel-title">NEW RELEASES</p> 
-		 <div class="carousel">
+        <p class="carousel-title">NEW RELEASES</p> 
+        <div class="carousel">
             <div class="carousel-cell brooklynninenine">
                 <img src="img/logo/bnn.png" alt="Brooklyn Nine Nine">
             </div>
@@ -51,7 +64,7 @@
             </div>
         </div>
 		
-		 <!-- 2nd carousel -->
+        <!-- 2nd carousel -->
 		
 		<p class="carousel-title">TRENDING</p> 
 		<div class="carousel">
@@ -74,7 +87,7 @@
                 <img src="img/logo/bm.png" alt="Big Mouth">
             </div>
         </div>
-	
+        
         <!-- H E R O -->
         <div class="hero">
             
@@ -335,13 +348,10 @@
         <i id="navprofile" class="nav-icon fas fa-user"></i>
     </nav>
     <!-- E N D  N A V -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/headroom.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/search.js"></script>
     <script src="js/faq.js"></script>
     <script src="js/profile-picture.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/navigation.js"></script>
 </body>

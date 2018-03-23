@@ -60,6 +60,37 @@ header {
 }
 
 
+/* L O A D I N G  S C R E E N */
+
+#loader {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+
+#loader-content {
+    width: 70%;
+    max-width: 350px;
+    text-align: center;
+}
+
+#loader-content img {
+    width: 100%;
+}
+
+#loader i{
+    margin: 15px 0 0 0;
+}
+
+
 /* B O T T O M  N A V */
 
 nav {
@@ -79,7 +110,6 @@ nav {
 .nav-icon {
     color: #fff;
     font-size: 2em;
-    transition: color 0.15s;
 }
 
 
@@ -423,6 +453,4 @@ nav {
 
 .element-active {
     color: #ff008e !important;
-    transition: color 1s;
-    transition: color 0.15s;
 }
