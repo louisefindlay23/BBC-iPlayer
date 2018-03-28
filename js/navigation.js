@@ -32,7 +32,7 @@ $(document).ready(function(){
 	});
 	
 	$("#settings-icon").click(function(){
-		$("#settings").fadeToggle();
+		$("#settings").fadeToggle("fast");
 		$("#settings-icon").toggleClass("fa-times fa-cog");
 	});
 });
