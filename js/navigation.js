@@ -44,6 +44,8 @@ $(document).ready(function(){
 	$(".fa-times").click(function(){
 		$(".dropdown").hide();
 		$("#history").show();
+		$("#searchbox").val("");
+		$("#searchbox").attr("placeholder", "S E A R C H");
 		$("#searchbox").val("S E A R C H");
     });
 	
