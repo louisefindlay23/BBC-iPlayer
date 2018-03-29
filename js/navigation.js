@@ -43,12 +43,15 @@ $(document).ready(function(){
 	
 	$(".fa-times").click(function(){
 		$(".dropdown").hide();
+		$("#history").show();
+		$("#searchbox").val("S E A R C H");
     });
 	
 	$("input").click(function(){
 		$(".dropdown").show();
 		$(".dropdown-content").show();
 		$(".fa-times").show();
+		$("#history").hide();
     });
 	
 	// Add more jquery
