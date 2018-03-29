@@ -8,6 +8,8 @@
     <meta name='author' content='Dellingr'/>
     <title>BBC iPlayer</title>
     <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://npmcdn.com/flickity@2.1.0/dist/flickity.css">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2.1.0/dist/flickity.css">
@@ -27,7 +29,7 @@
         <i id="settings-icon" class="fas fa-cog"></i>
     </header>
     <!-- E N D  H E A D E R -->
-    
+
     <!-- L O A D I N G  S C R E E N -->
     <section id="loader">
         <div id="loader-content">
@@ -63,7 +65,7 @@
                 <img src="img/logo/shameless.png" alt="Shameless">
             </div>
         </div>
-		
+
         <!-- 2nd carousel -->
 		
 		<p class="carousel-title">TRENDING</p> 
@@ -87,7 +89,7 @@
                 <img src="img/logo/bm.png" alt="Big Mouth">
             </div>
         </div>
-        
+       
         <!-- H E R O -->
         <div class="hero">
             
@@ -141,10 +143,31 @@
     <section id="search">
         
         <!-- Search box -->
+		
+		<form>
+            <h1><input onClick="myFunction()" onkeyup="filterFunction()" id="searchbox" type="text" name="search" autocomplete="off" placeholder="S E A R C H">
+			
+			<i class="fas fa-times"></i>
+				
+			</h1>
+		
+		</form>
+		
+		 <div class="dropdown">
+  		 	<div id="myDropdown" class="dropdown-content">
+				
+					<!--Add JQuery nav toggle to view TV Show pages on click and to add the value of the item clicked to the recent search history-->
+				
+   		 			<a href="#">Black Mirror</a>
+    				<a href="#">Breaking Bad</a>
+    				<a href="#">Brooklyn Nine-Nine</a>
+    				<a href="#">Daredevil</a>
+    				<a href="#">Game of Thrones</a>
+    				<a href="#">Gotham</a>
+    				<a href="#">Shameless</a>
+  			</div>
+		</div> 
         
-        <form>
-            <h1><input class="searchbox" type="text" name="search" placeholder="S E A R C H"></h1>
-        </form>
         <h3>Your recent searches</h3>
         
         <!-- Search with a closing X -->
@@ -348,6 +371,14 @@
         <i id="navprofile" class="nav-icon fas fa-user"></i>
     </nav>
     <!-- E N D  N A V -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/search.js"></script>
+	<script src="js/dropdown.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/profile-picture.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/search.js"></script>
     <script src="js/faq.js"></script>

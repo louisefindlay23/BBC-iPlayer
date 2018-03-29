@@ -4,6 +4,7 @@ $(document).ready(function(){
 	'use strict';
 	$("#profile").hide();
 	$("#home").show();
+	$(".fa-times").hide();
 
     $("#navhome").click(function(){
         $("#home").show();
@@ -38,6 +39,16 @@ $(document).ready(function(){
 		$("#home, #profile, #tvshow, #categories, #search, #faq").hide();
 		$("#settings-icon").addClass("element-active");
 		$("#navhome, #navsearch, #navcategory, #navprofile").removeClass("element-active");
+    });
+	
+	$(".fa-times").click(function(){
+		$(".dropdown").hide();
+    });
+	
+	$("input").click(function(){
+		$(".dropdown").show();
+		$(".dropdown-content").show();
+		$(".fa-times").show();
     });
 	
 	// Add more jquery
