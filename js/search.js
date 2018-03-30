@@ -71,10 +71,4 @@ $(document).ready(function(){
 	 $("#row7").fadeOut();
 		
 	 });
-	
-	
-	$("p.result").click(function(){
-		alert(this).text();
-    });
-	
 });
