@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2.1.0/dist/flickity.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/headroom.min.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="js/headroom.min.js"></script>
     <script src="js/loading.js"></script>
 </head>
 
@@ -144,8 +143,10 @@
         
         <!-- Search box -->
 		
+		<div id="searchcontainer">
+		
 		<form>
-            <h1><input onClick="myFunction()" onkeyup="filterFunction()" id="searchbox" type="text" name="search" autocomplete="off" placeholder="S E A R C H">
+            <h1><input onkeyup="filterFunction()" id="searchbox" type="text" name="search" autocomplete="off" placeholder="S E A R C H">
 			
 			<i class="fas fa-times"></i>
 				
@@ -219,6 +220,7 @@
         <!--Clear all searches -->
 
 			<h3 id="clearall">CLEAR ALL</h3>
+		</div>
 		</div>
     </section>
     <!-- E N D  S E A R C H -->
