@@ -73,6 +73,8 @@ $(document).ready(function(){
 	 });
 	
 	
-	// jquery goes here
+	$("p.result").click(function(){
+		alert(this).text();
+    });
 	
 });

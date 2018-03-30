@@ -5,7 +5,7 @@ function filterFunction() {
   input = document.getElementById("searchbox");
   filter = input.value.toUpperCase();
   div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
+  a = div.getElementsByTagName("p");
   for (i = 0; i < a.length; i++) {
     if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
       a[i].style.display = "";
