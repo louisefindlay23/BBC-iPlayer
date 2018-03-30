@@ -4,8 +4,6 @@ $(document).ready(function(){
 	'use strict';
 	$("#profile").hide();
 	$("#home").show();
-	$(".fa-times").hide();
-	$(".dropdown").hide();
 
     $("#navhome").click(function(){
         $("#home").show();
@@ -26,6 +24,10 @@ $(document).ready(function(){
 		$("#home, #faq, #categories, #tvshow, #settings, #profile").hide();
 		$("#navsearch").addClass("element-active");
 		$("#navhome, #navcategory, #navprofile, #settings-icon").removeClass("element-active");
+		$(".fa-times").hide();
+		$(".dropdown").hide();
+		$(".row").hide();
+		$("#clearall").hide();
     });
 	
 	$("#navprofile").click(function(){
@@ -40,25 +42,6 @@ $(document).ready(function(){
 		$("#home, #profile, #tvshow, #categories, #search, #faq").hide();
 		$("#settings-icon").addClass("element-active");
 		$("#navhome, #navsearch, #navcategory, #navprofile").removeClass("element-active");
-    });
-	
-	$(".fa-times").click(function(){
-		$(".dropdown").hide();
-		$("#history").show();
-		$("#searchbox").val("");
-		$("#searchbox").attr("placeholder", "S E A R C H");
-		$(".fa-times").hide();
-		$("#history").show();
-		$("#searchbox").val("");
-		$("#searchbox").attr("placeholder", "S E A R C H");
-		$("#searchbox").val("S E A R C H");
-    });
-	
-	$("input").click(function(){
-		$(".dropdown").show();
-		$(".dropdown-content").show();
-		$(".fa-times").show();
-		$("#history").hide();
     });
 	
 	// Add more jquery
