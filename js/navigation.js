@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$("#profile").hide();
 	$("#home").show();
 	$(".fa-times").hide();
+	$(".dropdown").hide();
 
     $("#navhome").click(function(){
         $("#home").show();
