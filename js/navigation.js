@@ -1,5 +1,3 @@
-// JavaScript Document
-
 $(document).ready(function(){
 	'use strict';
 	$("#profile").hide();
@@ -38,11 +36,7 @@ $(document).ready(function(){
 	});
 	
 	$("#settings-icon").click(function(){
-        $("#settings").show();
-		$("#home, #profile, #tvshow, #categories, #search, #faq").hide();
-		$("#settings-icon").addClass("element-active");
-		$("#navhome, #navsearch, #navcategory, #navprofile").removeClass("element-active");
-    });
-	
-	// Add more jquery
+		$("#settings").fadeToggle("fast");
+		$("#settings-icon").toggleClass("fa-times fa-cog");
+	});
 });
