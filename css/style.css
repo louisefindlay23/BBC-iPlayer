@@ -141,12 +141,12 @@ nav {
 /* C A R O U S E L */
 
 .carousel-cell {
-  width: 45%;
-  height: 15vh;
-  margin-right: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 45%;
+    height: 15vh;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-cell img {
@@ -246,11 +246,11 @@ nav {
 }
 
 .flickity-button {
-  display: none;
+    display: none;
 }
 
 .flickity-page-dots {
-  display: none;
+    display: none;
 }
 
 
@@ -272,11 +272,11 @@ nav {
 }
 
 .flickity-button {
-  display: none;
+    display: none;
 }
 
 .flickity-page-dots {
-  display: none;
+    display: none;
 }
 
 /* T V  S H O W */
@@ -335,7 +335,7 @@ form {
     color: #fff;
 }
 
-form .fa-times {
+.close-search {
 	color: #fff;
 	z-index: 2;
 	font-size: 20px;
@@ -368,28 +368,28 @@ form .fa-times {
 /* Creating the X's */
 
 .close {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  opacity: 1;
-  margin: 1em;
-  padding-left: 20%;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    margin: 1em;
+    padding-left: 20%;
 }
 .close:hover {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 .close:before, .close:after {
-  position: absolute;
-  content: ' ';
-  height: 19px;
-  width: 2px;
-  background: #fff;
+    position: absolute;
+    content: ' ';
+    height: 19px;
+    width: 2px;
+    background: #fff;
 }
 .close:before {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 .close:after {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 /* Dropdown search */
