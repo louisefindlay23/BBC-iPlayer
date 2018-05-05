@@ -92,7 +92,7 @@ header {
 
 /* P L A Y E R */
 #player {
-    /* display: none; */
+    display: none;
     width: 100vw;
     height: 100vh;
     z-index: 15;
