@@ -131,6 +131,12 @@ header {
     font-size: 50px;
 }
 
+.p-close {
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+}
+
 .p-fs {
     bottom: 25px;
     right: 25px;
@@ -145,19 +151,19 @@ header {
 
 .p-info {
     top: 15px;
-    right: 20px;
+    left: 20px;
     font-size: 25px;
 }
 
 .p-sub {
     top: 15px;
-    right: 70px;
+    left: 70px;
     font-size: 25px;
 }
 
 .p-sound {
     top: 15px;
-    right: 115px;
+    left: 115px;
     font-size: 25px;
 }
 
