@@ -204,8 +204,7 @@ $(document).ready(function () {
 	// TV SHOW
 
 	$(".fav").click(function(){
-		$(".fav").hide();
-		$(".fav-full").show();
+		$('.fav').toggleClass('far fas');
 	});
 
 	$(".fav-full").click(function(){

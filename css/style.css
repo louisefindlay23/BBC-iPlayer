@@ -275,9 +275,12 @@ nav {
 
 #info{
 	position:absolute;
-    left:5%;
+    left:0;
     bottom:4%;
-	color:#ffffff;
+    color:#ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 h1{
@@ -288,22 +291,17 @@ h1{
 
 #info p{
 	font-size:0.8em;
-	margin:0 4%;
+    margin:0 4%;
 }
 
 #text{
     float:left;
+    padding: 0 0 0 25px;
 }
 
 .fav{
-    width:15%;
-    float:right;
-}
-
-.fav-full{
-    width:15%;
-    float:right;
-    display:none;
+    font-size: 2em;
+    padding: 0 25px 0 0;
 }
 
 #list{
