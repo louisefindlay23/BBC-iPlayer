@@ -48,7 +48,11 @@
     <section id="loader">
         <div id="loader-content">
             <img src="img/BBC_iPlayer_logo.svg">
-            <i id="spinner" class="fas fa-spinner fa-spin fa-2x"></i>
+            <div class="hollow-dots-spinner" :style="spinnerStyle">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
         </div>
     </section>
     <!-- E N D  L O A D I N G  S C R E E N -->
