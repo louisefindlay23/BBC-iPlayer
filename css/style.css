@@ -256,124 +256,8 @@ nav {
 
 /* T V  S H O W */
 
-#tvshow{
-  display:block;
-	overflow:auto;
-	margin:none;
-	background: linear-gradient(rgba(156,52,53,1), rgba(28,15,45,1));
-}
-
-#tv{
-	width:100%;
-  position:absolute;
-  top:8%;
-  padding:40% 0 0 0;
-  background:url(../img/web-series.jpg);
-  background-size: cover;
-  z-index: 1;
-}
-
-#info{
-	position:absolute;
-  left:5%;
-  bottom:4%;
-	color:#ffffff;
-}
-
-h1{
-	font-size:1em;
-	margin:0;
-	color:#ffffff;
-}
-
-#info p{
-	font-size:0.8em;
-	margin:0 4%;
-}
-
-#text{
-  float:left;
-}
-
-.fav{
-  width:15%;
-  float:right;
-}
-
-.fav-full{
-  width:15%;
-  float:right;
-  display:none;
-}
-
-#list{
-  margin:60% 0 0 0;
-	width:100%;
-	height:auto;
-	overflow:auto;
-}
-
-.seasons{
-  position: relative;
-  display: inline-block;
-  width:100%;
-  text-align: center;
-}
-
-
-.drop{
-  color:#ffffff;
-  font-weight:bold;
-}
-
-.season-content{
-  display: block;
-  position: absolute;
-  width:100%;
-  background-color:#9C3435;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-align: center;
-}
-
-.season-content p{
-  color:#ffffff;
-  font-weight:bold;
-}
-
-.show {
-  display:block;
-}
-
-.episode{
-	width:95%;
-	height:auto;
-	overflow:auto;
-	margin:auto;
-}
-
-.ep img{
-	width:50%;
-	float:left;
-	margin:5%;
-}
-
-.ep-info{
-	width:40%;
-	float:left;
-}
-
-.ep h1{
-	margin: 10% 0;
-}
-
-.ep p{
-	color:#ffffff;
-	font-size:0.7em;
-}
-
-.eps2{
-	display:none;
+#tvshow {
+	display: none;
 }
 
 
@@ -395,6 +279,11 @@ h1{
     display: none;
 }
 
+/* T V  S H O W */
+
+#tvshow {
+	display: none;
+}
 
 /* C A T E G O R I E S */
 
@@ -660,46 +549,4 @@ form {
     color: #ff008e !important;
     transition: color 1s;
     transition: color 0.15s;
-}
-
-/* CATEGORIES */
-
-#categories{
-  width:100%;
-  margin-bottom:50%;
-}
-
-.grid{
-	width:95%;
-	margin:auto;
-}
-
-.grid-item{
-  margin:1px;
-	width: 49%;
-	float:right;
-}
-
-.grid-item img{
-	max-width:100%;
-	margin:auto;
-}
-.grid-item--width2{
-	width: 49%;
-}
-
-.grid-item--width3{
-	width: 49.5%;
-}
-
-.grid-item--width4{
-	width: 99%;
-}
-
-.grid-item--width5{
-	width: 34.5%;
-}
-
-.grid-item--width6{
-	width: 64%;
 }
