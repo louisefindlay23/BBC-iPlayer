@@ -308,7 +308,8 @@ h1{
     margin:60% 0 0 0;
 	width:100%;
 	height:auto;
-	overflow:auto;
+    overflow:auto;
+    position: relative;
 }
 
 .seasons{
@@ -318,6 +319,17 @@ h1{
     text-align: center;
 }
 
+.seasons p {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#season p {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 
 .drop{
     color:#ffffff;
