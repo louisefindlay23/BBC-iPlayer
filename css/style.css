@@ -284,9 +284,10 @@ nav {
 }
 
 h1{
-	font-size:1em;
+	font-size: 0.9em;
 	margin:0;
-	color:#ffffff;
+    color:#ffffff;
+    font-weight: 600;
 }
 
 #info p{
@@ -317,23 +318,21 @@ h1{
     display: inline-block;
     width:100%;
     text-align: center;
+    cursor: pointer;
 }
 
 .seasons p {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 3px;
+    color: #fff;
 }
 
 #season p {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 3px;
-}
-
-.drop{
-    color:#ffffff;
-    font-weight:bold;
+    color: #fff;
 }
 
 .season-content{
@@ -346,11 +345,6 @@ h1{
     text-align: center;
 }
 
-.season-content p{
-    color:#ffffff;
-    font-weight:bold;
-}
-
 .show {
     display:block;
 }
@@ -360,6 +354,12 @@ h1{
 	height:auto;
 	overflow:auto;
 	margin:auto;
+}
+
+.ep {
+    height: auto;
+    overflow: auto;
+    margin: 5px 0;
 }
 
 .ep img{
@@ -374,12 +374,14 @@ h1{
 }
 
 .ep h1{
-	margin: 10% 0;
+    margin: 5px 0;
+    font-size: 0.9em;
 }
 
 .ep p{
 	color:#ffffff;
-	font-size:0.7em;
+    font-size:0.7em;
+    margin: 0 0;
 }
 
 .eps2{
