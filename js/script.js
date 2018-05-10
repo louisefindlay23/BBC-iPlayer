@@ -207,11 +207,6 @@ $(document).ready(function () {
 		$('.fav').toggleClass('far fas');
 	});
 
-	$(".fav-full").click(function(){
-		$(".fav-full").hide();
-		$(".fav").show();
-	});
-
 	$("#season").hide();
 
 	$(".drop").click(function(){
@@ -232,6 +227,7 @@ $(document).ready(function () {
 
 	$(".strangerthings").click(function(){
 			$("#tvshow").show();
-			$("#home").hide();
+			$("#home, #faq, #search, #categories, #settings, #profile").hide();
+			$("#navhome, #navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 });
