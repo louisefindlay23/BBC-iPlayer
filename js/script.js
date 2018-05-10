@@ -201,53 +201,38 @@ $(document).ready(function () {
 		$("#history").hide();
 	});
 
-	//tvshow
+	// TV SHOW
 
 	$(".fav").click(function(){
-
 		$(".fav").hide();
-
 		$(".fav-full").show();
-
 	});
 
 	$(".fav-full").click(function(){
-
 		$(".fav-full").hide();
-
 		$(".fav").show();
-
 	});
 
 	$("#season").hide();
 
 	$(".drop").click(function(){
-
 		$("#season").slideToggle(".show");
-
 	});
 	
 	$(".season-1").click(function(){
-
+		$("#season").slideUp(".show");
 		$(".eps1").slideDown({display:"block"});
-
 		$(".eps2").slideUp({display:"none"});
-
 	});
 
 	$(".season-2").click(function(){
-
+		$("#season").slideUp(".show");
 		$(".eps2").slideDown({display:"block"});
-
 		$(".eps1").slideUp({display:"none"});
-
 	});
 
 	$(".strangerthings").click(function(){
-
 			$("#tvshow").show();
-
 			$("#home").hide();
-
 	});
 });
