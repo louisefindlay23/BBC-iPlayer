@@ -14,6 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://npmcdn.com/headroom.js@0.9.4/dist/headroom.min.js"></script>
     <script src="js/loading.js"></script>
+    <script src="js/masonry.js"></script>
+  
     <!-- F A V I C O N -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -34,7 +36,7 @@
 </head>
 
 <body>
-    
+
     <!-- H E A D E R -->
     <header class="headroom">
         <div id="site-id">
@@ -43,7 +45,7 @@
         <i id="settings-icon" class="fas fa-fw fa-cog"></i>
     </header>
     <!-- E N D  H E A D E R -->
-    
+
     <!-- L O A D I N G  S C R E E N -->
     <section id="loader">
         <div id="loader-content">
@@ -52,10 +54,13 @@
         </div>
     </section>
     <!-- E N D  L O A D I N G  S C R E E N -->
-    
+
     <!-- H O M E  -->
     <section id="home">
-        
+
+        <!-- 1st carousel -->
+
+      <p class="carousel-title">NEW RELEASES</p>    
 
         <!-- H E R O -->
         <div class="hero">
@@ -88,9 +93,10 @@
                 <img src="img/logo/shameless.png" alt="Shameless">
             </div>
         </div>
-        
+
         <!-- 2nd carousel -->
-		<p class="carousel-title">TRENDING</p> 
+      
+		<p class="carousel-title">TRENDING</p>
 		<div class="carousel">
             <div class="carousel-cell blackmirror">
                 <img src="img/logo/blackm.png" alt="Black Mirror">
@@ -111,8 +117,16 @@
                 <img src="img/logo/bm.png" alt="Big Mouth">
             </div>
         </div>
-        
-        
+
+        <!-- H E R O -->
+        <div class="hero">
+
+        </div>
+        <!-- E N D  H E R O -->
+
+
+        <!-- C A R O U S E L -->
+
         <!-- 3rd carousel -->
 		<p class="carousel-title">UPCOMING</p>
 		<div class="carousel">
@@ -136,46 +150,131 @@
             </div>
         </div>
         <!-- E N D  C A R O U S E L -->
-        
+
     </section>
     <!-- E N D  H O M E -->
-    
-    
+
+
     <!-- T V  S H O W -->
     <section id="tvshow">
-        
+      <header id="tv">
+        <div id="info">
+          <div id="text">
+            <h1>STRANGER THINGS</h1>
+            <p>2 Seasons / 2016 / 15+</p>
+          </div>
+          <img class="fav" src="img/star.png" alt="Favourites star icon">
+          <img class="fav-full" src="img/star-full.png" alt="Favourites star-full icon">
+        </div>
+      </header>
+    <div id="list">
+      <div class="seasons">
+        <p class="drop">Seasons</p>
+        <div id="season" class="season-content">
+          <p class="season-1">Season 1</p>
+          <p class="season-2">Season 2</p>
+        </div>
+      </div>
+      <div class="episode eps1">
+        <div class="ep">
+          <img alt="Episode 1" src="img/ep1.jpg">
+          <div class="ep-info">
+            <h1>Episode 1</h1>
+            <p>Here goes episode 1 description, it is an episode about a tv show</p>
+          </div>
+        </div>
+        <div class="ep">
+          <img alt="Episode 1" src="img/ep1.jpg">
+          <div class="ep-info">
+              <h1>Episode 2</h1>
+              <p>Here goes episode 2 description, it is an episode about a tv show</p>
+          </div>
+        </div>
+        <div class="ep">
+          <img alt="Episode 1" src="img/ep1.jpg">
+          <div class="ep-info">
+              <h1>Episode 3</h1>
+              <p>Here goes episode 3 description, it is an episode about a tv show</p>
+          </div>
+        </div>
+        <div class="ep">
+          <img alt="Episode 1" src="img/ep1.jpg">
+          <div class="ep-info">
+              <h1>Episode 4</h1>
+              <p>Here goes episode 4 description, it is an episode about a tv show</p>
+          </div>
+        </div>
+      </div>
+      <div class="episode eps2">
+        <div class="ep">
+          <img alt="Episode 1" src="img/ep2.jpg">
+          <div class="ep-info">
+            <h1>Episode 1</h1>
+            <p>Here goes episode 1 description, it is an episode about a tv show</p>
+          </div>
+        </div>
+        <div class="ep">
+          <img alt="Episode 1" src="img/ep2.jpg">
+          <div class="ep-info">
+              <h1>Episode 2</h1>
+              <p>Here goes episode 2 description, it is an episode about a tv show</p>
+          </div>
+        </div>
+        <div class="ep">
+          <img alt="Episode 1" src="img/ep2.jpg">
+          <div class="ep-info">
+              <h1>Episode 3</h1>
+              <p>Here goes episode 3 description, it is an episode about a tv show</p>
+          </div>
+        </div>
+        <div class="ep">
+          <img alt="Episode 1" src="img/ep2.jpg">
+          <div class="ep-info">
+              <h1>Episode 4</h1>
+              <p>Here goes episode 4 description, it is an episode about a tv show</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
     <!-- E N D  T V  S H O W -->
-    
-    
+
+
     <!-- C A T E G O R I E S -->
     <section id="categories">
-        
+      <div class="grid">
+    		<div class="grid-item grid-item--width2"><img src="img/adventure.jpeg"/></div>
+    		<div class="grid-item"><img src="img/action.jpeg"/></div>
+    		<div class="grid-item grid-item--width3"><img src="img/drama.jpeg"/></div>
+    		<div class="grid-item grid-item--width4"><img src="img/fantasy.jpeg"/></div>
+    		<div class="grid-item grid-item--width6"><img src="img/sports.jpeg"/></div>
+    		<div class="grid-item grid-item--width5"><img src="img/horror.jpeg"/></div>
+     	</div>
     </section>
     <!-- E N D  C A T E G O R I E S -->
-    
-    
+
+
     <!-- S E A R C H -->
     <section id="search">
-        
+
         <!-- Search box -->
-		
+
 		<div class="searchcontainer">
-            
+
             <form>
                 <h1><input onkeyup="filterFunction()" id="searchbox" type="text" name="search" autocomplete="off" placeholder="S E A R C H">
-                    
+
                     <i class="close-search fas fa-times"></i>
-                    
+
                 </h1>
-                
+
             </form>
-            
+
             <div class="dropdown">
                 <div id="myDropdown" class="dropdown-content">
-                    
+
 					<!--Add JQuery nav toggle to view TV Show pages on click and to add the value of the item clicked to the recent search history-->
-                    
+
                     <p class="result">Black Mirror</p>
                     <p class="result">Breaking Bad</p>
                     <p class="result">Brooklyn Nine-Nine</p>
@@ -184,15 +283,15 @@
                     <p class="result">Gotham</p>
                     <p class="result">Shameless</p>
                 </div>
-            </div> 
+            </div>
 		</div>
-		
+
 		<div id="history">
             <h3>Your recent searches</h3>
-            
+
             <!-- Search with a closing X -->
-            
-            <div class="row" id="row1"> 
+
+            <div class="row" id="row1">
                 <div class="left-col" id="result1">
                     <p></p>
                 </div>
@@ -200,10 +299,10 @@
                     <a href="#" class="close" id="close1"> </a>
                 </div>
             </div>
-            
+
             <!--2nd search with a closing X -->
-            
-            <div class="row" id="row2"> 
+
+            <div class="row" id="row2">
                 <div class="left-col" id="result2">
                     <p></p>
                 </div>
@@ -211,11 +310,11 @@
                     <a href="#" class="close" id="close2"> </a>
                 </div>
             </div>
-            
-            
+
+
             <!--3rd search with a closing X -->
-            
-            <div class="row" id="row3"> 
+
+            <div class="row" id="row3">
                 <div class="left-col" id="result3">
                     <p></p>
                 </div>
@@ -223,10 +322,10 @@
                     <a href="#" class="close" id="close3"> </a>
                 </div>
             </div>
-            
+
             <!--4th search with a closing X -->
-            
-            <div class="row" id="row4"> 
+
+            <div class="row" id="row4">
                 <div class="left-col" id="result4">
                     <p></p>
                 </div>
@@ -234,15 +333,15 @@
                     <a href="#" class="close" id="close4"> </a>
                 </div>
             </div>
-            
+
 			<!--Clear all searches -->
-            
+
 			<h3 id="clearall">CLEAR ALL</h3>
 		</div>
     </section>
     <!-- E N D  S E A R C H -->
-    
-    
+
+
     <!-- P R O F I L E -->
     <section id="profile">
         <div id="profile-header">
@@ -261,7 +360,7 @@
                 </div>
             </div>
         </div>
-        
+
         <p class="carousel-title">Favourites</p>
         <div class="carousel">
             <div class="carousel-cell blackmirror">
@@ -283,7 +382,7 @@
                 <img src="img/logo/bm.png" alt="Big Mouth">
             </div>
         </div>
-        
+
         <p class="carousel-title">Watchlist</p>
         <div class="carousel">
             <div class="carousel-cell adventuretime">
@@ -305,7 +404,7 @@
                 <img src="img/logo/th.png" alt="The Hundred">
             </div>
         </div>
-        
+
         <p class="carousel-title">You might also like</p>
         <div class="carousel">
             <div class="carousel-cell brooklynninenine">
@@ -329,15 +428,15 @@
         </div>
     </section>
     <!-- E N D  P R O F I L E -->
-    
-    
+
+
     <!-- S E T T I N G S -->
     <section id="settings">
-        
+
     </section>
     <!-- E N D  S E T T I N G S -->
-    
-    
+
+
     <!-- F A Q -->
     <section id="faq">
         <div id="faq-container">
@@ -345,10 +444,10 @@
             <div id="faq1">
                 <h4 id="q1"><i id="s1" class="fas fa-caret-right fa-fw"></i>What is BBC iPlayer?</i></h4>
                 <div id="a1" class="smooth-edge">
-                    <p>BBC iPlayer is a streaming service that allows our 
-                        customers to watch a wide variety of award-winning TV shows, 
-                        movies, documentaries and more on thousands of Internet-connected 
-                        devices. There's always something new to discover, and more 
+                    <p>BBC iPlayer is a streaming service that allows our
+                        customers to watch a wide variety of award-winning TV shows,
+                        movies, documentaries and more on thousands of Internet-connected
+                        devices. There's always something new to discover, and more
                         TV shows and movies are added every month!
                     </p>
                 </div>
@@ -356,7 +455,7 @@
             <div id="faq2">
                 <h4 id="q2"><i id="s2" class="fas fa-caret-right fa-fw"></i>What are the Internet Connection Speed Recommendations?</h4>
                 <div id="a2" class="smooth-edge">
-                    <p>Below are the internet download speed recommendations per 
+                    <p>Below are the internet download speed recommendations per
                         stream for playing TV shows and movies through BBC iPlayer.
                     </p>
                     <ul>
@@ -371,19 +470,19 @@
             <div id="faq3">
                 <h4 id="q3"><i id="s3" class="fas fa-caret-right fa-fw"></i>How does BBC iPlayer decide the maturity rating on TV shows and movies?</h4>
                 <div id="a3" class="smooth-edge">
-                    <p>Each TV show and movie on BBC iPlayer is assigned a maturity rating to 
-                        help members make informed choices for themselves and their children. 
-                        Maturity ratings are determined by a local standards organization. TV show 
+                    <p>Each TV show and movie on BBC iPlayer is assigned a maturity rating to
+                        help members make informed choices for themselves and their children.
+                        Maturity ratings are determined by a local standards organization. TV show
                         ratings reflect the overall maturity level of the whole series.
                     </p>
                 </div>
             </div>
         </div>
-        
+
     </section>
     <!-- E N D  F A Q -->
-    
-    
+
+
     <!-- B O T T O M  N A V -->
     <nav>
         <i id="navhome" class="element-active nav-icon fas fa-home"></i>
