@@ -169,6 +169,10 @@ nav {
     background: url(../img/bck/daredevil.jpg) center/cover no-repeat;
 }
 
+.sense8 {
+    background: url(../img/bck/sense8.jpg) center/cover no-repeat;
+}
+
 .gotham {
     background: url(../img/bck/gotham.jpg) center/cover no-repeat;
 }
@@ -254,26 +258,26 @@ nav {
 }
 
 
-/* T V  S H O W */
+/* S T R A N G E R  T H I N G S */
 
-#tvshow{
+#stranger-things{
     display:block;
 	overflow:auto;
 	margin:none;
 	background: linear-gradient(rgba(156,52,53,1), rgba(28,15,45,1));
 }
 
-#tv{
+#strange{
 	width:100%;
     position:absolute;
     top:8%;
     padding:40% 0 0 0;
-    background:url(../img/web-series.jpg);
+    background:url(../img/stranger-things.jpg);
     background-size: cover;
     z-index: 1;
 }
 
-#info{
+.info{
 	position:absolute;
     left:0;
     bottom:4%;
@@ -290,12 +294,12 @@ h1{
     font-weight: 600;
 }
 
-#info p{
+.info p{
 	font-size:0.8em;
     margin:0 4%;
 }
 
-#text{
+.text{
     float:left;
     padding: 0 0 0 25px;
 }
@@ -305,7 +309,7 @@ h1{
     padding: 0 25px 0 0;
 }
 
-#list{
+.list{
     margin:60% 0 0 0;
 	width:100%;
 	height:auto;
@@ -328,7 +332,7 @@ h1{
     color: #fff;
 }
 
-#season p {
+#season-str p {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -388,6 +392,73 @@ h1{
 	display:none;
 }
 
+/* B L A C K  M I R R O R */
+
+#black-mirror{
+  display:block;
+	overflow:auto;
+	margin:none;
+	background: linear-gradient(rgba(0,0,0,1), rgba(182, 185, 190, 1));
+}
+
+#black{
+  	width:100%;
+    position:absolute;
+    top:8%;
+    padding:40% 0 0 0;
+    background:url(../img/black-mirror.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+#season-blk p {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.blk{
+  background-color:#393A3C
+}
+
+.eps3{
+  display:none;
+}
+
+.eps4{
+  display:none;
+}
+
+/* S E N S E 8*/
+
+#sense8{
+  display:block;
+	overflow:auto;
+	margin:none;
+	background: linear-gradient(rgba(217, 227, 218, 1), rgba(108, 54, 88, 1));
+}
+
+#sense{
+  	width:100%;
+    position:absolute;
+    top:8%;
+    padding:40% 0 0 0;
+    background:url(../img/sense8.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+#season-sn8 p {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.sn8{
+  background-color:#C9CAC7;
+}
 
 /* C A T E G O R I E S */
 
