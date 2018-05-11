@@ -169,10 +169,6 @@ nav {
     background: url(../img/bck/daredevil.jpg) center/cover no-repeat;
 }
 
-.sense8 {
-    background: url(../img/bck/sense8.jpg) center/cover no-repeat;
-}
-
 .gotham {
     background: url(../img/bck/gotham.jpg) center/cover no-repeat;
 }
@@ -258,207 +254,12 @@ nav {
 }
 
 
-/* S T R A N G E R  T H I N G S */
+/* T V  S H O W */
 
-#stranger-things{
-    display:block;
-	overflow:auto;
-	margin:none;
-	background: linear-gradient(rgba(156,52,53,1), rgba(28,15,45,1));
+#tvshow {
+	display: none;
 }
 
-#strange{
-	width:100%;
-    position:absolute;
-    top:8%;
-    padding:40% 0 0 0;
-    background:url(../img/stranger-things.jpg);
-    background-size: cover;
-    z-index: 1;
-}
-
-.info{
-	position:absolute;
-    left:0;
-    bottom:4%;
-    color:#ffffff;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-h1{
-	font-size: 0.9em;
-	margin:0;
-    color:#ffffff;
-    font-weight: 600;
-}
-
-.info p{
-	font-size:0.8em;
-    margin:0 4%;
-}
-
-.text{
-    float:left;
-    padding: 0 0 0 25px;
-}
-
-.fav{
-    font-size: 2.3em;
-    padding: 0 25px 0 0;
-}
-
-.list{
-    margin:60% 0 0 0;
-	width:100%;
-	height:auto;
-    overflow:auto;
-    position: relative;
-}
-
-.seasons{
-    position: relative;
-    display: inline-block;
-    width:100%;
-    text-align: center;
-    cursor: pointer;
-}
-
-.seasons p {
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-}
-
-#season-str p {
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-}
-
-.season-content{
-    display: block;
-    position: absolute;
-    width:100%;
-    background-color:#9C3435;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-align: center;
-}
-
-.show {
-    display:block;
-}
-
-.episode{
-	width:95%;
-	height:auto;
-	overflow:auto;
-	margin:auto;
-}
-
-.ep {
-    height: auto;
-    overflow: auto;
-    margin: 5px 0;
-}
-
-.ep img{
-	width:50%;
-	float:left;
-	margin:5%;
-}
-
-.ep-info{
-	width:40%;
-	float:left;
-}
-
-.ep h1{
-    margin: 5px 0;
-    font-size: 0.9em;
-}
-
-.ep p{
-	color:#ffffff;
-    font-size:0.7em;
-    margin: 0 0;
-}
-
-.eps2{
-	display:none;
-}
-
-/* B L A C K  M I R R O R */
-
-#black-mirror{
-  display:block;
-	overflow:auto;
-	margin:none;
-	background: linear-gradient(rgba(0,0,0,1), rgba(182, 185, 190, 1));
-}
-
-#black{
-  	width:100%;
-    position:absolute;
-    top:8%;
-    padding:40% 0 0 0;
-    background:url(../img/black-mirror.jpg);
-    background-size: cover;
-    z-index: 1;
-}
-
-#season-blk p {
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-}
-
-.blk{
-  background-color:#393A3C
-}
-
-.eps3{
-  display:none;
-}
-
-.eps4{
-  display:none;
-}
-
-/* S E N S E 8*/
-
-#sense8{
-  display:block;
-	overflow:auto;
-	margin:none;
-	background: linear-gradient(rgba(217, 227, 218, 1), rgba(108, 54, 88, 1));
-}
-
-#sense{
-  	width:100%;
-    position:absolute;
-    top:8%;
-    padding:40% 0 0 0;
-    background:url(../img/sense8.jpg);
-    background-size: cover;
-    z-index: 1;
-}
-
-#season-sn8 p {
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-}
-
-.sn8{
-  background-color:#C9CAC7;
-}
 
 /* C A T E G O R I E S */
 
@@ -478,6 +279,11 @@ h1{
     display: none;
 }
 
+/* T V  S H O W */
+
+#tvshow {
+	display: none;
+}
 
 /* C A T E G O R I E S */
 
@@ -743,46 +549,4 @@ form {
     color: #ff008e !important;
     transition: color 1s;
     transition: color 0.15s;
-}
-
-/* CATEGORIES */
-
-#categories{
-    width:100%;
-    margin-bottom:50%;
-}
-
-.grid{
-	width:95%;
-	margin:auto;
-}
-
-.grid-item{
-    margin:1px;
-	width: 49%;
-	float:right;
-}
-
-.grid-item img{
-	max-width:100%;
-	margin:auto;
-}
-.grid-item--width2{
-	width: 49%;
-}
-
-.grid-item--width3{
-	width: 49.5%;
-}
-
-.grid-item--width4{
-	width: 99%;
-}
-
-.grid-item--width5{
-	width: 34.5%;
-}
-
-.grid-item--width6{
-	width: 64%;
 }
