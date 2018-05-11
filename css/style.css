@@ -427,6 +427,11 @@ h1{
 
 #search h1, #search h3, #search p, .row{
 	color: #fff;
+	margin: 1em 0 1em 0;
+}
+
+#search h1 {
+	margin-top: 2em;
 }
 
 form {
@@ -464,7 +469,7 @@ form {
 	font-size: 20px;
 	position: absolute;
 	left: 83%;
-	padding-top: 3.5%;
+	padding-top: 2.75%;
 }
 
 .row {
