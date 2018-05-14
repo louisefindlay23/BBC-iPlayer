@@ -202,16 +202,44 @@ $(document).ready(function () {
 	
 	// T V  S H O W
 	
-	$('.blackmirror').click(function (e) { 
-		e.preventDefault();
+	// Black Mirror
+	$('.blackmirror').one("click", function () { 
 		var blackmirror_id = 42009;
 		var blackmirror_hid = 'blackmirror';
 		create_tvshow(blackmirror_id, blackmirror_hid);
 		$("#blackmirror, #tvshow").show();
 		$("#faq, #search, #categories, #settings, #profile, #home").hide();
-		$("#navcategory, #navsearch, #navprofile, #settings-icon, #nav-home").removeClass("element-active");
+		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 	
+	$('.blackmirror').click(function (e) { 
+		e.preventDefault();
+		$("#blackmirror, #tvshow").show();
+		$("#faq, #search, #categories, #settings, #profile, #home, #americandad").hide();
+		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
+	});
+	
+	// American Dad
+	$('.americandad').one("click", function () { 
+		var americandad_id = 1433;
+		var americandad_hid = 'americandad';
+		create_tvshow(americandad_id, americandad_hid);
+		$("#americandad, #tvshow").show();
+		$("#faq, #search, #categories, #settings, #profile, #home, #blackmirror").hide();
+		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
+	});
+	
+	$('.americandad').click(function (e) { 
+		e.preventDefault();
+		$("#americandad, #tvshow").show();
+		$("#faq, #search, #categories, #settings, #profile, #home").hide();
+		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
+	});
+		
+	$('.season-button').click(function (e) { 
+		e.preventDefault();
+		$('.season-dropdown').slideToggle();
+	});	
 	
 	// var sense8_id = 61664;
 	// var sense8_hid = 'sense8';

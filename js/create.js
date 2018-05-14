@@ -32,7 +32,7 @@ function create_tvshow(tvshow_id, html_id) {
         // Now you can use data.posX, data.posY later in your code and it will work.
         var i = 0;
         
-        $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button">Season</div>' + '<div class="season-dropdown" id="' + html_id + '_season"></div>');
+        $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season</p></div>' + '<div class="season-dropdown" id="' + html_id + '_season"></div>');
         
         var header = '#' +  html_id + " .tvshow-header";
         var headerImage = config_data.images.secure_base_url + config_data.images.backdrop_sizes[1] + tv_data.backdrop_path;
