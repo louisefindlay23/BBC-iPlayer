@@ -32,8 +32,13 @@ function create_tvshow(tvshow_id, html_id) {
         // Now you can use data.posX, data.posY later in your code and it will work.
         var i = 0;
         
-        $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + '</p>' + '</div><div class="season-button" id="' + html_id + '_season"></div>');
+        $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button">Season</div>' + '<div class="season-dropdown" id="' + html_id + '_season"></div>');
         
+        var header = '#' +  html_id + " .tvshow-header";
+        var headerImage = config_data.images.secure_base_url + config_data.images.backdrop_sizes[1] + tv_data.backdrop_path;
+
+        $(header).css("background-image", 'url(' + headerImage + ')');
+
         while (i < tv_data.number_of_seasons + 1) {
             
             $('#' + html_id + '_season').append('<p>' + tv_data.seasons[i].name + '</p>');
@@ -55,7 +60,7 @@ function create_tvshow(tvshow_id, html_id) {
             
             
             while (j < tv_data.seasons[i].episode_count + 1) {
-                $('#' + html_id + '_s' + i).append('<div id="' + html_id + '_s' + i + '_ep' + j + '" class="episode"><div class="episode-text"><h3>' + ep_data.episodes[j-1].episode_number + ". " + ep_data.episodes[j-1].name + '</h3>' + '<p>' + ep_data.episodes[j-1].overview + '</p></div>' + '<div class="episode-thumb"><img src="' + (config_data.images.secure_base_url + config_data.images.backdrop_sizes[0] + ep_data.episodes[j-1].still_path) + '"></div></div>');
+                $('#' + html_id + '_s' + i).append('<div id="' + html_id + '_s' + i + '_ep' + j + '" class="episode"><div class="episode-text"><h3>' + ep_data.episodes[j-1].episode_number + ". " + ep_data.episodes[j-1].name + '</h3>' + '<p>' + ep_data.episodes[j-1].overview.substring(0, 100) + ' (...)' + '</p></div>' + '<div class="episode-thumb"><img src="' + (config_data.images.secure_base_url + config_data.images.backdrop_sizes[0] + ep_data.episodes[j-1].still_path) + '"></div></div>');
                 j++;
             }
             

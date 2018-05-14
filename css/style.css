@@ -261,7 +261,80 @@ nav {
     color: #fff;
 }
 
+.tvshow-header {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 15px;
+    background: center/cover no-repeat;
+}
 
+.tvshow-header h1 {
+    margin: 0;
+}
+
+.tvshow-header p {
+    margin: 5px 0 10px;
+}
+
+.episode {
+    width: 92%;
+    height: auto;
+    overflow: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.episode-text {
+    float: left;
+    width: 48%;
+}
+
+.episode-text h3 {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.episode-text p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.episode-thumb {
+    float: left;
+    width: 48%;
+}
+
+.episode-thumb img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.dropdown-menu-container {
+    position: relative;
+    height: 100%;
+}
+
+.season-button {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.season-dropdown {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background-color: #000;
+}
+
+.season-dropdown p {
+    margin: 0;
+    padding: 15px 0;
+}
 
 /* C A T E G O R I E S */
 
