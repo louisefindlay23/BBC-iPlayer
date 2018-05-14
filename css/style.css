@@ -257,8 +257,10 @@ nav {
 /* T V  S H O W */
 
 #tvshow {
-	display: none;
+    display: none;
+    color: #fff;
 }
+
 
 
 /* C A T E G O R I E S */

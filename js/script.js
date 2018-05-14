@@ -199,4 +199,34 @@ $(document).ready(function () {
 		$(".close-search").show();
 		$("#history").hide();
 	});
+	
+	// T V  S H O W
+	
+	$('.blackmirror').click(function (e) { 
+		e.preventDefault();
+		var blackmirror_id = 42009;
+		var blackmirror_hid = 'blackmirror';
+		create_tvshow(blackmirror_id, blackmirror_hid);
+		$("#blackmirror, #tvshow").show();
+		$("#faq, #search, #categories, #settings, #profile, #home").hide();
+		$("#navcategory, #navsearch, #navprofile, #settings-icon, #nav-home").removeClass("element-active");
+	});
+	
+	
+	// var sense8_id = 61664;
+	// var sense8_hid = 'sense8';
+	// create_tvshow(sense8_id, sense8_hid);
+	
+	// var westworld_id = 63247;
+	// var westworld_hid = 'westworld';
+	// create_tvshow(westworld_id, westworld_hid);
+	
+	// var americandad_id = 1433;
+	// var americandad_hid = 'americandad';
+	// create_tvshow(americandad_id, americandad_hid);
+	// 
+	// var theblacklist_id = 46952;
+	// var theblacklist_hid = 'theblacklist';
+	// create_tvshow(theblacklist_id, theblacklist_hid);
+	
 });
