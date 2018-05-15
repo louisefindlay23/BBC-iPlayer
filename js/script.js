@@ -273,14 +273,6 @@ $(document).ready(function () {
 	});
 
 	
-<<<<<<< HEAD
-=======
-	
-<<<<<<< HEAD
->>>>>>> c1aa4b6e42cd5c9122bb95ecbcc5fa5652bf111a
-=======
-	
->>>>>>> c1aa4b6e42cd5c9122bb95ecbcc5fa5652bf111a
 	$('.season-button').click(function (e) { 
 		e.preventDefault();
 		$('.season-dropdown').slideToggle();
