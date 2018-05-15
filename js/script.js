@@ -201,10 +201,26 @@ $(document).ready(function () {
 	});
 	
 	// T V  S H O W
-
-	var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home";
 	
-	// Black Mirror
+	var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home";
+	var tvshowList = "#blackmirror"
+	
+	
+	// function initTVShow(tvShowToInit) {
+	// 	$('.' + tvShowToInit).one("click", function () {
+	// 		var tv_id = tvShowToInit + '_id';
+	// 		var tvshow_hid = tvShowToInit + '_hid';
+	// 		var tv_id = 42009;
+	// 		var tvshow_hid = "'" + tvShowToInit + "'";
+	// 		create_tvshow(tv_id, tvshow_hid);
+	// 		$("#" + tvShowToInit + ", #tvshow").show();
+	// 		$(elementsToHide + ", #americandad, #brooklynninenine").hide();
+	// 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
+	// 	});
+	// }
+	
+	// initTVShow(blackmirror);
+	
 	$('.blackmirror').one("click", function () { 
 		var blackmirror_id = 42009;
 		var blackmirror_hid = 'blackmirror';
@@ -238,7 +254,7 @@ $(document).ready(function () {
 		$(elementsToHide + ", #blackmirror, #brooklynninenine").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
-
+	
 	// Brooklyn Nine-Nine
 	$('.brooklynninenine').one("click", function () { 
 		var brooklynninenine_id = 48891;
@@ -256,7 +272,7 @@ $(document).ready(function () {
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 	
-		
+	
 	$('.season-button').click(function (e) { 
 		e.preventDefault();
 		$('.season-dropdown').slideToggle();
