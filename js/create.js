@@ -24,13 +24,12 @@ function create_tvshow(tvshow_id, html_id) {
         console.log(tv_data);
         
         if (tv_data.seasons[0].name === 'Specials') {
-            var t = 0;
-        } else {
             var t = 1;
+            var i = 1;
+        } else {
+            var t = 0;
+            var i = 0;
         }
-        
-        
-        var i = 0;
         
         $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + ' / ' + tv_data.episode_run_time[0] + ' mins' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season</p></div>' + '<div class="season-dropdown" id="' + html_id + '_season"></div>');
         
