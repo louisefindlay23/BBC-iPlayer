@@ -9,7 +9,7 @@ function create_tvshow(tvshow_id, html_id) {
             "method": "GET",
             "headers": {},
             "data": "{}"
-        }).responseText); // This will wait until you get a response from the ajax request.        
+        }).responseText);       
         console.log(config_data);
         
         var tv_data = $.parseJSON($.ajax({            
@@ -20,7 +20,7 @@ function create_tvshow(tvshow_id, html_id) {
             "method": "GET",
             "headers": {},
             "data": "{}"
-        }).responseText); // This will wait until you get a response from the ajax request.        
+        }).responseText);        
         console.log(tv_data);
         
         if (tv_data.seasons[0].name === 'Specials') {
@@ -29,7 +29,7 @@ function create_tvshow(tvshow_id, html_id) {
             var t = 1;
         }
         
-        // Now you can use data.posX, data.posY later in your code and it will work.
+        
         var i = 0;
         
         $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season</p></div>' + '<div class="season-dropdown" id="' + html_id + '_season"></div>');
@@ -55,7 +55,7 @@ function create_tvshow(tvshow_id, html_id) {
                 "method": "GET",
                 "headers": {},
                 "data": "{}"
-            }).responseText); // This will wait until you get a response from the ajax request.
+            }).responseText);
             console.log(ep_data);
             
             
