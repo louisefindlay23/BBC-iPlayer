@@ -5,7 +5,7 @@ body {
 }
 
 html {
-    font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
 
@@ -316,7 +316,9 @@ nav {
 
 .dropdown-menu-container {
     position: relative;
-    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .season-button {
