@@ -229,6 +229,7 @@ $(document).ready(function () {
 		$("#americandad, #tvshow").show();
 		$(elementsToHide + ", #blackmirror, #brooklynninenine").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
+		$('.tvshow:nth-child(3)').show();
 	});
 	
 	$('.americandad').click(function (e) { 

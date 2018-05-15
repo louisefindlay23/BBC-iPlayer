@@ -24,10 +24,8 @@ function create_tvshow(tvshow_id, html_id) {
         console.log(tv_data);
         
         if (tv_data.seasons[0].name === 'Specials') {
-            var t = 1;
             var i = 1;
         } else {
-            var t = 0;
             var i = 0;
         }
         
@@ -39,10 +37,14 @@ function create_tvshow(tvshow_id, html_id) {
         $(header).css("background-image", 'linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url(' + headerImage + ')');
 
         while (i < tv_data.number_of_seasons + 1) {
-            
             $('#' + html_id + '_season').append('<p>' + tv_data.seasons[i].name + '</p>');
             $('#' + html_id).append('<div class="season" id="' + html_id + '_s' + i + '"></div>');
             
+            if (i == tv_data.seasons[1].season_number){
+            }
+            else {
+                $('#' + html_id + '_s' + i ).css('display', 'none');
+            }
             
             var j = 1;
             
@@ -50,7 +52,7 @@ function create_tvshow(tvshow_id, html_id) {
                 "async": false,
                 "crossDomain": true,
                 dataType: 'json',
-                url: "https://api.themoviedb.org/3/tv/" + tvshow_id + "/season/" + t + "?api_key=5baec0646d331ab270b4489371001070&language=en-US",
+                url: "https://api.themoviedb.org/3/tv/" + tvshow_id + "/season/" + i + "?api_key=5baec0646d331ab270b4489371001070&language=en-US",
                 "method": "GET",
                 "headers": {},
                 "data": "{}"
@@ -64,7 +66,6 @@ function create_tvshow(tvshow_id, html_id) {
             }
             
             i++;
-            t++;
         }
     });
 }
