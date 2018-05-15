@@ -237,6 +237,24 @@ $(document).ready(function () {
 		$(elementsToHide + ", #blackmirror").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
+
+	// Brooklyn Nine-Nine
+	$('.brooklynninenine').one("click", function () { 
+		var brooklynninenine_id = 48891;
+		var brooklynninenine_hid = 'brooklynninenine';
+		create_tvshow(brooklynninenine_id, brooklynninenine_hid);
+		$("#brooklynninenine, #tvshow").show();
+		$(elementsToHide + ", #blackmirror, #americandad").hide();
+		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
+	});
+	
+	$('.brooklynninenine').click(function (e) { 
+		e.preventDefault();
+		$("#brooklynninenine, #tvshow").show();
+		$(elementsToHide + ", #blackmirror, #americandad").hide();
+		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
+	});
+	
 		
 	$('.season-button').click(function (e) { 
 		e.preventDefault();
