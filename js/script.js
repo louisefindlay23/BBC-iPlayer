@@ -210,14 +210,14 @@ $(document).ready(function () {
 		var blackmirror_hid = 'blackmirror';
 		create_tvshow(blackmirror_id, blackmirror_hid);
 		$("#blackmirror, #tvshow").show();
-		$(elementsToHide + ", #americandad").hide();
+		$(elementsToHide + ", #americandad, #brooklynninenine").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 	
 	$('.blackmirror').click(function (e) { 
 		e.preventDefault();
 		$("#blackmirror, #tvshow").show();
-		$(elementsToHide + ", #americandad").hide();
+		$(elementsToHide + ", #americandad, #brooklynninenine").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 	
@@ -227,14 +227,14 @@ $(document).ready(function () {
 		var americandad_hid = 'americandad';
 		create_tvshow(americandad_id, americandad_hid);
 		$("#americandad, #tvshow").show();
-		$(elementsToHide + ", #blackmirror").hide();
+		$(elementsToHide + ", #blackmirror, #brooklynninenine").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 	
 	$('.americandad').click(function (e) { 
 		e.preventDefault();
 		$("#americandad, #tvshow").show();
-		$(elementsToHide + ", #blackmirror").hide();
+		$(elementsToHide + ", #blackmirror, #brooklynninenine").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 
