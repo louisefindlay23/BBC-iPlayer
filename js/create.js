@@ -32,12 +32,12 @@ function create_tvshow(tvshow_id, html_id) {
         
         var i = 0;
         
-        $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season</p></div>' + '<div class="season-dropdown" id="' + html_id + '_season"></div>');
+        $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + ' / ' + tv_data.episode_run_time[0] + ' mins' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season</p></div>' + '<div class="season-dropdown" id="' + html_id + '_season"></div>');
         
         var header = '#' +  html_id + " .tvshow-header";
         var headerImage = config_data.images.secure_base_url + config_data.images.backdrop_sizes[1] + tv_data.backdrop_path;
 
-        $(header).css("background-image", 'url(' + headerImage + ')');
+        $(header).css("background-image", 'linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url(' + headerImage + ')');
 
         while (i < tv_data.number_of_seasons + 1) {
             

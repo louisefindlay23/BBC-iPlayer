@@ -201,6 +201,8 @@ $(document).ready(function () {
 	});
 	
 	// T V  S H O W
+
+	var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home";
 	
 	// Black Mirror
 	$('.blackmirror').one("click", function () { 
@@ -208,14 +210,14 @@ $(document).ready(function () {
 		var blackmirror_hid = 'blackmirror';
 		create_tvshow(blackmirror_id, blackmirror_hid);
 		$("#blackmirror, #tvshow").show();
-		$("#faq, #search, #categories, #settings, #profile, #home").hide();
+		$(elementsToHide + ", #americandad").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 	
 	$('.blackmirror').click(function (e) { 
 		e.preventDefault();
 		$("#blackmirror, #tvshow").show();
-		$("#faq, #search, #categories, #settings, #profile, #home, #americandad").hide();
+		$(elementsToHide + ", #americandad").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 	
@@ -225,14 +227,14 @@ $(document).ready(function () {
 		var americandad_hid = 'americandad';
 		create_tvshow(americandad_id, americandad_hid);
 		$("#americandad, #tvshow").show();
-		$("#faq, #search, #categories, #settings, #profile, #home, #blackmirror").hide();
+		$(elementsToHide + ", #blackmirror").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 	
 	$('.americandad').click(function (e) { 
 		e.preventDefault();
 		$("#americandad, #tvshow").show();
-		$("#faq, #search, #categories, #settings, #profile, #home").hide();
+		$(elementsToHide + ", #blackmirror").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
 		
