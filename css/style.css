@@ -125,6 +125,7 @@ nav {
     width: 100vw;
     min-height: calc(100vh - 130px);
     padding: 0 0 65px 0;
+    z-index: 200;
 }
 
 #settings h3 {
