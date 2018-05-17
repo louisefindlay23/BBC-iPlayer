@@ -648,7 +648,7 @@
 		<div class="searchcontainer">
 
 			<form>
-				<h1><input onkeyup="filterFunction()" id="searchbox" type="text" name="search" autocomplete="off" placeholder="S E A R C H">
+				<h1><input id="searchbox" type="text" name="search" autocomplete="off" placeholder="S E A R C H">
 
 					<i class="close-search fas fa-times"></i>
 
@@ -661,13 +661,9 @@
 
 					<!--Add JQuery nav toggle to view TV Show pages on click and to add the value of the item clicked to the recent search history-->
 
-					<p class="result">Black Mirror</p>
-					<p class="result">Breaking Bad</p>
-					<p class="result">Brooklyn Nine-Nine</p>
-					<p class="result">Daredevil</p>
-					<p class="result">Game of Thrones</p>
-					<p class="result">Gotham</p>
-					<p class="result">Shameless</p>
+					<p class="result" id="bm-result">Black Mirror</p>
+					<p class="result" id="s8-result">Sense 8</p>
+					<p class="result" id="st-result">Stranger Things</p>
 				</div>
 			</div>
 		</div>

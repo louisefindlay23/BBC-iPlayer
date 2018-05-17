@@ -9,6 +9,7 @@ $(document).ready(function () {
 
 
 	// D R O P D O W N
+	
 	function filterFunction() {
 		var input, filter, ul, li, a, i;
 		input = document.getElementById("searchbox");
@@ -23,6 +24,8 @@ $(document).ready(function () {
 			}
 		}
 	}
+	
+$("input").keydown(filterFunction);
 
 
 	// F A Q
@@ -233,7 +236,7 @@ $(document).ready(function () {
 		$(".eps1").slideUp({display:"none"});
 	});
 
-	$(".strangerthings").click(function(){
+	$(".strangerthings, #st-result").click(function(){
 			$("#stranger-things").show();
 			$("#home, #faq, #search, #categories, #settings, #profile, #black-mirror, #sense8").hide();
 			$("#navhome, #navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
@@ -251,7 +254,7 @@ $(document).ready(function () {
 		$(".eps1").slideUp({display:"none"});
 	});
 
-	$(".sense8").click(function(){
+	$(".sense8, #s8-result").click(function(){
 			$("#sense8").show();
 			$("#home, #faq, #search, #categories, #settings, #profile, #black-mirror, #stranger-things").hide();
 			$("#navhome, #navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
@@ -289,7 +292,7 @@ $(document).ready(function () {
 		$(".eps2").slideUp({display:"none"});
 	});
 
-	$(".blackmirror").click(function(){
+	$(".blackmirror, #bm-result").click(function(){
 			$("#black-mirror").show();
 			$("#home, #faq, #search, #categories, #settings, #profile, #stranger-things, #sense8").hide();
 			$("#navhome, #navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
