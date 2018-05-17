@@ -123,74 +123,80 @@ $("input").keydown(filterFunction);
 		if ($('#result1 > p').is(':empty')) {
 			var result1 = $(this).text();
 			$("#result1 p").text(result1);
-			$("#row1").show();
-			$("#clearall").fadeIn();
+			$("#row1").addClass("showimportant");
 		}
 		// If not check the second row
 		else if ($('#result2 > p').is(':empty')) {
 			var result2 = $(this).text();
 			$("#result2 p").text(result2);
-			$("#row2").show();
+			$("#row2").addClass("showimportant");
+			$("#clearall").addClass("showimportant");
 		}
 		// If not check the third row
 		else if ($('#result3 > p').is(':empty')) {
 
 			var result3 = $(this).text();
 			$("#result3 p").text(result3);
-			$("#row3").show();
+			$("#row3").addClass("showimportant");
 		}
 		// If not check the fourth row
 		else if ($('#result4 > p').is(':empty')) {
 			var result4 = $(this).text();
 			$("#result4 p").text(result4);
-			$("#row4").show();
+			$("#row4").addClass("showimportant");
 		}
 	});
 
 	// Clear all searches
 	$("#clearall").click(function(){
-		$("#clearall").hide();
-		$(".row").hide();
-		$("#result1 p").text("");
+		$(".row").removeClass("showimportant");
+		$("#clearall").removeClass("showimportant");
+		$("#result1 p, #result2 p, #result3 p, #result4 p, #result5 p, #result6 p, #result7 p").text("");
 	});
 
 
 	// Clear first search
 	$("#close1").click(function(){
 		$("#result1 p").text("");
-		$("#row1").fadeOut();
+		$("#row1, #close1").fadeOut();
 	});
 
 
 	// Clear second search
 	$("#close2").click(function(){
-		$("#row2").fadeOut();
+		$("#result2 p").text("");
+		$("#row2, #close2").fadeOut();
 	});
 
 	// Clear third search
 
 	$("#close3").click(function(){
-		$("#row3").fadeOut();
+		$("#result3 p").text("");
+		$("#row3, #close3").fadeOut();
 	});
 
 	// Clear fourth search
 	$("#close4").click(function(){
-		$("#row4").fadeOut();
+		$("#result4 p").text("");
+		$("#row4, #close4").fadeOut();
 	});
 
 	// Clear fifth search
 	$("#close5").click(function(){
-		$("#row5").fadeOut();
+		$("#result5 p").text("");
+		$("#row5, #close5").fadeOut();
 	});
 
 	// Clear sixth search
 	$("#close6").click(function(){
-		$("#row6").fadeOut();
+		$("#result6 p").text("");
+		$("#row6, #close6").fadeOut();
 	});
 
 	// Clear seventh search
 	$("#close7").click(function(){
-		$("#row7").fadeOut();
+		$("#result7 p").text("");
+		$("#row7, #close7").fadeOut();
 	});
 
 	$(".close-search").click(function(){
