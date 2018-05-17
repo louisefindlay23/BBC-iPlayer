@@ -199,9 +199,9 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(45px);
-  -ms-transform: translateX(45px);
-  transform: translateX(45px);
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
 }
 
 
