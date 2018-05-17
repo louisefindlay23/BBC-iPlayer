@@ -67,5 +67,8 @@ function create_tvshow(tvshow_id, html_id) {
             
             i++;
         }
+        $('.season-button').click(function () {
+			$('.season-dropdown').slideToggle(150);
+		});	
     });
 }

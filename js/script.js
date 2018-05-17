@@ -273,10 +273,11 @@ $(document).ready(function () {
 	});
 
 	
-	$('.season-button').click(function (e) { 
-		e.preventDefault();
-		$('.season-dropdown').slideToggle();
-	});	
+	// $('.season-button').click(function () {
+	// 	$('.season-dropdown').slideToggle();
+	// });	
+
+
 	
 	// var sense8_id = 61664;
 	// var sense8_hid = 'sense8';
