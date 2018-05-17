@@ -893,41 +893,52 @@ form {
 /* CATEGORIES */
 
 #categories{
-    width:100%;
-    margin-bottom:50%;
+    width:95%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#ffffff;
 }
 
-.grid{
-	width:95%;
-	margin:auto;
-}
+
 
 .grid-item{
-    margin:1px;
+  background:url("../img/action.jpeg") center/cover no-repeat;
 	width: 49%;
+  margin:2px;
 	float:right;
+  padding: 0 0 65% 0;
 }
 
-.grid-item img{
-	max-width:100%;
-	margin:auto;
-}
+
 .grid-item--width2{
-	width: 49%;
+  background:url("../img/adventure.jpeg") center/cover no-repeat;
+	width: 48%;
+  padding: 0 0 118% 0;
 }
 
 .grid-item--width3{
-	width: 49.5%;
+  background:url("../img/drama.jpeg") center/cover no-repeat;
+	width: 49%;
+  padding: 0 0 45% 0;
 }
 
 .grid-item--width4{
+  background:url("../img/fantasy.jpeg") center/cover no-repeat;
 	width: 99%;
+  padding: 0 0 40% 0;
 }
 
 .grid-item--width5{
-	width: 34.5%;
+  background:url("../img/sports.jpeg") center/cover no-repeat;
+	width: 33%;
+  padding: 0 0 30% 0;
 }
 
 .grid-item--width6{
+  background:url("../img/horror.jpeg") center/cover no-repeat;
 	width: 64%;
+  padding: 0 0 30% 0;
 }

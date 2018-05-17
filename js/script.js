@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 
 	// D R O P D O W N
-	
+
 	function filterFunction() {
 		var input, filter, ul, li, a, i;
 		input = document.getElementById("searchbox");
@@ -24,7 +24,7 @@ $(document).ready(function () {
 			}
 		}
 	}
-	
+
 $("input").keydown(filterFunction);
 
 
@@ -66,6 +66,7 @@ $("input").keydown(filterFunction);
 	$("#black-mirror").hide();
 	$("#sense8").hide();
 	$("#home").show();
+	$("#categories").hide();
 
 	$("#navhome").click(function(){
 		$("#home").show();
