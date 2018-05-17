@@ -104,6 +104,10 @@ $("input").keydown(filterFunction);
 		$("#settings-icon").toggleClass("fa-times fa-cog");
 	});
 
+	$('.faq').click(function () {
+		$('#faq-container').slideToggle();
+	});
+
 
 	// P R O F I L  P I C T U R E
 	$("#trigger-zoom").click(function () {
