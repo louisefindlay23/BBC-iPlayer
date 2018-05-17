@@ -9,6 +9,7 @@ $(document).ready(function () {
 
 
 	// D R O P D O W N
+	
 	function filterFunction() {
 		var input, filter, ul, li, a, i;
 		input = document.getElementById("searchbox");
@@ -23,6 +24,8 @@ $(document).ready(function () {
 			}
 		}
 	}
+	
+$("input").keydown(filterFunction);
 
 
 	// F A Q
