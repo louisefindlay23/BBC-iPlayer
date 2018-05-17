@@ -245,7 +245,6 @@ $(document).ready(function () {
 		$("#americandad, #tvshow").show();
 		$(elementsToHide + ", #blackmirror, #brooklynninenine").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-		$('.tvshow:nth-child(3)').show();
 	});
 	
 	$('.americandad').click(function (e) { 
@@ -271,14 +270,8 @@ $(document).ready(function () {
 		$(elementsToHide + ", #blackmirror, #americandad").hide();
 		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
 	});
-
 	
-	// $('.season-button').click(function () {
-	// 	$('.season-dropdown').slideToggle();
-	// });	
 
-
-	
 	// var sense8_id = 61664;
 	// var sense8_hid = 'sense8';
 	// create_tvshow(sense8_id, sense8_hid);
