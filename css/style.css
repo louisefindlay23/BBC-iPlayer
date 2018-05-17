@@ -86,10 +86,46 @@ header {
     width: 100%;
 }
 
-#loader i{
-    margin: 15px 0 0 0;
-}
+.half-circle-spinner, .half-circle-spinner * {
+    box-sizing: border-box;
+  }
 
+  .half-circle-spinner {
+    margin: 25px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+  }
+
+  .half-circle-spinner .circle {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: calc(50px / 10) solid transparent;
+  }
+
+  .half-circle-spinner .circle.circle-1 {
+    border-top-color: #fff;
+    animation: half-circle-spinner-animation 1s infinite;
+  }
+
+  .half-circle-spinner .circle.circle-2 {
+    border-bottom-color: #fff;
+    animation: half-circle-spinner-animation 1s infinite alternate;
+  }
+
+  @keyframes half-circle-spinner-animation {
+    0% {
+      transform: rotate(0deg);
+
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
 
 /* B O T T O M  N A V */
 
@@ -120,11 +156,118 @@ nav {
     position: absolute;
     top: 65px;
     display: none;
-    z-index: 5;
     background-color: #000;
     width: 100vw;
-    min-height: calc(100vh - 130px);
+    min-height: 100vh;
     padding: 0 0 65px 0;
+}
+
+#settings h3 {
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px ;
+}
+
+.set-container {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	margin: auto;
+}
+.set-rows {
+    width: 100%;
+    margin: 18px 0;
+}
+
+.faq {
+    cursor: pointer;
+}
+
+.label {
+	display: block;
+	float: left;
+	color: #fff;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.switch {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 20px;
+	border-radius: 34px;
+	float: right;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #828282;
+	-webkit-transition: .15s;
+	transition: .15s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	top: -2.5px;
+	left: -7.5px;
+	content: "";
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	-webkit-transition: .15s;
+	transition: .15s;
+	border-radius: 34px;
+}
+
+input:checked + .slider {
+	background-color: #ff008e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+
+.set-rows a {
+	display: block;
+	color: #fff;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#delete {
+	width: 60%;
+	display: block;
+	margin: auto;
+	border: 4px solid #FF0004;
+	padding: 15px;
+}
+
+#delete p {
+	color: #FF0004;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+    margin: 0;
+    letter-spacing: 3px;
 }
 
 /* H O M E */
@@ -167,6 +310,10 @@ nav {
 
 .daredevil {
     background: url(../img/bck/daredevil.jpg) center/cover no-repeat;
+}
+
+.sense8 {
+    background: url(../img/bck/sense8.jpg) center/cover no-repeat;
 }
 
 .gotham {
@@ -254,26 +401,26 @@ nav {
 }
 
 
-/* T V  S H O W */
+/* S T R A N G E R  T H I N G S */
 
-#tvshow{
+#stranger-things{
     display:block;
 	overflow:auto;
 	margin:none;
 	background: linear-gradient(rgba(156,52,53,1), rgba(28,15,45,1));
 }
 
-#tv{
+#strange{
 	width:100%;
     position:absolute;
     top:8%;
     padding:40% 0 0 0;
-    background:url(../img/web-series.jpg);
+    background:url(../img/stranger-things.jpg);
     background-size: cover;
     z-index: 1;
 }
 
-#info{
+.info{
 	position:absolute;
     left:0;
     bottom:4%;
@@ -290,12 +437,12 @@ h1{
     font-weight: 600;
 }
 
-#info p{
+.info p{
 	font-size:0.8em;
     margin:0 4%;
 }
 
-#text{
+.text{
     float:left;
     padding: 0 0 0 25px;
 }
@@ -305,7 +452,7 @@ h1{
     padding: 0 25px 0 0;
 }
 
-#list{
+.list{
     margin:60% 0 0 0;
 	width:100%;
 	height:auto;
@@ -328,7 +475,7 @@ h1{
     color: #fff;
 }
 
-#season p {
+#season-str p {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -388,6 +535,73 @@ h1{
 	display:none;
 }
 
+/* B L A C K  M I R R O R */
+
+#black-mirror{
+  display:block;
+	overflow:auto;
+	margin:none;
+	background: linear-gradient(rgba(0,0,0,1), rgba(182, 185, 190, 1));
+}
+
+#black{
+  	width:100%;
+    position:absolute;
+    top:8%;
+    padding:40% 0 0 0;
+    background:url(../img/black-mirror.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+#season-blk p {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.blk{
+  background-color:#393A3C
+}
+
+.eps3{
+  display:none;
+}
+
+.eps4{
+  display:none;
+}
+
+/* S E N S E 8*/
+
+#sense8{
+  display:block;
+	overflow:auto;
+	margin:none;
+	background: linear-gradient(rgba(217, 227, 218, 1), rgba(108, 54, 88, 1));
+}
+
+#sense{
+  	width:100%;
+    position:absolute;
+    top:8%;
+    padding:40% 0 0 0;
+    background:url(../img/sense8.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+#season-sn8 p {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.sn8{
+  background-color:#C9CAC7;
+}
 
 /* C A T E G O R I E S */
 
@@ -427,6 +641,11 @@ h1{
 
 #search h1, #search h3, #search p, .row{
 	color: #fff;
+	margin: 1em 0 1em 0;
+}
+
+#search h1 {
+	margin-top: 2em;
 }
 
 form {
@@ -464,7 +683,7 @@ form {
 	font-size: 20px;
 	position: absolute;
 	left: 83%;
-	padding-top: 3.5%;
+	padding-top: 2.75%;
 }
 
 .row {
@@ -637,30 +856,27 @@ form {
 
 /* F A Q */
 
-#faq {
-    color: #fff;
-	display: none;
-}
-
 #faq-container {
+    color: #fff;
+    display: none;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 20px ;
 }
 
-#faq h3 {
+#faq-container h3 {
     margin: 10px 0 20px;
     text-align: center;
     font-weight: 400;
 }
 
-#faq h4 {
+#faq-container h4 {
     margin: 15px 0 0;
     transition: color 1s;
     font-weight: 600;
     cursor: pointer;
 }
 
-#faq p {
+#faq-container p {
     margin: 5px 0 20px;
 }
 
