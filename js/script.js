@@ -84,10 +84,7 @@ $("input").keydown(filterFunction);
 		$("#home, #faq, #categories, #settings, #profile").hide();
 		$("#navsearch").addClass("element-active");
 		$("#navhome, #navcategory, #navprofile, #settings-icon").removeClass("element-active");
-		$(".fa-times").hide();
-		$(".dropdown").hide();
-		$(".row").hide();
-		$("#clearall").hide();
+		$(".fa-times, .dropdown, .row, #clearall").hide();
 	});
 
 	$("#navprofile").click(function(){
@@ -194,17 +191,14 @@ $("input").keydown(filterFunction);
 	});
 
 	$(".close-search").click(function(){
-		$(".dropdown").hide();
+		$(".dropdown, .close-search").hide();
 		$("#history").show();
 		$("#searchbox").val("");
 		$("#searchbox").attr("placeholder", "S E A R C H");
-		$(".close-search").hide();
 	});
 
 	$("input").click(function(){
-		$(".dropdown").show();
-		$(".dropdown-content").show();
-		$(".close-search").show();
+		$(".dropdown, .dropdown-content, .close-search").show();
 		$("#history").hide();
 	});
 
