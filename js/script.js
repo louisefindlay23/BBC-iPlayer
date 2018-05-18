@@ -104,7 +104,7 @@ $("input").keydown(filterFunction);
 	});
 
 
-	// P R O F I L  P I C T U R E
+	// P R O F I L E  P I C T U R E
 	$("#trigger-zoom").click(function () {
 		$("#picture-zoom").fadeIn("fast");
 	});
