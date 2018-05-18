@@ -628,6 +628,62 @@ h1{
 	display: none;
 }
 
+.grid {
+    width: 98%;
+    margin: auto;
+    height: auto;
+    overflow: auto;
+}
+
+.grid-item p {
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.grid-item{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/action.jpeg") center/cover no-repeat;
+	width: 49%;
+  margin:2px;
+	float:right;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:200px;
+}
+
+
+.grid-item--width2{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/adventure.jpeg") center/cover no-repeat;
+	width: 48%;
+  height:340px
+}
+
+.grid-item--width3{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/drama.jpeg") center/cover no-repeat;
+	width: 49%;
+  height:136px;
+}
+
+.grid-item--width4{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/fantasy.jpeg") center/cover no-repeat;
+	width: 99%;
+  height:200px;
+}
+
+.grid-item--width5{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sports.jpeg") center/cover no-repeat;
+	width: 33%;
+  height:130px;
+}
+
+.grid-item--width6{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/horror.jpeg") center/cover no-repeat;
+	width: 64%;
+  height:130px;
+}
+
 
 /* S E A R C H */
 
@@ -888,55 +944,4 @@ form {
     color: #ff008e !important;
     transition: color 1s;
     transition: color 0.15s;
-}
-
-/* CATEGORIES */
-
-#categories{
-    width:95%;
-    margin:auto;
-    color:#ffffff;
-    height:670px;
-}
-
-.grid-item{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/action.jpeg") center/cover no-repeat;
-	width: 49%;
-  margin:2px;
-	float:right;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height:200px;
-}
-
-
-.grid-item--width2{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/adventure.jpeg") center/cover no-repeat;
-	width: 48%;
-  height:340px
-}
-
-.grid-item--width3{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/drama.jpeg") center/cover no-repeat;
-	width: 49%;
-  height:136px;
-}
-
-.grid-item--width4{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/fantasy.jpeg") center/cover no-repeat;
-	width: 99%;
-  height:200px;
-}
-
-.grid-item--width5{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sports.jpeg") center/cover no-repeat;
-	width: 33%;
-  height:130px;
-}
-
-.grid-item--width6{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/horror.jpeg") center/cover no-repeat;
-	width: 64%;
-  height:130px;
 }
