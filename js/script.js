@@ -7,6 +7,10 @@ $(document).ready(function () {
 		freeScroll: true,
 	});
 
+	$('.hero').flickity({
+
+	});
+
 
 	// D R O P D O W N
 	

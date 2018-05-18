@@ -279,6 +279,10 @@ input:checked + .slider:before {
 
 /* H E R O */
 
+.hero-cell {
+    width: 100%;
+    height: 30vh;
+}
 
 
 /* C A R O U S E L */
