@@ -396,11 +396,11 @@ input:checked + .slider:before {
     background: url(../img/bck/th.jpg) center/cover no-repeat;
 }
 
-.flickity-button {
+.carousel .flickity-button {
     display: none;
 }
 
-.flickity-page-dots {
+.carousel .flickity-page-dots {
     display: none;
 }
 
