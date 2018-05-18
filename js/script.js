@@ -62,29 +62,26 @@ $("input").keydown(filterFunction);
 
 	// N A V I G A T I O N
 	$("#profile").hide();
-	$("#stranger-things").hide();
-	$("#black-mirror").hide();
-	$("#sense8").hide();
 	$("#home").show();
 	$("#categories").hide();
 
 	$("#navhome").click(function(){
 		$("#home").show();
-		$("#faq, #search, #categories, #stranger-things, #settings, #profile, #black-mirror, #sense8").hide();
+		$("#faq, #search, #categories, #settings, #profile").hide();
 		$("#navhome").addClass("element-active");
 		$("#navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 
 	$("#navcategory").click(function(){
 		$("#categories").show();
-		$("#home, #faq, #search, #stranger-things, #settings, #profile, #black-mirror, #sense8").hide();
+		$("#home, #faq, #search, #settings, #profile").hide();
 		$("#navcategory").addClass("element-active");
 		$("#navhome, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 
 	$("#navsearch").click(function(){
 		$("#search").show();
-		$("#home, #faq, #categories, #stranger-things, #settings, #profile, #black-mirror, #sense8").hide();
+		$("#home, #faq, #categories, #settings, #profile").hide();
 		$("#navsearch").addClass("element-active");
 		$("#navhome, #navcategory, #navprofile, #settings-icon").removeClass("element-active");
 		$(".fa-times").hide();
@@ -95,7 +92,7 @@ $("input").keydown(filterFunction);
 
 	$("#navprofile").click(function(){
 		$("#profile").show();
-		$("#home, #faq, #search, #categories, #stranger-things, #settings, #black-mirror, #sense8").hide();
+		$("#home, #faq, #search, #categories, #settings").hide();
 		$("#navprofile").addClass("element-active");
 		$("#navhome, #navsearch, #navcategory, #settings-icon").removeClass("element-active");
 	});
@@ -217,89 +214,4 @@ $("input").keydown(filterFunction);
 		$('.fav').toggleClass('far fas');
 	});
 
-	$("#season-str").hide();
-
-	$("#season-blk").hide();
-
-	$("#season-sn8").hide();
-
-	$(".drop").click(function(){
-		$("#season-str").slideToggle(".show");
-		$("#season-blk").slideToggle(".show");
-		$("#season-sn8").slideToggle(".show");
-	});
-
-	$(".str-1").click(function(){
-		$("#season-str").slideUp(".show");
-		$(".eps1").slideDown({display:"block"});
-		$(".eps2").slideUp({display:"none"});
-	});
-
-	$(".str-2").click(function(){
-		$("#season-str").slideUp(".show");
-		$(".eps2").slideDown({display:"block"});
-		$(".eps1").slideUp({display:"none"});
-	});
-
-	$(".strangerthings, #st-result").click(function(){
-			$("#stranger-things").show();
-			$("#home, #faq, #search, #categories, #settings, #profile, #black-mirror, #sense8").hide();
-			$("#navhome, #navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
-	});
-
-	$(".sn8-1").click(function(){
-		$("#season-sn8").slideUp(".show");
-		$(".eps1").slideDown({display:"block"});
-		$(".eps2").slideUp({display:"none"});
-	});
-
-	$(".sn8-2").click(function(){
-		$("#season-sn8").slideUp(".show");
-		$(".eps2").slideDown({display:"block"});
-		$(".eps1").slideUp({display:"none"});
-	});
-
-	$(".sense8, #s8-result").click(function(){
-			$("#sense8").show();
-			$("#home, #faq, #search, #categories, #settings, #profile, #black-mirror, #stranger-things").hide();
-			$("#navhome, #navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
-	});
-
-	$(".blk-1").click(function(){
-		$("#season-blk").slideUp(".show");
-		$(".eps1").slideDown({display:"block"});
-		$(".eps2").slideUp({display:"none"});
-		$(".eps3").slideUp({display:"none"});
-		$(".eps4").slideUp({display:"none"});
-	});
-
-	$(".blk-2").click(function(){
-		$("#season-blk").slideUp(".show");
-		$(".eps2").slideDown({display:"block"});
-		$(".eps1").slideUp({display:"none"});
-		$(".eps3").slideUp({display:"none"});
-		$(".eps4").slideUp({display:"none"});
-	});
-
-	$(".blk-3").click(function(){
-		$("#season-blk").slideUp(".show");
-		$(".eps3").slideDown({display:"block"});
-		$(".eps1").slideUp({display:"none"});
-		$(".eps2").slideUp({display:"none"});
-		$(".eps4").slideUp({display:"none"});
-	});
-
-	$(".blk-4").click(function(){
-		$("#season-blk").slideUp(".show");
-		$(".eps4").slideDown({display:"block"});
-		$(".eps1").slideUp({display:"none"});
-		$(".eps3").slideUp({display:"none"});
-		$(".eps2").slideUp({display:"none"});
-	});
-
-	$(".blackmirror, #bm-result").click(function(){
-			$("#black-mirror").show();
-			$("#home, #faq, #search, #categories, #settings, #profile, #stranger-things, #sense8").hide();
-			$("#navhome, #navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
-	});
 });
