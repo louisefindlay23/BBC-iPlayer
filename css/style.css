@@ -895,50 +895,48 @@ form {
 #categories{
     width:95%;
     margin:auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color:#ffffff;
+    height:670px;
 }
 
-
-
 .grid-item{
-  background:url("../img/action.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/action.jpeg") center/cover no-repeat;
 	width: 49%;
   margin:2px;
 	float:right;
-  padding: 0 0 65% 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:200px;
 }
 
 
 .grid-item--width2{
-  background:url("../img/adventure.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/adventure.jpeg") center/cover no-repeat;
 	width: 48%;
-  padding: 0 0 118% 0;
+  height:340px
 }
 
 .grid-item--width3{
-  background:url("../img/drama.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/drama.jpeg") center/cover no-repeat;
 	width: 49%;
-  padding: 0 0 45% 0;
+  height:136px;
 }
 
 .grid-item--width4{
-  background:url("../img/fantasy.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/fantasy.jpeg") center/cover no-repeat;
 	width: 99%;
-  padding: 0 0 40% 0;
+  height:200px;
 }
 
 .grid-item--width5{
-  background:url("../img/sports.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sports.jpeg") center/cover no-repeat;
 	width: 33%;
-  padding: 0 0 30% 0;
+  height:130px;
 }
 
 .grid-item--width6{
-  background:url("../img/horror.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/horror.jpeg") center/cover no-repeat;
 	width: 64%;
-  padding: 0 0 30% 0;
+  height:130px;
 }
