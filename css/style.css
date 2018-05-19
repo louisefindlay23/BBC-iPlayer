@@ -8,6 +8,9 @@ html {
     font-family: 'Open Sans', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
+.showimportant {
+	display: block!important;
+}
 
 /* H E A D E R */
 
@@ -687,7 +690,11 @@ form {
 	font-size: 20px;
 	position: absolute;
 	left: 83%;
-	padding-top: 2.75%;
+	padding-top: 3.5%;
+}
+
+.result {
+	background: 000;
 }
 
 .row {

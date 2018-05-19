@@ -117,77 +117,121 @@ $("input").keydown(filterFunction);
 	// Search history
 	$(".result").click(function(){
 		// If statement querying whether the first row is empty or not
+		$("#history").show();
+		
 		if ($('#result1 > p').is(':empty')) {
 			var result1 = $(this).text();
 			$("#result1 p").text(result1);
-			$("#row1").show();
-			$("#clearall").fadeIn();
+			$("#row1, #close1").addClass("showimportant");
 		}
 		// If not check the second row
 		else if ($('#result2 > p').is(':empty')) {
 			var result2 = $(this).text();
 			$("#result2 p").text(result2);
-			$("#row2").show();
+			$("#row2, #close2").addClass("showimportant");
+			$("#clearall").addClass("showimportant");
 		}
 		// If not check the third row
 		else if ($('#result3 > p').is(':empty')) {
 
 			var result3 = $(this).text();
 			$("#result3 p").text(result3);
-			$("#row3").show();
+			$("#row3, #close3").addClass("showimportant");
 		}
 		// If not check the fourth row
 		else if ($('#result4 > p').is(':empty')) {
 			var result4 = $(this).text();
 			$("#result4 p").text(result4);
-			$("#row4").show();
+			$("#row4, #close4").addClass("showimportant");
+		}
+		
+		// If not check the fifth row
+		else if ($('#result5 > p').is(':empty')) {
+			var result5 = $(this).text();
+			$("#result5 p").text(result5);
+			$("#row5, #close5").addClass("showimportant");
+		}
+		
+		// If not check the sixth row
+		else if ($('#result6 > p').is(':empty')) {
+			var result6 = $(this).text();
+			$("#result6 p").text(result6);
+			$("#row6, #close6").addClass("showimportant");
+		}
+		
+		// If not check the seventh row
+		else if ($('#result7 > p').is(':empty')) {
+			var result7 = $(this).text();
+			$("#result7 p").text(result7);
+			$("#row7, #close7").addClass("showimportant");
 		}
 	});
 
 	// Clear all searches
 	$("#clearall").click(function(){
-		$("#clearall").hide();
-		$(".row").hide();
-		$("#result1 p").text("");
+		$(".row").removeClass("showimportant");
+		$("#clearall").removeClass("showimportant");
+		$("#result1 p, #result2 p, #result3 p, #result4 p, #result5 p, #result6 p, #result7 p").text("");
 	});
 
 
 	// Clear first search
 	$("#close1").click(function(){
 		$("#result1 p").text("");
-		$("#row1").fadeOut();
+		$("#row1, #close1").removeClass("showimportant");
 	});
 
 
 	// Clear second search
 	$("#close2").click(function(){
-		$("#row2").fadeOut();
+		$("#result2 p").text("");
+		$("#row2, #close2").removeClass("showimportant");
 	});
 
 	// Clear third search
 
 	$("#close3").click(function(){
-		$("#row3").fadeOut();
+		$("#result3 p").text("");
+		$("#row3, #close3").removeClass("showimportant");
 	});
 
 	// Clear fourth search
 	$("#close4").click(function(){
-		$("#row4").fadeOut();
+		$("#result4 p").text("");
+		$("#row4, #close4").removeClass("showimportant");
 	});
 
 	// Clear fifth search
 	$("#close5").click(function(){
-		$("#row5").fadeOut();
+		$("#result5 p").text("");
+		$("#row5, #close5").removeClass("showimportant");
 	});
 
 	// Clear sixth search
 	$("#close6").click(function(){
-		$("#row6").fadeOut();
+		$("#result6 p").text("");
+		$("#row6, #close6").removeClass("showimportant");
 	});
 
 	// Clear seventh search
 	$("#close7").click(function(){
-		$("#row7").fadeOut();
+		$("#result7 p").text("");
+		$("#row7, #close7").removeClass("showimportant");
+	});
+
+	$(".close-search").click(function(){
+		$(".dropdown").hide();
+		$("#history").show();
+		$("#searchbox").val("");
+		$("#searchbox").attr("placeholder", "S E A R C H");
+		$(".close-search").hide();
+	});
+
+	$("input").click(function(){
+		$(".dropdown").show();
+		$(".dropdown-content").show();
+		$(".close-search").show();
+		$("#history").hide();
 	});
 
 	$(".close-search").click(function(){
