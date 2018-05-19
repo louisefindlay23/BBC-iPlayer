@@ -460,6 +460,10 @@ input:checked + .slider:before {
     display: none;
 }
 
+.carousel .flickity-button {
+    display: none;
+}
+
 
 /* T V  S H O W */
 
@@ -568,8 +572,46 @@ input:checked + .slider:before {
 
 /* C A T E G O R I E S */
 
-.flickity-button {
-    display: none;
+#categories {
+	display: none;
+}
+
+.grid {
+    width: 98%;
+    margin: auto;
+    height: auto;
+    overflow: auto;
+}
+
+.grid-item p {
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.grid-item{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/action.jpeg") center/cover no-repeat;
+	width: 49%;
+  margin:2px;
+	float:right;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:200px;
+}
+
+
+.grid-item--width2{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/adventure.jpeg") center/cover no-repeat;
+	width: 48%;
+  height:340px
+}
+
+.grid-item--width3{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/drama.jpeg") center/cover no-repeat;
+	width: 49%;
+  height:136px;
 }
 
 .grid-item--width4{
