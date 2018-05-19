@@ -245,6 +245,74 @@ nav {
     background: url(../img/bck/th.jpg) center/cover no-repeat;
 }
 
+.dexter {
+    background: url(../img/bck/dexter.jpg) center/cover no-repeat;
+}
+
+.arrow {
+    background: url(../img/bck/arrow.jpg) center/cover no-repeat;
+}
+
+.rupaulsdragrace {
+    background: url(../img/bck/rpdr.jpg) center/cover no-repeat;
+}
+
+.rupaulsdragrace {
+    background: url(../img/bck/rpdr.jpg) center/cover no-repeat;
+}
+
+.americanhorrorstory {
+    background: url(../img/bck/ahs.jpg) center/cover no-repeat;
+}
+
+.bobsburgers {
+    background: url(../img/bck/bb.jpg) center/cover no-repeat;
+}
+
+.designatedsurvivor {
+    background: url(../img/bck/ds.jpg) center/cover no-repeat;
+}
+
+.thelastmanonearth {
+    background: url(../img/bck/tlmoe.jpg) center/cover no-repeat;
+}
+
+.futurama {
+    background: url(../img/bck/futurama.jpg) center/cover no-repeat;
+}
+
+.greysanatomy {
+    background: url(../img/bck/ga.jpg) center/cover no-repeat;
+}
+
+.homeland {
+    background: url(../img/bck/homeland.jpg) center/cover no-repeat;
+}
+
+.mindhunter {
+    background: url(../img/bck/mh.jpg) center/cover no-repeat;
+}
+
+.moneyheist {
+    background: url(../img/bck/mh1.jpg) center/cover no-repeat;
+}
+
+.personofinterest {
+    background: url(../img/bck/poi.jpg) center/cover no-repeat;
+}
+
+.theblacklist {
+    background: url(../img/bck/tb.jpg) center/cover no-repeat;
+}
+
+.thementalist {
+    background: url(../img/bck/tm.jpg) center/cover no-repeat;
+}
+
+.thewalkingdead {
+    background: url(../img/bck/twd.jpg) center/cover no-repeat;
+}
+
 .flickity-button {
     display: none;
 }
