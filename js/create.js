@@ -31,7 +31,7 @@ function create_tvshow(tvshow_id, html_id) {
             var z = 1;
         }
         
-        $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + ' / ' + tv_data.episode_run_time[0] + ' mins' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season <i class="fas fa-caret-down"></i></p></div>' + '<div class="season-dropdown" id="' + html_id + '_season"><ul></ul></div>');
+        $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + ' / ' + tv_data.episode_run_time[0] + ' mins' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season <i class="fas fa-caret-down"></i></p></div>' + '<div class="' + html_id + '-dropdown season-dropdown" id="' + html_id + '_season"><ul></ul></div>');
         $('#' + html_id).append('<div id="' + html_id + '_season_container" class="season_container"></div>');
         
         var headerImage = config_data.images.secure_base_url + config_data.images.backdrop_sizes[1] + tv_data.backdrop_path;
@@ -39,15 +39,15 @@ function create_tvshow(tvshow_id, html_id) {
         $('#' +  html_id + ' .tvshow-header').css("background-image", 'linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url(' + headerImage + ')');
         
         $('.season-button').click(function () {
-			$('.season-dropdown').slideToggle(150);
+			$('.' + html_id + '-dropdown').slideToggle(150);
         });
         
         while (i < tv_data.number_of_seasons + 1) {
             if (tv_data.seasons[i].air_date == null){
             }
             else {
-                $('#' + html_id + '_season ul').append('<li><a class="season-click" rel="ssn' + z +'">' + tv_data.seasons[i].name + '</a></li>');
-                $('#' + html_id + '_season_container').append('<div class="season ssn' + z + '" id="' + html_id + '_s' + z + '"></div>');
+                $('#' + html_id + '_season ul').append('<li><a class="season-click" rel="' + html_id + 'ssn' + z +'">' + tv_data.seasons[i].name + '</a></li>');
+                $('#' + html_id + '_season_container').append('<div class="season ' + html_id + 'ssn' + z + '" id="' + html_id + '_s' + z + '"></div>');
             }
             
             if (tv_data.seasons[i].season_number == 1){
@@ -59,7 +59,7 @@ function create_tvshow(tvshow_id, html_id) {
             $('.season-click').on('click', function(){
                 var target = $(this).attr('rel');
                 $("."+target).show().siblings('div').hide();
-                $('.season-dropdown').slideUp(150);
+                $('.' + html_id + '-dropdown').slideUp(150);
             });
             
             var j = 1;
