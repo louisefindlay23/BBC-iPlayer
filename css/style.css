@@ -8,6 +8,9 @@ html {
     font-family: 'Open Sans', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
+.showimportant {
+	display: block!important;
+}
 
 /* H E A D E R */
 
