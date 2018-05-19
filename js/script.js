@@ -117,7 +117,7 @@ $("input").keydown(filterFunction);
 	// Search history
 	$(".result").click(function(){
 		// If statement querying whether the first row is empty or not
-		if ($('#result1 > p').is(':empty')) {
+		$("#history").show();if ($('#result1 > p').is(':empty')) {
 			var result1 = $(this).text();
 			$("#result1 p").text(result1);
 			$("#row1").show();

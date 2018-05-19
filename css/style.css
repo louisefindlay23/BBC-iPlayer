@@ -690,6 +690,10 @@ form {
 	padding-top: 3.5%;
 }
 
+.result {
+	background: 000;
+}
+
 .row {
 	width: 60%;
 	height: auto;
