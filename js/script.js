@@ -202,83 +202,34 @@ $(document).ready(function () {
 	
 	// T V  S H O W
 	
-	var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home";	
-	
-	function initTVShow(quotetvShowToInit, tvShowToInit, tvShow_id) {
-		$('.' + quotetvShowToInit).one("click", function () {
-			var tv_id = tvShowToInit + '_id';
-			var tvshow_hid = tvShowToInit + '_hid';
-			var tv_id = tvShow_id;
-			var tvshow_hid = quotetvShowToInit;
-			create_tvshow(tv_id, tvshow_hid);
-			$(elementsToHide + ', .tvshow').hide();
-			$("#" + quotetvShowToInit + ", #tvshow").show();
-			$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-		});
-	}
-
-	function clickTVShow(tvShowToClick) {
-		$('.' + tvShowToClick).click(function () {
-			$(elementsToHide + ", .tvshow").hide();
-			$('#' + tvShowToClick + ', #tvshow').show();
-			$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-		});
-	}
 	
 	initTVShow('blackmirror', blackmirror, 42009);
 	clickTVShow('blackmirror');
-	
-	// $('.blackmirror').one("click", function () { 
-	// 	var blackmirror_id = 42009;
-	// 	var blackmirror_hid = 'blackmirror';
-	// 	create_tvshow(blackmirror_id, blackmirror_hid);
-	// 	$("#blackmirror, #tvshow").show();
-	// 	$(elementsToHide + ", #americandad, #brooklynninenine").hide();
-	// 	$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-	// });
-	
-	// $('.blackmirror').click(function (e) { 
-	// 	e.preventDefault();
-	// 	$("#blackmirror, #tvshow").show();
-	// 	$(elementsToHide + ", #americandad, #brooklynninenine").hide();
-	// 	$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-	// });
-	
-	// American Dad
-	$('.americandad').one("click", function () { 
-		var americandad_id = 1433;
-		var americandad_hid = 'americandad';
-		create_tvshow(americandad_id, americandad_hid);
-		$("#americandad, #tvshow").show();
-		$(elementsToHide + ", #blackmirror, #brooklynninenine").hide();
-		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-	});
-	
-	$('.americandad').click(function (e) { 
-		e.preventDefault();
-		$("#americandad, #tvshow").show();
-		$(elementsToHide + ", #blackmirror, #brooklynninenine").hide();
-		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-	});
-	
-	// Brooklyn Nine-Nine
-	$('.brooklynninenine').one("click", function () { 
-		var brooklynninenine_id = 48891;
-		var brooklynninenine_hid = 'brooklynninenine';
-		create_tvshow(brooklynninenine_id, brooklynninenine_hid);
-		$("#brooklynninenine, #tvshow").show();
-		$(elementsToHide + ", #blackmirror, #americandad").hide();
-		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-	});
-	
-	$('.brooklynninenine').click(function (e) { 
-		e.preventDefault();
-		$("#brooklynninenine, #tvshow").show();
-		$(elementsToHide + ", #blackmirror, #americandad").hide();
-		$("#navcategory, #navsearch, #navprofile, #settings-icon, #navhome").removeClass("element-active");
-	});
+
+	initTVShow('americandad', americandad, 1433);
+	clickTVShow('americandad');
+
+	initTVShow('brooklynninenine', brooklynninenine, 48891);
+	clickTVShow('brooklynninenine');
+
+	initTVShow('westworld', westworld, 63247);
+	clickTVShow('westworld');
+
+	initTVShow('houseofcards', houseofcards, 1425);
+	clickTVShow('houseofcards');
+
 	
 
+	
+	// var americandad_id = 1433;
+	// var americandad_hid = 'americandad';
+	
+	// var brooklynninenine_id = 48891;
+	// var brooklynninenine_hid = 'brooklynninenine';
+	
+	// var brooklynninenine_id = 48891;
+	// var brooklynninenine_hid = 'brooklynninenine';
+	
 	// var sense8_id = 61664;
 	// var sense8_hid = 'sense8';
 	// create_tvshow(sense8_id, sense8_hid);
@@ -287,10 +238,6 @@ $(document).ready(function () {
 	// var westworld_hid = 'westworld';
 	// create_tvshow(westworld_id, westworld_hid);
 	
-	// var americandad_id = 1433;
-	// var americandad_hid = 'americandad';
-	// create_tvshow(americandad_id, americandad_hid);
-	// 
 	// var theblacklist_id = 46952;
 	// var theblacklist_hid = 'theblacklist';
 	// create_tvshow(theblacklist_id, theblacklist_hid);

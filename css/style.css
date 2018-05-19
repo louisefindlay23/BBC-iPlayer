@@ -173,7 +173,7 @@ nav {
     background: url(../img/bck/gotham.jpg) center/cover no-repeat;
 }
 
-.got {
+.gameofthrones {
     background: url(../img/bck/got.jpg) center/cover no-repeat;
 }
 
@@ -181,7 +181,7 @@ nav {
     background: url(../img/bck/breakingbad.jpg) center/cover no-repeat;
 }
 
-.hoc {
+.houseofcards {
     background: url(../img/bck/hoc.jpg) center/cover no-repeat;
 }
 
@@ -347,6 +347,7 @@ nav {
 .season-dropdown li {
     height: auto;
     overflow: auto;
+    cursor: pointer;
 }
 
 .season-dropdown a {
