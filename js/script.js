@@ -67,21 +67,21 @@ $("input").keydown(filterFunction);
 
 	$("#navhome").click(function(){
 		$("#home").show();
-		$("#faq, #search, #categories, #settings, #profile").hide();
+		$("#faq, #search, #categories, #settings, #profile, #tvshow").hide();
 		$("#navhome").addClass("element-active");
 		$("#navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 
 	$("#navcategory").click(function(){
 		$("#categories").show();
-		$("#home, #faq, #search, #settings, #profile").hide();
+		$("#home, #faq, #search, #settings, #profile, #tvshow").hide();
 		$("#navcategory").addClass("element-active");
 		$("#navhome, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 
 	$("#navsearch").click(function(){
 		$("#search").show();
-		$("#home, #faq, #categories, #settings, #profile").hide();
+		$("#home, #faq, #categories, #settings, #profile, #tvshow").hide();
 		$("#navsearch").addClass("element-active");
 		$("#navhome, #navcategory, #navprofile, #settings-icon").removeClass("element-active");
 		$(".fa-times, .dropdown, .row, #clearall").hide();
@@ -89,7 +89,7 @@ $("input").keydown(filterFunction);
 
 	$("#navprofile").click(function(){
 		$("#profile").show();
-		$("#home, #faq, #search, #categories, #settings").hide();
+		$("#home, #faq, #search, #categories, #settings, #tvshow").hide();
 		$("#navprofile").addClass("element-active");
 		$("#navhome, #navsearch, #navcategory, #settings-icon").removeClass("element-active");
 	});
@@ -202,8 +202,8 @@ $("input").keydown(filterFunction);
 		$("#history").hide();
 	});
 	
-	// T V  S H O W
 
+	// T V  S H O W
 
 	initTVShow('americandad', americandad, 1433);
 	clickTVShow('americandad');

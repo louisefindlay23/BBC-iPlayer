@@ -456,6 +456,10 @@ input:checked + .slider:before {
     background: url(../img/bck/sense8.jpg) center/cover no-repeat;
 }
 
+.carousel .flickity-page-dots {
+    display: none;
+}
+
 
 /* T V  S H O W */
 
