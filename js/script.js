@@ -201,11 +201,113 @@ $("input").keydown(filterFunction);
 		$(".dropdown, .dropdown-content, .close-search").show();
 		$("#history").hide();
 	});
+	
+	// T V  S H O W
 
-	// TV SHOWS
 
-	$(".fav").click(function(){
-		$('.fav').toggleClass('far fas');
-	});
+	initTVShow('americandad', americandad, 1433);
+	clickTVShow('americandad');
+	
+	initTVShow('blackmirror', blackmirror, 42009);
+	clickTVShow('blackmirror');
+
+	initTVShow('brooklynninenine', brooklynninenine, 48891);
+	clickTVShow('brooklynninenine');
+
+	initTVShow('westworld', westworld, 63247);
+	clickTVShow('westworld');
+
+	initTVShow('houseofcards', houseofcards, 1425);
+	clickTVShow('houseofcards');
+
+	initTVShow('sense8', sense8, 61664);
+	clickTVShow('sense8');
+
+	initTVShow('theblacklist', theblacklist, 46952);
+	clickTVShow('theblacklist');
+
+	initTVShow('daredevil', daredevil, 61889);
+	clickTVShow('daredevil');
+
+	initTVShow('breakingbad', breakingbad, 1396);
+	clickTVShow('breakingbad');
+
+	initTVShow('safe', safe, 72792);
+	clickTVShow('safe');
+
+	initTVShow('americanhorrorstory', americanhorrorstory, 1413);
+	clickTVShow('americanhorrorstory');
+
+	initTVShow('arrow', arrow, 1412);
+	clickTVShow('arrow');
+
+	initTVShow('bigmouth', bigmouth, 74204);
+	clickTVShow('bigmouth');
+
+	initTVShow('bobsburgers', bobsburgers, 32726);
+	clickTVShow('bobsburgers');
+
+	initTVShow('designatedsurvivor', designatedsurvivor, 67026);
+	clickTVShow('designatedsurvivor');
+
+	initTVShow('dexter', dexter, 1405);
+	clickTVShow('dexter');
+
+	initTVShow('thelastmanonearth', thelastmanonearth, 61888);
+	clickTVShow('thelastmanonearth');
+
+	initTVShow('futurama', futurama, 615);
+	clickTVShow('futurama');
+
+	initTVShow('gotham', gotham, 60708);
+	clickTVShow('gotham');
+
+	initTVShow('greysanatomy', greysanatomy, 1416);
+	clickTVShow('greysanatomy');
+
+	initTVShow('homeland', homeland, 1407);
+	clickTVShow('homeland');
+
+	initTVShow('gameofthrones', gameofthrones, 1399);
+	clickTVShow('gameofthrones');
+	
+	initTVShow('mindhunter', mindhunter, 67744);
+	clickTVShow('mindhunter');
+	
+	initTVShow('moneyheist', moneyheist, 71446);
+	clickTVShow('moneyheist');
+	
+	initTVShow('mrrobot', mrrobot, 62560);
+	clickTVShow('mrrobot');
+	
+	initTVShow('parksandrecreation', parksandrecreation, 8592);
+	clickTVShow('parksandrecreation');
+	
+	initTVShow('personofinterest', personofinterest, 1411);
+	clickTVShow('personofinterest');
+	
+	initTVShow('rickandmorty', rickandmorty, 60625);
+	clickTVShow('rickandmorty');
+		
+	initTVShow('shameless', shameless, 34307);
+	clickTVShow('shameless');
+
+	initTVShow('siliconvalley', siliconvalley, 60573);
+	clickTVShow('siliconvalley');
+
+	initTVShow('sonsofanarchy', sonsofanarchy, 1409);
+	clickTVShow('sonsofanarchy');
+
+	initTVShow('strangerthings', strangerthings, 66732);
+	clickTVShow('strangerthings');
+
+	initTVShow('thehundred', thehundred, 48866);
+	clickTVShow('thehundred');
+
+	initTVShow('thementalist', thementalist, 5920);
+	clickTVShow('thementalist');
+
+	initTVShow('thewalkingdead', thewalkingdead, 1402);
+	clickTVShow('thewalkingdead');
 
 });

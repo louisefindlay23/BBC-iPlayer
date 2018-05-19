@@ -5,7 +5,7 @@ body {
 }
 
 html {
-    font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
 
@@ -320,7 +320,7 @@ input:checked + .slider:before {
     background: url(../img/bck/gotham.jpg) center/cover no-repeat;
 }
 
-.got {
+.gameofthrones {
     background: url(../img/bck/got.jpg) center/cover no-repeat;
 }
 
@@ -328,7 +328,7 @@ input:checked + .slider:before {
     background: url(../img/bck/breakingbad.jpg) center/cover no-repeat;
 }
 
-.hoc {
+.houseofcards {
     background: url(../img/bck/hoc.jpg) center/cover no-repeat;
 }
 
@@ -350,10 +350,6 @@ input:checked + .slider:before {
 
 .blackmirror {
     background: url(../img/bck/blackm.jpg) center/cover no-repeat;
-}
-
-.theericandreshow {
-    background: url(../img/bck/teas.jpg) center/cover no-repeat;
 }
 
 .adventuretime {
@@ -392,57 +388,184 @@ input:checked + .slider:before {
     background: url(../img/bck/th.jpg) center/cover no-repeat;
 }
 
-.flickity-button {
+.dexter {
+    background: url(../img/bck/dexter.jpg) center/cover no-repeat;
+}
+
+.arrow {
+    background: url(../img/bck/arrow.jpg) center/cover no-repeat;
+}
+
+.americanhorrorstory {
+    background: url(../img/bck/ahs.jpg) center/cover no-repeat;
+}
+
+.bobsburgers {
+    background: url(../img/bck/bb.jpg) center/cover no-repeat;
+}
+
+.designatedsurvivor {
+    background: url(../img/bck/ds.jpg) center/cover no-repeat;
+}
+
+.thelastmanonearth {
+    background: url(../img/bck/tlmoe.jpg) center/cover no-repeat;
+}
+
+.futurama {
+    background: url(../img/bck/futurama.jpg) center/cover no-repeat;
+}
+
+.greysanatomy {
+    background: url(../img/bck/ga.jpg) center/cover no-repeat;
+}
+
+.homeland {
+    background: url(../img/bck/homeland.jpg) center/cover no-repeat;
+}
+
+.mindhunter {
+    background: url(../img/bck/mh.jpg) center/cover no-repeat;
+}
+
+.moneyheist {
+    background: url(../img/bck/mh1.jpg) center/cover no-repeat;
+}
+
+.personofinterest {
+    background: url(../img/bck/poi.jpg) center/cover no-repeat;
+}
+
+.theblacklist {
+    background: url(../img/bck/tb.jpg) center/cover no-repeat;
+}
+
+.thementalist {
+    background: url(../img/bck/tm.jpg) center/cover no-repeat;
+}
+
+.thewalkingdead {
+    background: url(../img/bck/twd.jpg) center/cover no-repeat;
+}
+
+.safe {
+    background: url(../img/bck/safe.jpg) center/cover no-repeat;
+}
+
+.sense8 {
+    background: url(../img/bck/sense8.jpg) center/cover no-repeat;
+}
+
+
+/* T V  S H O W */
+
+#tvshow {
+    display: none;
+    color: #fff;
+}
+
+.tvshow-header {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 15px;
+    background: center/cover no-repeat;
+}
+
+.tvshow-header h1 {
+    margin: 0;
+}
+
+.tvshow-header p {
+    margin: 0 0 10px;
+}
+
+.episode {
+    width: 92%;
+    height: auto;
+    overflow: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.episode-text {
+    float: left;
+    width: 48%;
+}
+
+.episode-text h3 {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.episode-text p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.episode-thumb {
+    float: left;
+    width: 48%;
+}
+
+.episode-thumb img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.dropdown-menu-container {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}   
+
+.season-button {
+    text-align: center;
+    padding: 25px 0 20px 0;
+    cursor: pointer;
+}
+
+.season-button p {
+    margin: 0;
+}
+
+.season-dropdown {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background-color: #000;
     display: none;
 }
 
-.flickity-page-dots {
-    display: none;
+.season-dropdown ul {
+    list-style: none;
+    padding: 0;
 }
 
+.season-dropdown li {
+    height: auto;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.season-dropdown a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 15px 0;
+    width: 100%;
+    float: left;
+}
 
 /* C A T E G O R I E S */
 
-#categories {
-	display: none;
-}
-
-.grid {
-    width: 98%;
-    margin: auto;
-    height: auto;
-    overflow: auto;
-}
-
-.grid-item p {
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 0.9em;
-}
-
-.grid-item{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/action.jpeg") center/cover no-repeat;
-	width: 49%;
-  margin:2px;
-	float:right;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height:200px;
-}
-
-
-.grid-item--width2{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/adventure.jpeg") center/cover no-repeat;
-	width: 48%;
-  height:340px
-}
-
-.grid-item--width3{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/drama.jpeg") center/cover no-repeat;
-	width: 49%;
-  height:136px;
+.flickity-button {
+    display: none;
 }
 
 .grid-item--width4{
