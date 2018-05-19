@@ -326,11 +326,15 @@ input:checked + .slider:before {
 .hero-title {
 	color: #FFFFFF;
 	text-transform: uppercase;
+	-webkit-text-stroke-width: 0.5px;
+   	-webkit-text-stroke-color: black;
 }
 
 .hero-description {
 	color: #FFFFFF;
 	text-transform: capitalize;
+	-webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }
 
 .fa-info-circle {
