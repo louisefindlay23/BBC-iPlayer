@@ -6,9 +6,11 @@ $(document).ready(function () {
 		contain: true,
 		freeScroll: true,
 	});
-
+	
+	//H E R O
 	$('.hero').flickity({
-
+		pageDots: false,
+		freeScroll: false,
 	});
 
 

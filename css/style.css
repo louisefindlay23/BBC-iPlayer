@@ -284,6 +284,17 @@ input:checked + .slider:before {
     height: 30vh;
 }
 
+.flickity-button {
+  background: transparent;
+}
+
+.flickity-button:disabled {
+  display: none;
+}
+
+.flickity-button-icon {
+  fill: white;
+}
 
 /* C A R O U S E L */
 
