@@ -337,6 +337,7 @@ input:checked + .slider:before {
 	color:  #FFFFFF;
 	align-self: flex-end;
 	margin: 0 2% 2% 0;
+	font-size: 1.5em;
 	
 }
 
