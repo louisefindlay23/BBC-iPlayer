@@ -205,10 +205,6 @@ nav {
     background: url(../img/bck/blackm.jpg) center/cover no-repeat;
 }
 
-.theericandreshow {
-    background: url(../img/bck/teas.jpg) center/cover no-repeat;
-}
-
 .adventuretime {
     background: url(../img/bck/at.jpg) center/cover no-repeat;
 }
@@ -313,12 +309,12 @@ nav {
     background: url(../img/bck/twd.jpg) center/cover no-repeat;
 }
 
-.flickity-button {
-    display: none;
+.safe {
+    background: url(../img/bck/safe.jpg) center/cover no-repeat;
 }
 
-.flickity-page-dots {
-    display: none;
+.sense8 {
+    background: url(../img/bck/sense8.jpg) center/cover no-repeat;
 }
 
 
