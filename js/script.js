@@ -218,28 +218,19 @@ $(document).ready(function () {
 	initTVShow('houseofcards', houseofcards, 1425);
 	clickTVShow('houseofcards');
 
-	
+	initTVShow('sense8', sense8, 61664);
+	clickTVShow('sense8');
 
-	
-	// var americandad_id = 1433;
-	// var americandad_hid = 'americandad';
-	
-	// var brooklynninenine_id = 48891;
-	// var brooklynninenine_hid = 'brooklynninenine';
-	
-	// var brooklynninenine_id = 48891;
-	// var brooklynninenine_hid = 'brooklynninenine';
-	
-	// var sense8_id = 61664;
-	// var sense8_hid = 'sense8';
-	// create_tvshow(sense8_id, sense8_hid);
-	
-	// var westworld_id = 63247;
-	// var westworld_hid = 'westworld';
-	// create_tvshow(westworld_id, westworld_hid);
-	
-	// var theblacklist_id = 46952;
-	// var theblacklist_hid = 'theblacklist';
-	// create_tvshow(theblacklist_id, theblacklist_hid);
-	
+	initTVShow('theblacklist', theblacklist, 46952);
+	clickTVShow('theblacklist');
+
+	initTVShow('daredevil', daredevil, 61889);
+	clickTVShow('daredevil');
+
+	initTVShow('breakingbad', breakingbad, 1396);
+	clickTVShow('breakingbad');
+
+	initTVShow('theericandreshow', theericandreshow, 56590);
+	clickTVShow('theericandreshow');
+
 });
