@@ -5,14 +5,15 @@ $(document).ready(function () {
 		cellAlign: 'left',
 		contain: true,
 		freeScroll: true,
+		prevNextButtons: false,
+		pageDots: false
 	});
 	
 	//H E R O
 	$('.hero').flickity({
 		pageDots: false,
 		freeScroll: false,
-		autoPlay: 5000,
-		wrapAround: true,
+		wrapAround: true
 	});
 
 
