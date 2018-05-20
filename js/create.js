@@ -86,6 +86,12 @@ function create_tvshow(tvshow_id, html_id) {
             }
             z++;
             i++;
+            $('.episode').click(function () {
+                $('#player').fadeIn(100);
+            });
+            $('#player .fa-times').click(function () {
+                $('#player').fadeOut(100);
+            });
         }
     });
 }
