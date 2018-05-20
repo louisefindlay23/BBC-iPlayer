@@ -25,7 +25,7 @@ header {
     height: 65px;
     width: 100%;
     background-color: #000;
-    z-index: 10;
+    z-index: 20;
     transition: top 0.2s ease-in-out;
     -webkit-box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.75);
@@ -275,6 +275,7 @@ nav {
     width: 100vw;
     min-height: 100vh;
     padding: 0 0 65px 0;
+    z-index: 15;
 }
 
 #settings h3 {
