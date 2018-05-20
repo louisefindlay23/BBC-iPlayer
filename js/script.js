@@ -354,4 +354,7 @@ $("input").keydown(filterFunction);
 	initTVShow('thewalkingdead', thewalkingdead, 1402);
 	clickTVShow('thewalkingdead');
 
+	initTVShow('evilgenius', evilgenius, 79126);
+	clickTVShow('evilgenius');
+
 });
