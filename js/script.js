@@ -318,8 +318,8 @@ $("input").keydown(filterFunction);
 	initTVShow('mindhunter', mindhunter, 67744);
 	clickTVShow('mindhunter');
 	
-	initTVShow('moneyheist', moneyheist, 71446);
-	clickTVShow('moneyheist');
+	initTVShow('lacasadepapel', lacasadepapel, 71446);
+	clickTVShow('lacasadepapel');
 	
 	initTVShow('mrrobot', mrrobot, 62560);
 	clickTVShow('mrrobot');

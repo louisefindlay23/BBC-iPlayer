@@ -414,7 +414,7 @@ input:checked + .slider:before {
 .hero-logo {
     max-width: 300px;
     width: 50%;
-    margin: 0 5% 0 0;
+    margin: 0 3% 0 0;
 }
 
 .hero-logo img {
@@ -435,16 +435,18 @@ input:checked + .slider:before {
 }
 
 #hero-container h3 {
-    margin: 0 5% 5px 0;
-    font-weight: 600;
+    margin: 0 3% 5px 0;
+    font-weight: 400;
     color: #ff008e;
+    letter-spacing: 2px;
 }
 
 .hero-button {
-    padding: 5px 10% 5px 10px;
+    padding: 5px 4% 5px 10px;
     background: #fff;
     color: #000;
     cursor: pointer;
+    margin: 1.5em 0;
 }
 
 /* C A R O U S E L */
@@ -594,7 +596,7 @@ input:checked + .slider:before {
     background: url(../img/bck/mh.jpg) center/cover no-repeat;
 }
 
-.moneyheist {
+.lacasadepapel {
     background: url(../img/bck/mh1.jpg) center/cover no-repeat;
 }
 
