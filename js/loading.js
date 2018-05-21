@@ -1,4 +1,4 @@
-$(document).ready(function(){
-    $("#loader-content").delay(1650).fadeOut();
-    $('#loader').delay(1800).fadeOut();
+$(window).on("load", function() {
+    $("#loader-content").fadeOut();
+    $('#loader').fadeOut();
 });
