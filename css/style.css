@@ -47,6 +47,7 @@ header {
     color: #fff;
     font-size: 1.9em;
     margin: 0 3% 0 0;
+    cursor: pointer;
 }
 
 .headroom {
@@ -262,6 +263,7 @@ nav {
     color: #fff;
     font-size: 2em;
     transition: color 0.15s;
+    cursor: pointer;
 }
 
 
@@ -442,6 +444,7 @@ input:checked + .slider:before {
     padding: 5px 10% 5px 10px;
     background: #fff;
     color: #000;
+    cursor: pointer;
 }
 
 /* C A R O U S E L */
@@ -854,7 +857,8 @@ form {
 }
 
 .result {
-	background: 000;
+    background: 000;
+    cursor: pointer;
 }
 
 .row {
