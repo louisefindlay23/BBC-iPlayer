@@ -74,28 +74,28 @@ $(document).ready(function () {
 	
 	$("#navhome").click(function(){
 		$("#home").show();
-		$("#faq, #search, #categories, #settings, #profile, #tvshow").hide();
+		$("#faq, #search, #categories, #settings, #profile, #tvshow, #settings-icon").hide();
 		$("#navhome").addClass("element-active");
 		$("#navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 	
 	$("#navcategory").click(function(){
 		$("#categories").show();
-		$("#home, #faq, #search, #settings, #profile, #tvshow").hide();
+		$("#home, #faq, #search, #settings, #profile, #tvshow, #settings-icon").hide();
 		$("#navcategory").addClass("element-active");
 		$("#navhome, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 	
 	$("#navsearch").click(function(){
 		$("#search").show();
-		$("#home, #faq, #categories, #settings, #profile, #tvshow").hide();
+		$("#home, #faq, #categories, #settings, #profile, #tvshow, #settings-icon").hide();
 		$("#navsearch").addClass("element-active");
 		$("#navhome, #navcategory, #navprofile, #settings-icon").removeClass("element-active");
 		$(".fa-times, .dropdown, .row, #clearall").hide();
 	});
 	
 	$("#navprofile").click(function(){
-		$("#profile").show();
+		$("#profile, #settings-icon").show();
 		$("#home, #faq, #search, #categories, #settings, #tvshow").hide();
 		$("#navprofile").addClass("element-active");
 		$("#navhome, #navsearch, #navcategory, #settings-icon").removeClass("element-active");
@@ -103,6 +103,7 @@ $(document).ready(function () {
 	
 	$("#settings-icon").click(function(){
 		$("#settings").fadeToggle("fast");
+		$("#profile").toggle("fast");
 		$("#settings-icon").toggleClass("fa-times fa-cog");
 	});
 	
