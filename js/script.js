@@ -256,6 +256,8 @@ $(document).ready(function () {
 	
 	
 	// T V  S H O W
+
+	initTVShow('adventuretime', adventuretime, 15260);
 	
 	initTVShow('americandad', americandad, 1433);
 	
