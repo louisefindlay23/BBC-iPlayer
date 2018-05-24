@@ -501,10 +501,10 @@ input:checked + .slider:before {
 
 .hero .fa-play-circle {
     position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
-    color: rgba(255, 255, 255, 0.3);
-	font-size: 200px;
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);
+    color: rgba(255, 255, 255, 0.25);
+	font-size: 160px;
 }
 
 .hero-title {
@@ -524,10 +524,10 @@ input:checked + .slider:before {
     position: absolute;
     right: 5%;
     bottom: 5%;
-	color:  #FFFFFF;
+	color:  rgb(255, 255, 255, 0.9);
 	margin: 0 2% 2% 0;
-	font-size: 1.5em;
-	
+    font-size: 1.5em;
+    background: none !important;
 }
 
 /* C A R O U S E L */
