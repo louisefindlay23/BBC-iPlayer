@@ -1,398 +1,611 @@
 <!doctype html>
 <html lang=en>
 <head>
-    <meta charset='utf-8'>
-    <meta name='description' content='Description'/>
-    <meta name='keywords' content='Keywords'/>
-    <meta name='viewport' content='width=device-width'/>
-    <meta name='author' content='Dellingr'/>
-    <title>BBC iPlayer</title>
-    <link rel='stylesheet' href='css/style.css'>
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<meta charset='utf-8'>
+	<meta name='description' content='Description'/>
+	<meta name='keywords' content='Keywords'/>
+	<meta name='viewport' content='width=device-width'/>
+	<meta name='author' content='Dellingr'/>
+	<title>BBC iPlayer</title>
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://npmcdn.com/flickity@2.1.0/dist/flickity.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://npmcdn.com/headroom.js@0.9.4/dist/headroom.min.js"></script>
-    <script src="js/loading.js"></script>
-    <!-- F A V I C O N -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#000000">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://npmcdn.com/headroom.js@0.9.4/dist/headroom.min.js"></script>
+	<script src="js/loading.js"></script>
+	<script src="js/create.js"></script>
+	<!-- F A V I C O N -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#000000">
 </head>
 
 <body>
-    
-    <!-- H E A D E R -->
-    <header class="headroom">
-        <div id="site-id">
-            <img src="img/BBC_iPlayer_logo.svg" alt="BBC iPlayer logo">
-        </div>
-        <i id="settings-icon" class="fas fa-fw fa-cog"></i>
-    </header>
-    <!-- E N D  H E A D E R -->
-    
-    <!-- L O A D I N G  S C R E E N -->
-    <section id="loader">
-        <div id="loader-content">
-            <img src="img/BBC_iPlayer_logo.svg">
-            <i id="spinner" class="fas fa-spinner fa-spin fa-2x"></i>
-        </div>
-    </section>
-    <!-- E N D  L O A D I N G  S C R E E N -->
-    
-    <!-- H O M E  -->
-    <section id="home">
-        
-
-        <!-- H E R O -->
-        <div class="hero">
-            
-        </div>
-        <!-- E N D  H E R O -->
-        
-        
-        <!-- C A R O U S E L -->
-
-        <!-- 1st carousel -->
-        <p class="carousel-title">NEW RELEASES</p> 
-        <div class="carousel">
-            <div class="carousel-cell brooklynninenine">
-                <img src="img/logo/bnn.png" alt="Brooklyn Nine Nine">
-            </div>
-            <div class="carousel-cell sonsofanarchy">
-                <img src="img/logo/soa.png" alt="Sons of Anarchy">
-            </div>
-            <div class="carousel-cell americandad">
-                <img src="img/logo/ad.png" alt="American Dad">
-            </div>
-            <div class="carousel-cell hoc">
-                <img src="img/logo/hoc.png" alt="House of Cards">
-            </div>
-            <div class="carousel-cell got">
-                <img src="img/logo/got.png" alt="Game of Thrones">
-            </div>
-            <div class="carousel-cell shameless">
-                <img src="img/logo/shameless.png" alt="Shameless">
-            </div>
-        </div>
-        
-        <!-- 2nd carousel -->
+	
+	<!-- H E A D E R -->
+	<header class="headroom">
+		<div id="site-id">
+			<img src="img/BBC_iPlayer_logo.svg" alt="BBC iPlayer logo">
+		</div>
+		<i id="settings-icon" class="fas fa-fw fa-cog"></i>
+	</header>
+	<!-- E N D  H E A D E R -->
+	
+	<!-- L O A D I N G  S C R E E N -->
+	<section id="loader">
+		<div id="loader-content">
+			<img src="img/BBC_iPlayer_logo.svg" alt=" ">
+			<div class="half-circle-spinner">
+				<div class="circle circle-1"></div>
+				<div class="circle circle-2"></div>
+			</div>
+		</div>
+	</section>
+	<!-- E N D  L O A D I N G  S C R E E N -->
+	<!-- P L A Y E R -->
+	<section id="player">
+		<div class="player-container">
+			<i class="fas fa-play p-icon p-play"></i>
+			<i class="fas fa-angle-right p-icon p-right"></i>
+			<i class="fas fa-angle-left p-icon p-left"></i>
+			<i class="fas fa-times p-icon p-close"></i>
+			<i class="fas fa-info-circle p-icon p-info"></i>
+			<i class="fas fa-closed-captioning p-icon p-sub"></i>
+			<i class="fas fa-volume-up p-icon p-sound"></i>
+			<div class="p-bottom-row">
+				<div class="line-container">
+					<div class="p-icon p-line"></div>
+					<div class="p-icon p-pos"></div>
+					<i class="fas fa-expand p-icon p-fs"></i>
+					<i class="far fa-star p-icon p-fav"></i>
+				</div>
+			</div>
+			
+		</div>            
+	</section>
+	<!-- E N D  P L A Y E R -->
+	
+	<!-- H O M E  -->
+	<section id="home">
+		
+		<div id="hero">
+			<div class="video-container">
+				<video autoplay loop muted poster="/img/videothumb.jpg" src="img/evilgenius.mp4"></video>
+			</div>
+			<div id="hero-container">
+				<h3>New Series</h3>
+				<div class="hero-logo">
+					<img src="img/logo/evilgenius.png" alt="Evil Genius">
+				</div>
+				<p class="hero-button evilgenius">Watch now</p>
+			</div>
+		</div>
+		
+		
+		<!-- C A R O U S E L -->
+		
+		<!-- 1st carousel -->
+		<p class="carousel-title">NEW RELEASES</p> 
+		<div class="carousel">
+			<div class="carousel-cell sonsofanarchy">
+				<img src="img/logo/soa.png" alt="Sons of Anarchy">
+			</div>
+			<div class="carousel-cell americandad">
+				<img src="img/logo/ad.png" alt="American Dad">
+			</div>
+			<div class="carousel-cell houseofcards">
+				<img src="img/logo/hoc.png" alt="House of Cards">
+			</div>
+			<div class="carousel-cell gameofthrones">
+				<img src="img/logo/got.png" alt="Game of Thrones">
+			</div>
+			<div class="carousel-cell shameless">
+				<img src="img/logo/shameless.png" alt="Shameless">
+			</div>
+		</div>
+		
+		<!-- 2nd carousel -->
 		<p class="carousel-title">TRENDING</p> 
 		<div class="carousel">
-            <div class="carousel-cell blackmirror">
-                <img src="img/logo/blackm.png" alt="Black Mirror">
-            </div>
-            <div class="carousel-cell theericandreshow">
-                <img src="img/logo/teas.png" alt="The Eric Andre Show">
-            </div>
-            <div class="carousel-cell westworld">
-                <img src="img/logo/ww.png" alt="Westworld">
-            </div>
-            <div class="carousel-cell mrrobot">
-                <img src="img/logo/mrrobot.png" alt="Mr Robot">
-            </div>
-            <div class="carousel-cell strangerthings">
-                <img src="img/logo/st.png" alt="Stranger Things">
-            </div>
-            <div class="carousel-cell bigmouth">
-                <img src="img/logo/bm.png" alt="Big Mouth">
-            </div>
-        </div>
-        
-        
-        <!-- 3rd carousel -->
+			<div class="carousel-cell brooklynninenine">
+				<img src="img/logo/bnn.png" alt="Brooklyn Nine Nine">
+			</div>
+			<div class="carousel-cell blackmirror">
+				<img src="img/logo/blackm.png" alt="Black Mirror">
+			</div>            
+			<div class="carousel-cell westworld">
+				<img src="img/logo/ww.png" alt="Westworld">
+			</div>
+			<div class="carousel-cell safe">
+				<img src="img/logo/safe.png" alt="Safe">
+			</div>
+			
+			<div class="carousel-cell mrrobot">
+				<img src="img/logo/mrrobot.png" alt="Mr Robot">
+			</div>
+			<div class="carousel-cell strangerthings">
+				<img src="img/logo/st.png" alt="Stranger Things">
+			</div>
+			<div class="carousel-cell bigmouth">
+				<img src="img/logo/bm.png" alt="Big Mouth">
+			</div>
+		</div>
+		
+		<!-- 3rd carousel -->
 		<p class="carousel-title">UPCOMING</p>
 		<div class="carousel">
-            <div class="carousel-cell breakingbad">
-                <img src="img/logo/breakingbad.png" alt="Breaking Bad" style="filter:none;">
-            </div>
-            <div class="carousel-cell daredevil">
-                <img src="img/logo/daredevil.png" alt="Daredevil">
-            </div>
-            <div class="carousel-cell got">
-                <img src="img/logo/got.png" alt="Game of Thrones">
-            </div>
-            <div class="carousel-cell gotham">
-                <img src="img/logo/gotham.png" alt="Gotham">
-            </div>
-            <div class="carousel-cell hoc">
-                <img src="img/logo/hoc.png" alt="House of Cards">
-            </div>
-            <div class="carousel-cell shameless">
-                <img src="img/logo/shameless.png" alt="Shameless">
-            </div>
-        </div>
-        <!-- E N D  C A R O U S E L -->
-        
-    </section>
-    <!-- E N D  H O M E -->
-    
-    
-    <!-- T V  S H O W -->
-    <section id="tvshow">
-        
-    </section>
-    <!-- E N D  T V  S H O W -->
-    
-    
-    <!-- C A T E G O R I E S -->
-    <section id="categories">
-        
-    </section>
-    <!-- E N D  C A T E G O R I E S -->
-    
-    
-    <!-- S E A R C H -->
-    <section id="search">
-        
-        <!-- Search box -->
+			<div class="carousel-cell breakingbad">
+				<img src="img/logo/breakingbad.png" alt="Breaking Bad" style="filter:none;">
+			</div>
+			<div class="carousel-cell daredevil">
+				<img src="img/logo/daredevil.png" alt="Daredevil">
+			</div>
+			<div class="carousel-cell gotham">
+				<img src="img/logo/gotham.png" alt="Gotham">
+			</div>
+			<div class="carousel-cell sense8">
+				<img src="img/logo/sense8.png" alt="Sense8">
+			</div>
+			<div class="carousel-cell dexter">
+				<img src="img/logo/dexter.png" alt="Dexter">
+			</div>
+			<div class="carousel-cell arrowtv">
+				<img src="img/logo/arrow.png" alt="Arrow">
+			</div>
+		</div>
+		<!-- E N D  C A R O U S E L -->
+		
+	</section>
+	<!-- E N D  H O M E -->
+	
+	
+	<!-- T V  S H O W -->
+	<section id="tvshow">
+		<div id="adventuretime" class="tvshow"></div>
+		<div id="blackmirror" class="tvshow"></div>
+		<div id="americandad" class="tvshow"></div>
+		<div id="brooklynninenine" class="tvshow"></div>
+		<div id="westworld" class="tvshow"></div>
+		<div id="houseofcards" class="tvshow"></div>
+		<div id="sense8" class="tvshow"></div>
+		<div id="theericandreshow" class="tvshow"></div>
+		<div id="breakingbad" class="tvshow"></div>
+		<div id="daredevil" class="tvshow"></div>
+		<div id="theblacklist" class="tvshow"></div>
+		<div id="americanhorrorstory" class="tvshow"></div>
+		<div id="arrowtv" class="tvshow"></div>
+		<div id="bigmouth" class="tvshow"></div>
+		<div id="bobsburgers" class="tvshow"></div>
+		<div id="safe" class="tvshow"></div>
+		<div id="designatedsurvivor" class="tvshow"></div>
+		<div id="dexter" class="tvshow"></div>
+		<div id="thelastmanonearth" class="tvshow"></div>
+		<div id="futurama" class="tvshow"></div>
+		<div id="gotham" class="tvshow"></div>
+		<div id="greysanatomy" class="tvshow"></div>
+		<div id="homeland" class="tvshow"></div>
+		<div id="gameofthrones" class="tvshow"></div>
+		<div id="mindhunter" class="tvshow"></div>
+		<div id="lacasadepapel" class="tvshow"></div>
+		<div id="mrrobot" class="tvshow"></div>
+		<div id="parksandrecreation" class="tvshow"></div>
+		<div id="personofinterest" class="tvshow"></div>
+		<div id="rickandmorty" class="tvshow"></div>
+		<div id="shameless" class="tvshow"></div>
+		<div id="siliconvalley" class="tvshow"></div>
+		<div id="sonsofanarchy" class="tvshow"></div>
+		<div id="strangerthings" class="tvshow"></div>
+		<div id="thehundred" class="tvshow"></div>
+		<div id="thementalist" class="tvshow"></div>
+		<div id="thewalkingdead" class="tvshow"></div>
+		<div id="evilgenius" class="tvshow"></div>
+	</section>
+	<!-- E N D  T V  S H O W -->
+	
+	
+	<!-- C A T E G O R I E S -->
+	<section id="categories">
+		<div class="grid">
+			<div class="grid-item grid-item--width2"><p>Adventure</p></div>
+			<div class="grid-item"><p>Action</p></div>
+			<div class="grid-item grid-item--width3"><p>Drama</p></div>
+			<div class="grid-item grid-item--width4"><p>Fantasy</p></div>
+			<div class="grid-item grid-item--width6"><p>Horror</p></div>
+			<div class="grid-item grid-item--width5"><p>Sports</p></div>
+		</div>
+	</section>
+	<!-- E N D  C A T E G O R I E S -->
+	
+	<!-- S E A R C H -->
+	<section id="search">
+		
+		<!-- Search box -->
 		
 		<div class="searchcontainer">
-            
-            <form>
-                <h1><input onkeyup="filterFunction()" id="searchbox" type="text" name="search" autocomplete="off" placeholder="S E A R C H">
-                    
-                    <i class="close-search fas fa-times"></i>
-                    
-                </h1>
-                
-            </form>
-            
-            <div class="dropdown">
-                <div id="myDropdown" class="dropdown-content">
-                    
+			
+			<form>
+				<h1><input id="searchbox" type="text" name="search" autocomplete="off" placeholder="S E A R C H">
+					
+					<i class="close-search fas fa-times"></i>
+					
+				</h1>
+				
+			</form>
+			
+			<div class="dropdown">
+				<div id="myDropdown" class="dropdown-content">
+					
 					<!--Add JQuery nav toggle to view TV Show pages on click and to add the value of the item clicked to the recent search history-->
-                    
-                    <p class="result">Black Mirror</p>
-                    <p class="result">Breaking Bad</p>
-                    <p class="result">Brooklyn Nine-Nine</p>
-                    <p class="result">Daredevil</p>
-                    <p class="result">Game of Thrones</p>
-                    <p class="result">Gotham</p>
-                    <p class="result">Shameless</p>
-                </div>
-            </div> 
+					
+					<p class="result adventuretime">Adventure Time</p>
+					<p class="result americandad">American Dad</p>
+					<p class="result americanhorrorstory">American Horror Story</p>
+					<p class="result arrow">Arrow</p>
+					<p class="result bigmouth">Big Mouth</p>
+					<p class="result blackmirror">Black Mirror</p>
+					<p class="result bobsburgers">Bob's Burgers</p>
+					<p class="result breakingbad">Breaking Bad</p>
+					<p class="result brooklynninenine">Brooklyn Nine-Nine</p>
+					<p class="result designatedsurvivor">Designated Survivor</p>
+					<p class="result dexter">Dexter</p>
+					<p class="result evilgenius">Evil Genius</p>
+					<p class="result gameofthrones">Game of Thrones</p>
+					<p class="result gotham">Gotham</p>
+					<p class="result greysanatomy">Grey's Anatomy</p>
+					<p class="result futurama">Futurama</p>
+					<p class="result homeland">Homeland</p>
+					<p class="result houseofcards">House of Cards</p>
+					<p class="result daredevil">Marvel's Daredevil</p>
+					<p class="result mindhunter">Mindhunter</p>
+					<p class="result lacasadepapel">La Casa de Papel</p>
+					<p class="result mrrobot">Mr Robot</p>
+					<p class="result parksandrecreation">Parks and Recreation</p>
+					<p class="result personofinterest">Person of Interest</p>
+					<p class="result rickandmorty">Rick and Morty</p>
+					<p class="result safe">Safe</p>
+					<p class="result sense8">Sense 8</p>
+					<p class="result shameless">Shameless</p>
+					<p class="result siliconvalley">Silicon Valley</p>
+					<p class="result sonsofanarchy">Sons of Anarchy</p>
+					<p class="result strangerthings">Stranger Things</p>
+					<p class="result theblacklist">The Blacklist</p>
+					<p class="result thehundred">The 100</p>
+					<p class="result thelastmanonearth">The Last Man on Earth</p>
+					<p class="result thementalist">The Mentalist</p>
+					<p class="result westworld">Westworld</p>
+				</div>
+			</div>
 		</div>
 		
 		<div id="history">
-            <h3>Your recent searches</h3>
-            
-            <!-- Search with a closing X -->
-            
-            <div class="row" id="row1"> 
-                <div class="left-col" id="result1">
-                    <p></p>
-                </div>
-                <div class="right-col">
-                    <a href="#" class="close" id="close1"> </a>
-                </div>
-            </div>
-            
-            <!--2nd search with a closing X -->
-            
-            <div class="row" id="row2"> 
-                <div class="left-col" id="result2">
-                    <p></p>
-                </div>
-                <div class="right-col">
-                    <a href="#" class="close" id="close2"> </a>
-                </div>
-            </div>
-            
-            
-            <!--3rd search with a closing X -->
-            
-            <div class="row" id="row3"> 
-                <div class="left-col" id="result3">
-                    <p></p>
-                </div>
-                <div class="right-col">
-                    <a href="#" class="close" id="close3"> </a>
-                </div>
-            </div>
-            
-            <!--4th search with a closing X -->
-            
-            <div class="row" id="row4"> 
-                <div class="left-col" id="result4">
-                    <p></p>
-                </div>
-                <div class="right-col">
-                    <a href="#" class="close" id="close4"> </a>
-                </div>
-            </div>
-            
+			<h3>Your recent searches</h3>
+			
+			<!-- Search with a closing X -->
+			
+			<div class="row" id="row1">
+				<div class="left-col" id="result1">
+					<p></p>
+				</div>
+				<div class="right-col">
+					<a href="#" class="close" id="close1"> </a>
+				</div>
+			</div>
+			
+			<!--2nd search with a closing X -->
+			
+			<div class="row" id="row2">
+				<div class="left-col" id="result2">
+					<p></p>
+				</div>
+				<div class="right-col">
+					<a href="#" class="close" id="close2"> </a>
+				</div>
+			</div>
+			
+			
+			<!--3rd search with a closing X -->
+			
+			<div class="row" id="row3">
+				<div class="left-col" id="result3">
+					<p></p>
+				</div>
+				<div class="right-col">
+					<a href="#" class="close" id="close3"> </a>
+				</div>
+			</div>
+			
+			<!--4th search with a closing X -->
+			
+			<div class="row" id="row4">
+				<div class="left-col" id="result4">
+					<p></p>
+				</div>
+				<div class="right-col">
+					<a href="#" class="close" id="close4"> </a>
+				</div>
+			</div>
+			
+			<!--5th search with a closing X -->
+			
+			<div class="row" id="row5">
+				<div class="left-col" id="result5">
+					<p></p>
+				</div>
+				<div class="right-col">
+					<a href="#" class="close" id="close5"> </a>
+				</div>
+			</div>
+			
+			<!--6th search with a closing X -->
+			
+			<div class="row" id="row6">
+				<div class="left-col" id="result6">
+					<p></p>
+				</div>
+				<div class="right-col">
+					<a href="#" class="close" id="close6"> </a>
+				</div>
+			</div>
+			
+			<!--7th search with a closing X -->
+			
+			<div class="row" id="row7">
+				<div class="left-col" id="result7">
+					<p></p>
+				</div>
+				<div class="right-col">
+					<a href="#" class="close" id="close7"> </a>
+				</div>
+			</div>
+			
+			
 			<!--Clear all searches -->
-            
+			
 			<h3 id="clearall">CLEAR ALL</h3>
 		</div>
-    </section>
-    <!-- E N D  S E A R C H -->
-    
-    
-    <!-- P R O F I L E -->
-    <section id="profile">
-        <div id="profile-header">
-            <div id="picture-zoom">
-                <div id="picture-flex">
-                    <img src="img/joshua.jpg" alt="Profile picture">
-                </div>
-            </div>
-            <div id="profile-container">
-                <div id="profile-picture">
-                    <img src="img/joshua.jpg" alt="Profile picture" id="trigger-zoom">
-                </div>
-                <div id="profile-info">
-                    <h3>Joshua</h3>
-                    <p>15 Shows Finished</p>
-                </div>
-            </div>
-        </div>
-        
-        <p class="carousel-title">Favourites</p>
-        <div class="carousel">
-            <div class="carousel-cell blackmirror">
-                <img src="img/logo/blackm.png" alt="Black Mirror">
-            </div>
-            <div class="carousel-cell theericandreshow">
-                <img src="img/logo/teas.png" alt="The Eric Andre Show">
-            </div>
-            <div class="carousel-cell westworld">
-                <img src="img/logo/ww.png" alt="Westworld">
-            </div>
-            <div class="carousel-cell mrrobot">
-                <img src="img/logo/mrrobot.png" alt="Mr Robot">
-            </div>
-            <div class="carousel-cell strangerthings">
-                <img src="img/logo/st.png" alt="Stranger Things">
-            </div>
-            <div class="carousel-cell bigmouth">
-                <img src="img/logo/bm.png" alt="Big Mouth">
-            </div>
-        </div>
-        
-        <p class="carousel-title">Watchlist</p>
-        <div class="carousel">
-            <div class="carousel-cell adventuretime">
-                <img src="img/logo/at.png" alt="Adventure Time">
-            </div>
-            <div class="carousel-cell siliconvalley">
-                <img src="img/logo/sv.png" alt="Silicon Valley">
-            </div>
-            <div class="carousel-cell parksandrecreation">
-                <img src="img/logo/par.png" alt="Parks and Recreation">
-            </div>
-            <div class="carousel-cell breakingbad">
-                <img src="img/logo/breakingbad.png" alt="Gotham">
-            </div>
-            <div class="carousel-cell rickandmorty">
-                <img src="img/logo/ram.png" alt="Rick and Morty">
-            </div>
-            <div class="carousel-cell thehundred">
-                <img src="img/logo/th.png" alt="The Hundred">
-            </div>
-        </div>
-        
-        <p class="carousel-title">You might also like</p>
-        <div class="carousel">
-            <div class="carousel-cell brooklynninenine">
-                <img src="img/logo/bnn.png" alt="Brooklyn Nine Nine">
-            </div>
-            <div class="carousel-cell sonsofanarchy">
-                <img src="img/logo/soa.png" alt="Sons of Anarchy">
-            </div>
-            <div class="carousel-cell americandad">
-                <img src="img/logo/ad.png" alt="American Dad">
-            </div>
-            <div class="carousel-cell hoc">
-                <img src="img/logo/hoc.png" alt="House of Cards">
-            </div>
-            <div class="carousel-cell got">
-                <img src="img/logo/got.png" alt="Game of Thrones">
-            </div>
-            <div class="carousel-cell shameless">
-                <img src="img/logo/shameless.png" alt="Shameless">
-            </div>
-        </div>
-    </section>
-    <!-- E N D  P R O F I L E -->
-    
-    
-    <!-- S E T T I N G S -->
-    <section id="settings">
-        
-    </section>
-    <!-- E N D  S E T T I N G S -->
-    
-    
-    <!-- F A Q -->
-    <section id="faq">
-        <div id="faq-container">
-            <h3>Frequently Asked Questions</h3>
-            <div id="faq1">
-                <h4 id="q1"><i id="s1" class="fas fa-caret-right fa-fw"></i>What is BBC iPlayer?</i></h4>
-                <div id="a1" class="smooth-edge">
-                    <p>BBC iPlayer is a streaming service that allows our 
-                        customers to watch a wide variety of award-winning TV shows, 
-                        movies, documentaries and more on thousands of Internet-connected 
-                        devices. There's always something new to discover, and more 
-                        TV shows and movies are added every month!
-                    </p>
-                </div>
-            </div>
-            <div id="faq2">
-                <h4 id="q2"><i id="s2" class="fas fa-caret-right fa-fw"></i>What are the Internet Connection Speed Recommendations?</h4>
-                <div id="a2" class="smooth-edge">
-                    <p>Below are the internet download speed recommendations per 
-                        stream for playing TV shows and movies through BBC iPlayer.
-                    </p>
-                    <ul>
-                        <li> 0.5 Megabits per second - Required broadband connection speed</li>
-                        <li> 1.5 Megabits per second - Recommended broadband connection speed</li>
-                        <li> 3.0 Megabits per second - Recommended for SD quality</li>
-                        <li> 5.0 Megabits per second - Recommended for HD quality</li>
-                        <li> 25 Megabits per second - Recommended for Ultra HD quality</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="faq3">
-                <h4 id="q3"><i id="s3" class="fas fa-caret-right fa-fw"></i>How does BBC iPlayer decide the maturity rating on TV shows and movies?</h4>
-                <div id="a3" class="smooth-edge">
-                    <p>Each TV show and movie on BBC iPlayer is assigned a maturity rating to 
-                        help members make informed choices for themselves and their children. 
-                        Maturity ratings are determined by a local standards organization. TV show 
-                        ratings reflect the overall maturity level of the whole series.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-    <!-- E N D  F A Q -->
-    
-    
-    <!-- B O T T O M  N A V -->
-    <nav>
-        <i id="navhome" class="element-active nav-icon fas fa-home"></i>
-        <i id="navcategory" class="nav-icon fas fa-list"></i>
-        <i id="navsearch" class="nav-icon fas fa-search"></i>
-        <i id="navprofile" class="nav-icon fas fa-user"></i>
-    </nav>
-    <!-- E N D  N A V -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="js/script.js"></script>
+	</section>
+	<!-- E N D  S E A R C H -->
+	
+	
+	<!-- P R O F I L E -->
+	<section id="profile">
+		<div id="profile-header">
+			<div id="picture-zoom">
+				<div id="picture-flex">
+					<img src="img/joshua.jpg" alt="Profile picture">
+				</div>
+			</div>
+			<div id="profile-container">
+				<div id="profile-picture">
+					<img src="img/joshua.jpg" alt="Profile picture" id="trigger-zoom">
+				</div>
+				<div id="profile-info">
+					<h3>Joshua</h3>
+					<p>15 Shows Finished</p>
+				</div>
+			</div>
+		</div>
+		
+		<p class="carousel-title">Continue Watching</p>
+		<div class="hero">
+			<div class="hero-cell dd-h">
+				<img src="img/logo/daredevil.png" alt="Daredevil">
+				<i class="far fa-play-circle"></i>	
+				<p class="hero-description">Season 1 Episode 4</p>
+				<i class="fas fa-info-circle daredevil"></i>
+			</div>
+			<div class="hero-cell bb-h">
+				<img src="img/logo/breakingbad.png" alt="Breaking Bad">
+				<i class="far fa-play-circle"></i>
+				<p class="hero-description">Season 2 Episode 6</p>
+				<i class="fas fa-info-circle breakingbad"></i>
+			</div>
+			<div class="hero-cell got-h">
+				<img src="img/logo/got.png" alt="Game of Thrones">
+				<i class="far fa-play-circle"></i>
+				<p class="hero-description">Season 7 Episode 2</p>
+				<i class="fas fa-info-circle gameofthrones"></i>
+			</div>
+		</div>
+		
+		<p class="carousel-title">Favourites</p>
+		<div class="carousel">
+			<div class="carousel-cell homeland">
+				<img src="img/logo/homeland.png" alt="Homeland">
+			</div>
+			<div class="carousel-cell futurama">
+				<img src="img/logo/futurama.svg" alt="Futurama">
+			</div>
+			<div class="carousel-cell mindhunter">
+				<img src="img/logo/mh.svg" alt="Mindhunter">
+			</div>
+			<div class="carousel-cell americanhorrorstory">
+				<img src="img/logo/ahs.png" alt="American Horror Story">
+			</div>
+			<div class="carousel-cell thelastmanonearth">
+				<img src="img/logo/tlmoe.png" alt="The Last Man on Earth">
+			</div>
+			<div class="carousel-cell thewalkingdead">
+				<img src="img/logo/twd.png" alt="The Walking Dead">
+			</div>
+		</div>
+		
+		<p class="carousel-title">Watchlist</p>
+		<div class="carousel">
+			<div class="carousel-cell adventuretime">
+				<img src="img/logo/at.png" alt="Adventure Time">
+			</div>
+			<div class="carousel-cell siliconvalley">
+				<img src="img/logo/sv.png" alt="Silicon Valley">
+			</div>
+			<div class="carousel-cell parksandrecreation">
+				<img src="img/logo/par.png" alt="Parks and Recreation">
+			</div>
+			<div class="carousel-cell lacasadepapel">
+				<img src="img/logo/lcdp.png" alt="La Casa de Papel">
+			</div>
+			<div class="carousel-cell rickandmorty">
+				<img src="img/logo/ram.png" alt="Rick and Morty">
+			</div>
+			<div class="carousel-cell thehundred">
+				<img src="img/logo/th.png" alt="The Hundred">
+			</div>
+		</div>
+		
+		<p class="carousel-title">You might also like</p>
+		<div class="carousel">
+			<div class="carousel-cell theblacklist">
+				<img src="img/logo/tb.svg" alt="The Blacklist">
+			</div>
+			<div class="carousel-cell designatedsurvivor">
+				<img src="img/logo/ds.png" alt="Designated Survivor">
+			</div>
+			<div class="carousel-cell bobsburgers">
+				<img src="img/logo/bb.png" alt="Bob's Burgers">
+			</div>
+			<div class="carousel-cell personofinterest">
+				<img src="img/logo/poi.svg" alt="Person of Interest">
+			</div>
+			<div class="carousel-cell thementalist">
+				<img src="img/logo/tm.svg" alt="The Mentalist">
+			</div>
+			<div class="carousel-cell greysanatomy">
+				<img src="img/logo/ga.svg" alt="Grey's Anatomy">
+			</div>
+		</div>
+	</section>
+	<!-- E N D  P R O F I L E -->
+	
+	
+	<!-- S E T T I N G S -->
+	<section id="settings">
+		<h3>Settings</h3>
+		<div class="set-container">
+			<div class="set-rows">
+				<span class="label">Offline Mode</span>
+				<label class="switch">
+					<input type="checkbox">
+					<div class="slider"></div>
+				</label>
+			</div>
+			<div class="set-rows">
+				<span class="label">Autoplay</span>
+				<label class="switch">
+					<input type="checkbox">
+					<div class="slider"></div>
+				</label>
+			</div>
+			<div class="set-rows">
+				<span class="label">Child Lock</span>
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider"></span>
+				</label>
+			</div>
+			<div class="set-rows">
+				<span class="label">Normalize Volume</span>
+				<label class="switch">
+					<input type="checkbox" checked>
+					<span class="slider"></span>
+				</label>
+			</div>
+			<div class="set-rows">
+				<span class="label">Notification</span>
+				<label class="switch">
+					<input type="checkbox" checked>
+					<span class="slider"></span>
+				</label>
+			</div>
+			<div class="set-rows">
+				<a>Link to TVTime</a>
+			</div>
+			<div class="set-rows advanced">
+				<a>Advanced Settings</a>
+			</div>
+			<div class="set-rows faq">
+				<a>FAQ</a>
+			</div>
+			<div id="faq-container">
+				<div id="faq1">
+					<h4 id="q1"><i id="s1" class="fas fa-caret-right fa-fw"></i>What is BBC iPlayer?</h4>
+					<div id="a1" class="smooth-edge">
+						<p>BBC iPlayer is a streaming service that allows our
+							customers to watch a wide variety of award-winning TV shows,
+							movies, documentaries and more on thousands of Internet-connected
+							devices. There's always something new to discover, and more
+							TV shows and movies are added every month!
+						</p>
+					</div>
+				</div>
+				<div id="faq2">
+					<h4 id="q2"><i id="s2" class="fas fa-caret-right fa-fw"></i>What are the Internet Connection Speed Recommendations?</h4>
+					<div id="a2" class="smooth-edge">
+						<p>Below are the internet download speed recommendations per
+							stream for playing TV shows and movies through BBC iPlayer.
+						</p>
+						<ul>
+							<li> 0.5 Megabits per second - Required broadband connection speed</li>
+							<li> 1.5 Megabits per second - Recommended broadband connection speed</li>
+							<li> 3.0 Megabits per second - Recommended for SD quality</li>
+							<li> 5.0 Megabits per second - Recommended for HD quality</li>
+							<li> 25 Megabits per second - Recommended for Ultra HD quality</li>
+						</ul>
+					</div>
+				</div>
+				<div id="faq3">
+					<h4 id="q3"><i id="s3" class="fas fa-caret-right fa-fw"></i>How does BBC iPlayer decide the maturity rating on TV shows and movies?</h4>
+					<div id="a3" class="smooth-edge">
+						<p>Each TV show and movie on BBC iPlayer is assigned a maturity rating to
+							help members make informed choices for themselves and their children.
+							Maturity ratings are determined by a local standards organization. TV show
+							ratings reflect the overall maturity level of the whole series.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="set-rows">
+				<a>Log Out</a>
+			</div>
+			<div class="set-rows">
+				<div id="delete">
+					<p>Delete Account</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- E N D  S E T T I N G S -->
+	
+	
+	<!-- F A Q -->
+	
+	<!-- E N D  F A Q -->
+	
+	
+	<!-- B O T T O M  N A V -->
+	<nav>
+		<i id="navhome" class="element-active nav-icon fas fa-home"></i>
+		<i id="navcategory" class="nav-icon fas fa-list"></i>
+		<i id="navsearch" class="nav-icon fas fa-search"></i>
+		<i id="navprofile" class="nav-icon fas fa-user"></i>
+	</nav>
+	<!-- E N D  N A V -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="js/script.js"></script>
+	
 </body>
 </html>

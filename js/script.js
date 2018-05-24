@@ -7,8 +7,17 @@ $(document).ready(function () {
 		freeScroll: true,
 	});
 	
+	//H E R O  P R O F I L E
+	$('.hero').flickity({
+		pageDots: false,
+		freeScroll: false,
+		autoPlay: 2500,
+		wrapAround: true
+	});
+	
 	
 	// D R O P D O W N
+	
 	function filterFunction() {
 		var input, filter, ul, li, a, i;
 		input = document.getElementById("searchbox");
@@ -24,8 +33,10 @@ $(document).ready(function () {
 		}
 	}
 	
+	$("input").keydown(filterFunction);
 	
-	// F A Q 
+	
+	// F A Q
 	$("#q1").click(function(){
 		$("#a1").slideToggle();
 		$("#q1").toggleClass("element-active");
@@ -60,50 +71,53 @@ $(document).ready(function () {
 	// N A V I G A T I O N
 	$("#profile").hide();
 	$("#home").show();
+	$("#categories").hide();
 	
 	$("#navhome").click(function(){
 		$("#home").show();
-		$("#faq, #search, #categories, #tvshow, #settings, #profile").hide();
+		$("#faq, #search, #categories, #settings, #profile, #tvshow, #settings-icon").hide();
 		$("#navhome").addClass("element-active");
 		$("#navcategory, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 	
 	$("#navcategory").click(function(){
 		$("#categories").show();
-		$("#home, #faq, #search, #tvshow, #settings, #profile").hide();
+		$("#home, #faq, #search, #settings, #profile, #tvshow, #settings-icon").hide();
 		$("#navcategory").addClass("element-active");
 		$("#navhome, #navsearch, #navprofile, #settings-icon").removeClass("element-active");
 	});
 	
 	$("#navsearch").click(function(){
 		$("#search").show();
-		$("#home, #faq, #categories, #tvshow, #settings, #profile").hide();
+		$("#home, #faq, #categories, #settings, #profile, #tvshow, #settings-icon").hide();
 		$("#navsearch").addClass("element-active");
 		$("#navhome, #navcategory, #navprofile, #settings-icon").removeClass("element-active");
-		$(".fa-times").hide();
-		$(".dropdown").hide();
-		$(".row").hide();
-		$("#clearall").hide();
+		$(".fa-times, .dropdown, .row, #clearall").hide();
 	});
 	
 	$("#navprofile").click(function(){
-		$("#profile").show();
-		$("#home, #faq, #search, #categories, #tvshow, #settings").hide();
+		$("#profile, #settings-icon").show();
+		$("#home, #faq, #search, #categories, #settings, #tvshow").hide();
 		$("#navprofile").addClass("element-active");
 		$("#navhome, #navsearch, #navcategory, #settings-icon").removeClass("element-active");
 	});
 	
 	$("#settings-icon").click(function(){
 		$("#settings").fadeToggle("fast");
+		$("#profile").toggle("fast");
 		$("#settings-icon").toggleClass("fa-times fa-cog");
 	});
 	
+	$('.faq').click(function () {
+		$('#faq-container').slideToggle();
+	});
 	
-	// P R O F I L  P I C T U R E
-	$("#trigger-zoom").click(function () { 
+	
+	// P R O F I L E  P I C T U R E
+	$("#trigger-zoom").click(function () {
 		$("#picture-zoom").fadeIn("fast");
 	});
-	$("#picture-zoom").click(function() { 
+	$("#picture-zoom").click(function() {
 		$("#picture-zoom").fadeOut("fast");
 	});
 	
@@ -112,77 +126,106 @@ $(document).ready(function () {
 	// Search history
 	$(".result").click(function(){
 		// If statement querying whether the first row is empty or not
-		if ($('#result1 > p').is(':empty')) { 
+		$("#history").show();
+		
+		if ($('#result1 > p').is(':empty')) {
 			var result1 = $(this).text();
 			$("#result1 p").text(result1);
-			$("#row1").show();
-			$("#clearall").fadeIn();
+			$("#row1, #close1").addClass("showimportant");
 		}
 		// If not check the second row
-		else if ($('#result2 > p').is(':empty')) { 
+		else if ($('#result2 > p').is(':empty')) {
 			var result2 = $(this).text();
 			$("#result2 p").text(result2);
-			$("#row2").show();
+			$("#row2, #close2").addClass("showimportant");
+			$("#clearall").addClass("showimportant");
 		}
-		// If not check the third row	
-		else if ($('#result3 > p').is(':empty')) { 
+		// If not check the third row
+		else if ($('#result3 > p').is(':empty')) {
 			
 			var result3 = $(this).text();
 			$("#result3 p").text(result3);
-			$("#row3").show();
+			$("#row3, #close3").addClass("showimportant");
 		}
-		// If not check the fourth row	
-		else if ($('#result4 > p').is(':empty')) { 
+		// If not check the fourth row
+		else if ($('#result4 > p').is(':empty')) {
 			var result4 = $(this).text();
 			$("#result4 p").text(result4);
-			$("#row4").show();
+			$("#row4, #close4").addClass("showimportant");
+		}
+		
+		// If not check the fifth row
+		else if ($('#result5 > p').is(':empty')) {
+			var result5 = $(this).text();
+			$("#result5 p").text(result5);
+			$("#row5, #close5").addClass("showimportant");
+		}
+		
+		// If not check the sixth row
+		else if ($('#result6 > p').is(':empty')) {
+			var result6 = $(this).text();
+			$("#result6 p").text(result6);
+			$("#row6, #close6").addClass("showimportant");
+		}
+		
+		// If not check the seventh row
+		else if ($('#result7 > p').is(':empty')) {
+			var result7 = $(this).text();
+			$("#result7 p").text(result7);
+			$("#row7, #close7").addClass("showimportant");
 		}
 	});
 	
 	// Clear all searches
 	$("#clearall").click(function(){
-		$("#clearall").hide();
-		$(".row").hide();
-		$("#result1 p").text("");
+		$(".row").removeClass("showimportant");
+		$("#clearall").removeClass("showimportant");
+		$("#result1 p, #result2 p, #result3 p, #result4 p, #result5 p, #result6 p, #result7 p").text("");
 	});
 	
 	
 	// Clear first search
 	$("#close1").click(function(){
 		$("#result1 p").text("");
-		$("#row1").fadeOut();
+		$("#row1, #close1").removeClass("showimportant");
 	});
 	
 	
 	// Clear second search
 	$("#close2").click(function(){
-		$("#row2").fadeOut();
+		$("#result2 p").text("");
+		$("#row2, #close2").removeClass("showimportant");
 	});
 	
 	// Clear third search
 	
 	$("#close3").click(function(){
-		$("#row3").fadeOut();
+		$("#result3 p").text("");
+		$("#row3, #close3").removeClass("showimportant");
 	});
 	
 	// Clear fourth search
 	$("#close4").click(function(){
-		$("#row4").fadeOut();
+		$("#result4 p").text("");
+		$("#row4, #close4").removeClass("showimportant");
 	});
 	
 	// Clear fifth search
 	$("#close5").click(function(){
-		$("#row5").fadeOut();
+		$("#result5 p").text("");
+		$("#row5, #close5").removeClass("showimportant");
 	});
 	
 	// Clear sixth search
 	$("#close6").click(function(){
-		$("#row6").fadeOut();
+		$("#result6 p").text("");
+		$("#row6, #close6").removeClass("showimportant");
 	});
 	
 	// Clear seventh search
 	$("#close7").click(function(){
-		$("#row7").fadeOut();
+		$("#result7 p").text("");
+		$("#row7, #close7").removeClass("showimportant");
 	});
 	
 	$(".close-search").click(function(){
@@ -199,4 +242,94 @@ $(document).ready(function () {
 		$(".close-search").show();
 		$("#history").hide();
 	});
+	
+	$(".close-search").click(function(){
+		$(".dropdown, .close-search").hide();
+		$("#history").show();
+		$("#searchbox").val("");
+		$("#searchbox").attr("placeholder", "S E A R C H");
+	});
+	
+	$("input").click(function(){
+		$(".dropdown, .dropdown-content, .close-search").show();
+		$("#history").hide();
+	});
+	
+	
+	// T V  S H O W
+
+	initTVShow('adventuretime', adventuretime, 15260);
+	
+	initTVShow('americandad', americandad, 1433);
+	
+	initTVShow('blackmirror', blackmirror, 42009);
+	
+	initTVShow('brooklynninenine', brooklynninenine, 48891);
+	
+	initTVShow('westworld', westworld, 63247);
+	
+	initTVShow('houseofcards', houseofcards, 1425);
+	
+	initTVShow('sense8', sense8, 61664);
+	
+	initTVShow('theblacklist', theblacklist, 46952);
+	
+	initTVShow('daredevil', daredevil, 61889);
+	
+	initTVShow('breakingbad', breakingbad, 1396);
+	
+	initTVShow('safe', safe, 72792);
+	
+	initTVShow('americanhorrorstory', americanhorrorstory, 1413);
+	
+	initTVShow('arrowtv', arrowtv, 1412);
+	
+	initTVShow('bigmouth', bigmouth, 74204);
+	
+	initTVShow('bobsburgers', bobsburgers, 32726);
+	
+	initTVShow('designatedsurvivor', designatedsurvivor, 67026);
+	
+	initTVShow('dexter', dexter, 1405);
+	
+	initTVShow('thelastmanonearth', thelastmanonearth, 61888);
+	
+	initTVShow('futurama', futurama, 615);
+	
+	initTVShow('gotham', gotham, 60708);
+	
+	initTVShow('greysanatomy', greysanatomy, 1416);
+	
+	initTVShow('homeland', homeland, 1407);
+	
+	initTVShow('gameofthrones', gameofthrones, 1399);
+	
+	initTVShow('mindhunter', mindhunter, 67744);
+	
+	initTVShow('lacasadepapel', lacasadepapel, 71446);
+	
+	initTVShow('mrrobot', mrrobot, 62560);
+	
+	initTVShow('parksandrecreation', parksandrecreation, 8592);
+	
+	initTVShow('personofinterest', personofinterest, 1411);
+	
+	initTVShow('rickandmorty', rickandmorty, 60625);
+	
+	initTVShow('shameless', shameless, 34307);
+	
+	initTVShow('siliconvalley', siliconvalley, 60573);
+	
+	initTVShow('sonsofanarchy', sonsofanarchy, 1409);
+	
+	initTVShow('strangerthings', strangerthings, 66732);
+	
+	initTVShow('thehundred', thehundred, 48866);
+	
+	initTVShow('thementalist', thementalist, 5920);
+	
+	initTVShow('thewalkingdead', thewalkingdead, 1402);
+	
+	initTVShow('evilgenius', evilgenius, 79126);
+	
 });
