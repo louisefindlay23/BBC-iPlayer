@@ -278,7 +278,7 @@ $(document).ready(function () {
 	
 	initTVShow('americanhorrorstory', americanhorrorstory, 1413);
 	
-	initTVShow('arrow', arrow, 1412);
+	initTVShow('arrowtv', arrowtv, 1412);
 	
 	initTVShow('bigmouth', bigmouth, 74204);
 	
