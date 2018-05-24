@@ -32,7 +32,7 @@ function create_tvshow(tvshow_id, html_id) {
                 var z = 1;
             }
             
-            $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + ' / ' + tv_data.episode_run_time[0] + ' mins' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season <i class="fas fa-caret-down"></i></p></div>' + '<div class="' + html_id + '-dropdown season-dropdown" id="' + html_id + '_season"><ul></ul></div>');
+            $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.original_name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + ' / ' + tv_data.episode_run_time[0] + ' mins' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season <i class="fas fa-caret-down"></i></p></div>' + '<div class="' + html_id + '-dropdown season-dropdown" id="' + html_id + '_season"><ul></ul></div>');
             $('#' + html_id).append('<div id="' + html_id + '_season_container" class="season_container"></div>');
             
             var headerImage = config_data.images.secure_base_url + config_data.images.backdrop_sizes[1] + tv_data.backdrop_path;
