@@ -98,7 +98,7 @@ function create_tvshow(tvshow_id, html_id) {
     });
 }
 
-var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home";	
+var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home, #settings-icon";	
 
 function initTVShow(quotetvShowToInit, tvShowToInit, tvShow_id) {
     $('.' + quotetvShowToInit).click(function () {
