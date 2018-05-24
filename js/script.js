@@ -11,6 +11,7 @@ $(document).ready(function () {
 	$('.hero').flickity({
 		pageDots: false,
 		freeScroll: false,
+		autoPlay: 2500,
 		wrapAround: true
 	});
 	
