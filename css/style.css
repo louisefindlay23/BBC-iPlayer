@@ -154,6 +154,10 @@ header {
     height: 100%;
 }
 
+.player-container h2 {
+	display: none;
+}
+
 .p-icon {
     position: absolute;
     color: #fff;
