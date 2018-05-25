@@ -730,6 +730,10 @@ input:checked + .slider:before {
     color: #fff;
 }
 
+#tvshow h2 {
+	display: none;
+}
+
 .tvshow-header {
     height: 30vh;
     display: flex;
@@ -837,6 +841,10 @@ input:checked + .slider:before {
     margin: auto;
     height: auto;
     overflow: auto;
+}
+
+.grid h2 {
+	display: none;
 }
 
 .grid-item p {
