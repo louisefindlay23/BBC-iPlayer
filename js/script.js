@@ -92,7 +92,7 @@ $(document).ready(function () {
 		$("#home, #faq, #categories, #settings, #profile, #tvshow, #settings-icon").hide();
 		$("#navsearch").addClass("element-active");
 		$("#navhome, #navcategory, #navprofile, #settings-icon").removeClass("element-active");
-		$(".fa-times, .dropdown, .row, #clearall").hide();
+		$(".close-search, .dropdown, .row, #clearall").hide();
 	});
 	
 	$("#navprofile").click(function(){

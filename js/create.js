@@ -42,6 +42,10 @@ function create_tvshow(tvshow_id, html_id) {
             $('.season-button').click(function () {
                 $('.' + html_id + '-dropdown').slideToggle(150);
             });
+
+            if (tv_data.number_of_seasons === 1) { 
+                $('.season-button').css('display', 'none'); 
+            } 
             
             while (i < tv_data.number_of_seasons + 1) {
                 if (tv_data.seasons[i].air_date == null){
@@ -98,7 +102,7 @@ function create_tvshow(tvshow_id, html_id) {
     });
 }
 
-var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home";	
+var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home, #settings-icon";	
 
 function initTVShow(quotetvShowToInit, tvShowToInit, tvShow_id) {
     $('.' + quotetvShowToInit).click(function () {
