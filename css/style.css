@@ -91,6 +91,10 @@ header {
     width: 100%;
 }
 
+#loader h2 {
+	display: none;
+}
+
 .half-circle-spinner, .half-circle-spinner * {
     box-sizing: border-box;
 }
