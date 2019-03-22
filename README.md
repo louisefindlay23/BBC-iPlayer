@@ -8,6 +8,15 @@ As it was a mobile app, the carousel had to be touch-friendly so I used the plug
 
 Originally, the search section was meant to be a prototype because our host, Github Pages didn't allow databases. However, I still wanted to get it work. I used a mixture of jQuery and JavaScript to create a dropdown menu with filterFunction which would narrow down search results when typed and keep the history of searches.
 
+### Collaborators
+
+[@louisefindlay23](https://github.com/louisefindlay23)
+
+[@florin235](https://github.com/Florin235)
+
+[@gfrcsd](https://github.com/gfrcsd)
+
+[@zSaibot](https://github.com/zSaibot)
 
 # Useful Links  :link:
 
