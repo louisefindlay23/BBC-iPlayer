@@ -6,7 +6,7 @@ Following on from the [SilverNote](https://github.com/louisefindlay23/silvernote
 
 As it was a mobile app, the carousel had to be touch-friendly so I used the plugin, [Flickity](https://flickity.metafizzy.co) which was easy to use and very customisable. When the TV Show section was complete, it was integrated together so clicking on a cell showed metadata from the TVDB.
 
-Originally, the search section was meant to be a prototype because our host, Github Pages didn't allow databases. However, I still wanted to get it work. I used a mixture of jQuery and JavaScript to create a dropdown menu with filterFunction which would narrow down search results when typed and keep the history of searches.
+Originally, the search section was meant to be a prototype because our host, Github Pages didn't allow databases. However, I was still determined to get it work. I used a mixture of jQuery and JavaScript to create a dropdown menu with filterFunction which would narrow down search results when typed. I also added a check in jQuery to see if search history already exists and add the name of the show visted underneath it.
 
 ### Collaborators
 
@@ -18,6 +18,6 @@ Originally, the search section was meant to be a prototype because our host, Git
 
 [@zSaibot](https://github.com/zSaibot)
 
-# Useful Links  :link:
+### Useful Links  :link:
 
-[Mobile web app](https://louisefindlay23.github.io/BBC-iPlayer)
+[Mobile Web App](https://louisefindlay23.github.io/BBC-iPlayer)
