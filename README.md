@@ -1,36 +1,14 @@
-
-
 ![BBC iPlayer logo](https://upload.wikimedia.org/wikipedia/en/0/05/BBC_iPlayer_logo.svg)
 
-Web App prototype
+### About the Project
 
-## Introduction
-You will find explanations regarding the workflow for this project below. It summarize what we talked about during our first production meeting and it should be read before jumping in to make sure that everything goes smoothly during the development process.
+Following on from the [SilverNote](https://github.com/louisefindlay23/silvernote) project, we were assigned to create a mobile web app prototype for BBC iPlayer. We divided the website into eight sections and took two each. Once the skeleton was created, I worked on the carousel and search areas.
 
-### Skeleton
-A skeleton was created for you to branch off. Both the index.html and the style.css are heavily commented and should clearly define the space in which your feature will be implemented. This is done in order to avoid merge errors during pull request when the time comes. If you have any question regarding the comments left in the index.html or style.css, come talk to me on Slack. It is important for everyone to understand this as it should keep us away from too much trouble when putting together everyone's work.
+As it was a mobile app, the carousel had to be touch-friendly so I used the plugin, [Flickity](https://flickity.metafizzy.co) which was easy to use and very customisable. When the TV Show section was complete, it was integrated together so clicking on a cell showed metadata from the TVDB.
 
-### Naming your branch
-Name your branch accordingly to the "Issue"/feature you are working on: hero, search, carousel... Always be extremely careful to work on your branch and not one of another collaborator.
+Originally, the search section was meant to be a prototype because our host, Github Pages didn't allow databases. However, I still wanted to get it work. I used a mixture of jQuery and JavaScript to create a dropdown menu with filterFunction which would narrow down search results when typed and keep the history of searches.
 
-### JavaScript
- A separate file should be made for every feature developped which require JavaScript. Name it accordingly to the feature (i.e "search.js" for the search feature) and make sure it is stored in the "js" folder.
-
-### jQuery
-The latest version of jQuery (3.3.1) is hosted in the repository folder "js" and already in the skeleton's HTML header. Keep that version number in mind if you are searching for solutions. We could use a CDN but having it hosted here means allowing offline development.
-
-### Bugs & Errors
-There is nothing wrong with having a look at other people's work/branches (it is even encouraged) but don't widly change their codes. Instead go to the issue related to the feature they are developing and refer to the code/commit which contain the error in the comments so the contributor can rectify it
-
-### Pull request
-The master branch is locked and the only way to add your content to it will be through submitting a pull request. You can submit pull request as you are developing your feature, whoever make sure that your code is clean and up to standard when you do so (indenting, syntax, alt...).
-
-If you have any question regarding pull request you can learn more about them at the [following link](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
 
 # Useful Links  :link:
 
-[Master branch preview Website](https://gfrcsd.github.io/BBC-iPlayer/)
-
-[Slack #worldskills @nescolwebdev](https://nescolwebdev.slack.com/)
-
-[OneDrive Project Folder](https://nescol-my.sharepoint.com/:f:/g/personal/30058089_nescol_ac_uk/EvzvF0nxvoJEtWpL2O9qAPgBwHpsNhQPa5geHdNE4o-E9w?e=MJchg5)
+[Mobile web app](https://louisefindlay23.github.io/BBC-iPlayer)
