@@ -18,6 +18,12 @@ Originally, the search section was meant to be a prototype because our host, Git
 
 [@zSaibot](https://github.com/zSaibot)
 
+### Search Demo
+
+A demo of the search functionality of the app
+
+![Demo](https://media.giphy.com/media/ThqJLK4AVJbm1uUwgq/giphy.gif)
+
 ### Useful Links  :link:
 
 [Mobile Web App](https://louisefindlay23.github.io/BBC-iPlayer)
