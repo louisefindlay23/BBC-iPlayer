@@ -1,8 +1,8 @@
 function create_tvshow(tvshow_id, html_id) {
     $(document).ready(function () {
         if( $('#' + html_id).is(':empty') ) {
-            
-            var config_data = $.parseJSON($.ajax({            
+
+            var config_data = $.parseJSON($.ajax({
                 "async": false,
                 "crossDomain": true,
                 dataType: 'json',
@@ -10,10 +10,10 @@ function create_tvshow(tvshow_id, html_id) {
                 "method": "GET",
                 "headers": {},
                 "data": "{}"
-            }).responseText);       
+            }).responseText);
             console.log(config_data);
-            
-            var tv_data = $.parseJSON($.ajax({            
+
+            var tv_data = $.parseJSON($.ajax({
                 "async": false,
                 "crossDomain": true,
                 dataType: 'json',
@@ -21,9 +21,9 @@ function create_tvshow(tvshow_id, html_id) {
                 "method": "GET",
                 "headers": {},
                 "data": "{}"
-            }).responseText);        
-            console.log(tv_data);       
-            
+            }).responseText);
+            console.log(tv_data);
+
             if (tv_data.seasons[0].season_number === 0) {
                 var i = 1;
                 var z = 1;
@@ -31,22 +31,22 @@ function create_tvshow(tvshow_id, html_id) {
                 var i = 0;
                 var z = 1;
             }
-            
+
             $('#' + html_id).append('<div class="tvshow-header"><h1>' + tv_data.original_name + '</h1>' + '<p>' + tv_data.first_air_date.substring(0,4) + ' / ' + tv_data.number_of_seasons + ' Seasons' + ' / ' + tv_data.episode_run_time[0] + ' mins' + '</p>' + '</div>' + '<div class="dropdown-menu-container"><div class="season-button"><p>Season <i class="fas fa-caret-down"></i></p></div>' + '<div class="' + html_id + '-dropdown season-dropdown" id="' + html_id + '_season"><ul></ul></div>');
             $('#' + html_id).append('<div id="' + html_id + '_season_container" class="season_container"></div>');
-            
+
             var headerImage = config_data.images.secure_base_url + config_data.images.backdrop_sizes[1] + tv_data.backdrop_path;
-            
+
             $('#' +  html_id + ' .tvshow-header').css("background-image", 'linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url(' + headerImage + ')');
-            
+
             $('.season-button').click(function () {
                 $('.' + html_id + '-dropdown').slideToggle(150);
             });
 
-            if (tv_data.number_of_seasons === 1) { 
-                $('.season-button').css('display', 'none'); 
-            } 
-            
+            if (tv_data.number_of_seasons === 1) {
+                $('.season-button').css('display', 'none');
+            }
+
             while (i < tv_data.number_of_seasons + 1) {
                 if (tv_data.seasons[i].air_date == null){
                 }
@@ -54,22 +54,22 @@ function create_tvshow(tvshow_id, html_id) {
                     $('#' + html_id + '_season ul').append('<li><a class="season-click" rel="' + html_id + 'ssn' + z +'">' + tv_data.seasons[i].name + '</a></li>');
                     $('#' + html_id + '_season_container').append('<div class="season ' + html_id + 'ssn' + z + '" id="' + html_id + '_s' + z + '"></div>');
                 }
-                
+
                 if (tv_data.seasons[i].season_number == 1){
                 }
                 else {
                     $('#' + html_id + '_s' + z ).css('display', 'none');
                 }
-                
+
                 $('.season-click').on('click', function(){
                     var target = $(this).attr('rel');
                     $("."+target).show().siblings('div').hide();
                     $('.' + html_id + '-dropdown').slideUp(150);
                 });
-                
+
                 var j = 1;
-                
-                var ep_data = $.parseJSON($.ajax({            
+
+                var ep_data = $.parseJSON($.ajax({
                     "async": false,
                     "crossDomain": true,
                     dataType: 'json',
@@ -79,11 +79,11 @@ function create_tvshow(tvshow_id, html_id) {
                     "data": "{}"
                 }).responseText);
                 console.log(ep_data);
-                
-                
+
+
                 while (j < tv_data.seasons[i].episode_count + 1) {
                     $('#' + html_id + '_s' + z).append('<div id="' + html_id + '_s' + z + '_ep' + j + '" class="episode"><div class="episode-text"><h3>' + ep_data.episodes[j-1].episode_number + ". " + ep_data.episodes[j-1].name + '</h3>' + '<p>' + ep_data.episodes[j-1].overview.substring(0, 100) + ' (...)' + '</p></div>' + '<div class="episode-thumb"><img src="' + (config_data.images.secure_base_url + config_data.images.backdrop_sizes[0] + ep_data.episodes[j-1].still_path) + '"></div></div>');
-                    
+
                     if (ep_data.episodes[j-1].still_path == null){
                         $('#' + html_id + '_s' + z + '_ep' + j).css('display', 'none');
                     }
@@ -102,7 +102,7 @@ function create_tvshow(tvshow_id, html_id) {
     });
 }
 
-var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home, #settings-icon";	
+var elementsToHide = "#faq, #search, #categories, #settings, #profile, #home, #settings-icon";
 
 function initTVShow(quotetvShowToInit, tvShowToInit, tvShow_id) {
     $('.' + quotetvShowToInit).click(function () {

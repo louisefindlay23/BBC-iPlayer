@@ -125,7 +125,7 @@ header {
 @keyframes half-circle-spinner-animation {
     0% {
         transform: rotate(0deg);
-        
+
     }
     100%{
         transform: rotate(360deg);
@@ -184,7 +184,7 @@ header {
     left: -22%;
 }
 
-.p-fav {    
+.p-fav {
     font-size: 35px;
     right: -25%;
 }
@@ -778,7 +778,7 @@ input:checked + .slider:before {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
-}   
+}
 
 .season-button {
     text-align: center;
