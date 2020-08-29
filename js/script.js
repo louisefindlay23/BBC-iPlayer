@@ -331,5 +331,13 @@ $(document).ready(function () {
 	initTVShow('thewalkingdead', thewalkingdead, 1402);
 	
 	initTVShow('evilgenius', evilgenius, 79126);
+
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+   navigator.serviceWorker.register('../sw.js').then( () => {
+    console.log('Service Worker Registered')
+   })
+ })
+}
 	
 });
