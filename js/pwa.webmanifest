@@ -1,16 +1,16 @@
 {
-  “name”: “BBC iPlayer”,
-  “short_name”: “bbc-iPlayer”,
-  “description”: “Mobile web app redesign of the BBC iPlayer streaming service”,
-  “icons”: [
+  "name": "BBC iPlayer",
+  "short_name": "bbc-iPlayer",
+  "description": "Mobile web app redesign of the BBC iPlayer streaming service",
+  "icons": [
     {
-      “src”: “/img/splash-screen.png”,
-      “sizes”: “512x512”,
-      “type”: “image/png”
+      "src": "/img/splash-screen.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  “start_url”: “/“,
-  “display”: “fullscreen”,
-  “theme_color”: “#ffffff”,
-  “background_color”: “#000000”
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#ffffff",
+  "background_color": "#000000"
 }
