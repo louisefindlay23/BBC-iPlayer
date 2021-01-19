@@ -4,7 +4,7 @@
   "description": "Mobile web app redesign of the BBC iPlayer streaming service",
   "icons": [
     {
-      "src": "/img/splash-screen.png",
+      "src": "/img/favicons/splash-screen.png",
       "sizes": "512x512",
       "type": "image/png"
     }
